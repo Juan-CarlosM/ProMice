@@ -133,5 +133,5 @@ Esta ultima pieza sostiene un uStepper driver para medir la rotacion del hombre 
 
 ![top encoder base](images/top_encoder_base_resin.jpeg){width=45% align=left}
 
-
+<p style="color: #d12a38;"> MODIFICATION FAITE PAR CORENTIN </p>
 
