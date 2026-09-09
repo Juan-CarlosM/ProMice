@@ -1,0 +1,61 @@
+site_name: ProMice
+theme:   
+  logo: images/Logo_white.png
+  name: material
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    
+nav:
+  - Home: index.md
+  - System Overview:
+    - Structure: architecture.md
+    - Mechanical design: mechanical_design.md
+    - Sensors: sensors.md
+    - Hardware: hardware.md
+  - Tutorial: 
+    - 3D printing: 3D_printing.md
+    - Soldering: soldering.md
+    - Instrumentation : instrumentation.md
+    - Electronics: electronics.md
+    - Assembling : assembling.md
+    - Encoders linearization: encoders_linearization.md
+    - Control : control.md
+    - Materials: materials.md
+    
+  
+plugins:
+  - search
+  - table-reader
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.blocks.caption
+  - pymdownx.betterem
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - stylesheets/extra.css  
+  - https://unpkg.com/katex@0/dist/katex.min.css
