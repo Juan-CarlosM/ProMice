@@ -135,5 +135,7 @@ TEST CORENTIN
 
 ![top encoder base](images/top_encoder_base_resin.jpeg){width=45% align=left}
 
+## Test de validación automática
 
+Este texto es una prueba.
 
