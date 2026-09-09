@@ -39,3 +39,4 @@ To adapt the sensors to the prosthesis, a ball-and-socket joint was designed tha
 since this rotation is already accounted for by $a_1$. The Hall effect sensor in the ball-and-socket joint measures $a_2$ and $a_3$, 
 while a second Hall sensor measures the rotation of $a_4$ .
 
+<!-- Test de protección de main -->
