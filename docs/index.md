@@ -1,5 +1,5 @@
 # ProMice from HERMIN project
----------------TEST------------------
+---------------TEST------------------,Another test_______________
 Haptic Exploration and Reflex Motor control In a Neuroprosthesis :
 Project HERMIN aims to develop and explore for the first time 
 adaptive shared-control strategy in a bidirectional neuroprosthesis with direct sensory feedback 
