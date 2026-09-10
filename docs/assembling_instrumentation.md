@@ -14,7 +14,7 @@ cmo se muestra a continuacion y uti
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav3.jpg){width=42% align=left}
 
-![YLS ball bearings cav2](images/YLS_ball_bearings_cav2.jpg){width=40% align=left}
+![YLS ball bearings cav2](images/YLS_ball_bearings_cav2.jpg){width=40% .center}
 
 
 
