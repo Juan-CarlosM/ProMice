@@ -1,6 +1,6 @@
 ![Motors and rack](images/motors_rack.jpg){ width=50% .center}
 
-![Bowden actuation](images/front_bowden.png){ width=50% .center}
+![Bowden actuation](images/front_bowden.jpg){ width=50% .center}
 
 ![PCB teensy](images/PCB_teensy.jpg){ width=50% .center}
 
