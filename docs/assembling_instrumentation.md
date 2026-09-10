@@ -83,21 +83,21 @@ On clipse le support cache et le support main (part 1 and 2) sur les roulements 
 
 Pour que les moteurs puissent agir sur la prothèse, on utilise du fils de pêche en guise de câble, que l'on enroule autour des poulies d'un côté et que l'on attache à l'extrémité de la prothèse de l'autre, comme détaillé ci-dessous.
 
-Pour éviter d'user la prothèse, on passe les câbles dans des gaines de Xmm de diamètre (interne et externe). On utilise des câble de Xcm et des gaines de Xcm de longeur. Il vaut meiux prendre de la marge sur la longueur des câble et couper ce qu'il dépasse à la fin pour faciliter les manipulations.
+Pour éviter d'user la prothèse, on passe les câbles dans des [gaines](https://www.vwr.com/fr/en/product/576865/null) de 0.3mm de diamètre interne et 1.5mm de diamètre externe. On utilise des câble d'environ 60-80cm de longeure et des gaines de 40-50cm de longeure. Il vaut mieux prendre de la marge sur la longueur des câble et couper ce qu'il dépasse à la fin pour faciliter les manipulations.
 On va d'abord passer les gaines dans leur trous pour vérifier qu'ils ne soient pas bouchés et les déboucher si nécessaire.
-
-IMAGE GAINE TROU
-
 On peut ensuite glisser les câbles dans les gaines, en laissant dépasser de la longeure des 2 côtés.
 
-Pour la suite il est important de connaitre la position dans laquelle le capteur est positionné dans la socket. En fonction du sens dans lequel il est, la positionnement des câbles sera différent:
+Pour la suite il est important de connaitre la position dans laquelle le capteur est positionné dans la socket. En fonction du sens dans lequel il est, la positionnement des câbles dans les poulies sera différent:
 
-IMAGE CONFIG CAPTEUR -> Postition des câbles.tif
+Configuration n°1 :
+![configuration 1](images/configuration_n1.png){width=80% .center}
+
+Configuration n°2:
+![configuration 2](images/configuration_n2.png){width=100% .center}
 
 Il faut nouer les câble à l'extrémité de la prothèse comme cela :
 
-![nodes](images/nodes.jpeg){width=80% .center}
+![nodes](images/nodes.png){width=100% .center}
 
-Et de l'autre côté, on enroule le câble autour des poulies de cette façon:
+Et de l'autre côté, on enroule les câbles autour des poulies comme montré ci-dessous. Les 2 images représentent la même poulie, mais on a représenté la façon dont s'enroule les 2 câbles d'une même poulie.
 ![pulley cable](images/pulley_cable.png){width=80% .center}
-
