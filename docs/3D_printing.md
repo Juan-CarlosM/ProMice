@@ -12,9 +12,9 @@ a soft behavior against friction and a detailed appearence.
 
 El parametraje de la impresora para el tamano de capa es el de base. 
 
-![layer thickness](images/layers_thickness.png){ width=60% .center }
+![layer thickness](images/layers_thickness.png){ width=70% .center }
 
-![grey resin](images/grey_resin.png){ width=40% .center }
+![grey resin](images/grey_resin.png){ width=50% .center }
 
 
 En la imagen de abajo mostramos el modelo 3D de las piezas que se imprimen en resina Se trata de el sistema que alberga las articulaciones, 
