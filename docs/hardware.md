@@ -1,23 +1,28 @@
-Como todo sistema robotico ProMice cuenta con componentes actuadores, estructuras mecanicas de soporte, estructuras articuladas, sistema de transmision de movimiento, electronica e instrumentacion. A continuacion presentamos una descripcion general del hardware de ProMice. Detalles sobre los materiales y ensamblajes pueden ser consultados en la seccion [Tutorial](3D_printing.md).
+# Hardware
+Like any robotic system, ProMice comprises actuators, mechanical support structures, articulated structures, a motion transmission system, electronics and instrumentation. Below is a general description of the ProMice hardware. Details regarding materials and assemblies can be found in the section [Tutorial](3D_printing.md).
 
-# Actuators and their suport
-El sistema cuenta con 4 motores a pasos Nema 17 como actuadores que sostienen en un soporte de impreso en 3D con PLA. Los motores tienen instalada una polea impresa en resina con un sistema de tension para los cables de actuacion. 
+## Actuators and their suport
+The system has four Nema 17 stepper motors as actuators, which are mounted on a 3D-printed rack made from PLA. The motors are fitted with a resin-printed pulley and a tensioning system for the actuation cables.
 
 ![Motors and rack](images/motors_rack.jpg){ width=70% .center}
-# Transmission and articulations system 
-ProMice es un cable-driven system que usa un Bowden-cable-type system como sistema de transmision de movimiento. El cable actuador es un fino cable metalico y el conducto es [PTFE Tube](https://fr.vwr.com/store/product/576865/null).
-
-
+## Transmission and articulations system 
+ProMice is a cable-driven robotic hand that uses a Bowden-cable-type system for motion transmission. The actuator cable is a thin metal cable and the sheath is [PTFE Tube](https://fr.vwr.com/store/product/576865/null).
+El sistema frontal atculado es la parte que se representa en el modelo del robot. Aqui se encuentran los 4 sus grados de libertad: Tres del hombro (articulacion esferica) y uno para el codo. 
 
 ![Bowden actuation](images/front_bowden.jpg){ width=70% .center}
 
+## Electronics & instruentation 
+The robot’s main controller is a Teensy 4.1 board ntegrated into in a custom PCB to manage connections.
+
 ![PCB teensy](images/PCB_teensy.jpg){ width=50% .center}
 
-![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){ width=50% .center}
-
+To ensure precise control using servomotion, the stepper motors were fitted with uStepperS32 controllers. Position feedback prevents missed steps and also ensures that an absolute position is always maintained, which is an important aspect in robotic systems.
+The following image, taken from beneath the motor rack, shows that only the last three motors have the controller installed, whereas the first one is mounted at the top of the articulated system.
+The explanation is that it is more accurate to measure the position of the joint locally; therefore, in our 4-DOF system, the rotation about the shoulder’s z-axis is measured locally by a driver that controls the respective actuator.
 ![uSteppers](images/uStepper_drivers.jpg){ width=50% .center}
 
-The precision of the prosthesis movement is achieved through stepper motors equipped with controllers and Hall sensors.
-This allows for rotations of much less than 1 degree and a high sampling rate for the angular position of the actuators
+The last two remaining degrees of freedom of the shoulder (spherical joint) are measured using a 3D Hall sensor in a socket-ball configuration. The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
+The following image shows the position of the sensor directly above the ball cavity in the socket containing the joint.
+![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){width=50% .center}
 
-show the cable driven sistem
+The final degree of freedom (the elbow) is also measured using a Hall sensor positioned perpendicular to the axis of rotation. This encoding is achieved thanks to its small, meticulously constructed bearing system, which is fitted with a tiny magnet. Its manufacture and installation are described in the section [Assembling & instrumentation - Elbow joint ball bearings] (assembling_instrumentation.md#Elbow joint ball bearings]
