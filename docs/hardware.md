@@ -2,7 +2,7 @@
 
 ![Bowden actuation](images/front_bowden.jpg){ width=70% .center}
 
-![PCB teensy](images/PCB_Teensy.jpg){ width=50% .center}
+![PCB teensy](images/PCB_teensy.jpg){ width=50% .center}
 
 ![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){ width=50% .center}
 
