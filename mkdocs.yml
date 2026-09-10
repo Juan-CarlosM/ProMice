@@ -25,9 +25,8 @@ nav:
   - Tutorial: 
     - 3D printing: 3D_printing.md
     - Soldering: soldering.md
-    - Instrumentation : instrumentation.md
-    - Electronics: electronics.md
     - Assembling & instrumentation : assembling_instrumentation.md
+    - Electronics: electronics.md
     - Encoders linearization: encoders_linearization.md
     - Control : control.md
     - Materials: materials.md
