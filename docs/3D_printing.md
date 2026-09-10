@@ -2,8 +2,7 @@
 ProMice esta constituida en mayor parte por piezas impresas en 3D. Se utilizan dos tecnicas muy comunes de prototipaje;
 impresion de filamento con PLA e impresion de resina 
 
-
- add image of the whole 3D model of the prostheis including the motors. point to the pieces that have to be printed with resin use different colors
+![prothesis full](images/Prosthesis_full.png){width=70% .center}
 
 ## impresion con resina 
 Las piezas impresas en Resina son las que requieren mayor detalle y calidad, tambien son las piezas mas pequenas. 
@@ -46,7 +45,9 @@ los dos agujeros por dond epasan los actuating cables que dirigen la articulacio
 ![forearm labels](images/forearm_labels.png){width=60% .center}
 
 ![forearm resin](images/forearm_resin.jpeg){width=30% .center}
-
+ 
+Orientation for 3D printing :
+![forearm printing](images/forearm_printing.png){width=30% .center}
 
 ### The ball-arm of the ball joint
 
@@ -69,10 +70,12 @@ description of the piece cleanine etc.
 the arm of the ball is a stick with a design in the lower part that allws the attachment of the actuating cables. 
 Tambien tiene una cavidad longitudinal al brazo en l aque se inserta la varilla que sostiene la articulacion del codo. 
 cercano al brazo tambien tiene 4 agujeros cuyo proposito se detalla en la seccion de [Encoders linearization](encoders_linearization.md)
+ 
+Orientation for 3D printing :
+ 
+![ball_arm_printing](images/rotule.png){width=50% .center}
 
-
-
-
+ 
 ### The socket
 
 ![socket 3D](images/socket_3D.png){width=60% .center}
@@ -80,9 +83,9 @@ cercano al brazo tambien tiene 4 agujeros cuyo proposito se detalla en la seccio
 El socket tambien esta dividido en dos piezas para poder ensamblarse con la bola y usamos un anillo para mantener las dos piezas juntas.
 En ambas piezas podemos notar diferentes ranuras y cavidades. La pieza uno es la mas grande, tiene 9 cavidades cilindricas de las cuales 8 estan 
 distribuidas radial y simetricamente y una esta en el centro.
-En las 8 cavidades radieales se inserta un [PTFE Tube](https://fr.vwr.com/store/product/576865/null) ya que es un bowden -cable-type actuation system.
-el cable has an internal diameter of 0.3mm  and external diameter of 1.5mm
-En l acabidad esferica que alberga la bola cuenta con un housing donde se inserta un mini rodamiento que forma parte del [Yaw-lock system](mechanical_design.md#yaw_lock_system).
+En las 8 cavidades radieales se inserta un [PTFE Tube](https://fr.vwr.com/store/product/576865/null) with an internal diameter of 0.3mm 
+and external diameter of 1.5mm para reducir el radio y por lo tanto el back lash de los actuating cables. En l acabidad esferica 
+que alberga la bola cuenta con un housing donde se inserta un mini rodamiento que forma parte del [Yaw-lock system](mechanical_design.md#yaw_lock_system).
 Justo en el centro se encuentra la cavidad del ball joint hall sensor que medira el movimiento de la articulacion. Esta cavidad esta
 conectada a la novena cavidad cilindrica para pasar los cables del sensor. 
 
@@ -94,12 +97,16 @@ La otra parte de socket es simetrica a la parte baja de la primera, con la excep
 contener la esfera en conjunto con la pieza uno. The socket includes a ring thar fastens the two pieces toguether 
 
 
-![Socket 1 and 2](images/socket_1_2_resin.jpeg){ width=40% .center } 
+![Socket parts](images/socket_parts.jpeg){ width=40% .center } 
+ 
+Orientation for 3D printing :
+  
+![socket_printing](images/socket_printing.png){width=70% .center}
 
 
 ### Shoulder ball bearing housing
 
-![shoulder ball bearing housing 3D](images/shoulder_ball_bearing_housing_3D.png){width=70% .center}
+![shoulder ball bearing housing 3D](images/shoulder_ball_bearing_housing_3D.png){width=80% .center}
 
 This section is composed by 3 piece. it holds the shoulder Z-axis rotation system. It has housings for two ball bearings and two cavities for the PTFE tube. La pieza mas gra,de es la
 parte que sostiene la parte frontal de la protesis, en la imagen de abajo se muestra senalado el front support hole para apoyar la protesis en un
@@ -114,7 +121,10 @@ Las dos piezas restantes son complementos para sostener los rodamientos y para s
 ![shoulder case 2 resin](images/shoulder_case_2_resin.jpeg){ width=40% .center }
 
 faltan imagenes en resina de las otras dos piezas 
-
+ 
+ Orientation for 3D printing :
+  INSERER IMAGE
+![shoulder ball bearing housing](images/shoulder_ball_bearing_housing.png){width=70% .center} 
 ### Shoulder rotatory pieces 
 ![shoulder rotatory pieces 3D](images/shoulder_rotatory_pieces_3D.png){width=60% .center}
 
@@ -122,19 +132,52 @@ Este es un set de tres piezas que transmiten la rotacion en Z del hombro al rest
 tiene una cavidad para un iman que queda justo debajo de un encoder para medir la rotacion. La polea lleva atados los actuating cables 
 como lo muestra the red dashed line en la figura de abajo. La pieza de mas abajo es la conexion entre la polea y el socket.  
 
-![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels.png){width=80% .center}
-
+![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
+ 
+Orientation for 3D printing :
+  
+![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=70% .center} 
 ### Top encoder base. 
 ![top encoder base 3D](images/top_encoder_base_3D.png){width=60% .center}
 
 Esta ultima pieza sostiene un uStepper driver para medir la rotacion del hombre en el eje Z 
 
-![top encoder base](images/top_encoder_base.png){width=45% align=right}
+![top encoder base](images/top_encoder_base.png){width=45% .center}
+
+![top encoder base](images/top_encoder_base_resin.jpeg){width=45% .center}
+
+Orientation for 3D printing :
+
+![top encoder base printing](images/top_encoder_base_printing.png){width=45% .center}
+
+### Pulleys
+![pulley views](images/pulley_views.png){width=75% .center}
 
 
-![top encoder base](images/top_encoder_base_resin.jpeg){width=45% align=left}
 
-## Test de validación automática
+<p style="color: #999999;">There are four pulleys in total, each mounted on a motor. They are used to transmit the motors’ rotation to the prosthesis, allowing it to move along its different axes. Motion is transmitted via wires, which are attached to the end of the prosthesis on one side and wound around the pulley on the other, as shown below:</p>
 
-Este texto es una prueba.
+![pulley cable](images/pulley_cable.png){width=75% .center}
 
+<p style="color: #999999;">The tension of the wires can be adjusted by turning the corresponding screw: turning it clockwise increases the tension on the wire, while turning it counterclockwise decreases it.</p>
+
+
+![pulley screw](images/pulley_screw.png){width=75% .center}
+ 
+Orientation for 3D printing :
+ 
+![pulley printing](images/pulley_printing.png){width=70% .center}
+
+## impresion con PLA
+<p style="color: #999999;">Parts that do not require a high level of precision are printed in PLA, which is less expensive than resin. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.</p>
+
+### Motors suport
+<p style="color: #999999;">
+To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
+
+![suports](images/suports.png){width=140% .center}
+
+Orientation for 3D printing :
+![motors suport](images/motors_suport_printing.png){width=70% .center}
+ 
+![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
