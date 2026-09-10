@@ -27,7 +27,7 @@ nav:
     - Soldering: soldering.md
     - Instrumentation : instrumentation.md
     - Electronics: electronics.md
-    - Assembling : assembling.md
+    - Assembling & instrumentation : assembling_instrumentation.md
     - Encoders linearization: encoders_linearization.md
     - Control : control.md
     - Materials: materials.md
