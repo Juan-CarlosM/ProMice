@@ -13,12 +13,11 @@ cmo se muestra a continuacion y uti
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
-Pour que la rotule puisse bien se mouvoir une fois dans la prothèse, on peut la poncer pour diminuer les frottements avec la socket si nécessaire.
+Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut le poncer pour diminuer les frottements avec la socket si nécessaire. On doit pouvoir bouger la rotule dans toutes les directions avec 1 seul doigts, sans forcer.
 
-IMAGE PONCAGE ROTULE
-
+On insère au fond de la rotule_short un enroulement de 3mm, puis on vient glisser le T-shaft à l'interieur. Puis on glisse un roulement de l'autre côté du T et on referme avec la sphere complement.
 Enfin on vient insérer l'aimant dans son emplacement en veillant à ce qu'il ne dépasse pas pour éviter des problèmes d'usures plus tard.
-
+![ball arm assembly](images/ball_arm_assembly.png){width=40% .center}
 
 ### Assembling of the elbow joint 
 ### Elbow joint ball bearings
@@ -99,5 +98,5 @@ Il faut nouer les câble à l'extrémité de la prothèse comme cela :
 
 ![nodes](images/nodes.png){width=100% .center}
 
-Et de l'autre côté, on enroule les câbles autour des poulies comme montré ci-dessous. Les 2 images représentent la même poulie, mais on a représenté la façon dont s'enroule les 2 câbles d'une même poulie.
+Et de l'autre côté, on enroule les câbles autour des poulies comme montré ci-dessous. Les 2 images représentent la même poulie, mais on a représenté la façon dont s'enroule les 2 câbles pour cette même poulie.
 ![pulley cable](images/pulley_cable.png){width=80% .center}
