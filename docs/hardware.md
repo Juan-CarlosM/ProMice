@@ -26,7 +26,11 @@ It is done this way to measure the position of the joint locally; therefore, in 
 
 ### Embedded hall sensors 
 
-The last two remaining degrees of freedom of the shoulder (spherical joint) are measured using a 3D Hall sensor in a socket-ball configuration. The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
+The last two remaining degrees of freedom of the shoulder (spherical joint) are measured using a 3D Hall sensor in a socket-ball configuration. 
+
+
+
+The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
 The following image shows the position of the sensor directly above the ball cavity in the socket containing the joint.
 
 ![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){width=50% .center}
