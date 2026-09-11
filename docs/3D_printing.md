@@ -168,13 +168,9 @@ Orientation for 3D printing :
 ![pulley printing](images/pulley_printing.png){width=70% .center}
 
 ## impresion con PLA
-<p style="color: #999999;">Parts that do not require a high level of precision are printed in PLA, which is less expensive than resin. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.</p>
 
-### Motors suport
-<p style="color: #999999;">
-To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
-
-![suports](images/suports.png){width=140% .center}
+The motors rack and PCB housing are printed in PLA, this pieces do not require a high level of precision. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.
+![PLA parts](images/PLA_parts.jpg)
 
 Orientation for 3D printing :
 ![motors suport](images/motors_suport_printing.png){width=70% .center}
