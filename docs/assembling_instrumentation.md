@@ -1,4 +1,4 @@
-## Assembling and instrumentation
+# Assembling and instrumentation
 ## Pieces assembling
 ### Assembling the ball-arm 
 El en samblaje de la ball arm puede requerir de pequenos detallados. Por ejemplo, importante que los pequenos rodamientos del 
