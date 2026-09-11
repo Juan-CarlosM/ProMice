@@ -89,10 +89,10 @@ On peut ensuite glisser les câbles dans les gaines, en laissant dépasser de la
 Pour la suite il est important de connaitre la position dans laquelle le capteur est positionné dans la socket. En fonction du sens dans lequel il est, la positionnement des câbles dans les poulies sera différent:
 
 Configuration n°1 :
-![configuration 1](images/configuration_n1.png){width=80% .center}
+![configuration 1](images/configuration_1.png){width=80% .center}
 
 Configuration n°2:
-![configuration 2](images/configuration_n2.png){width=100% .center}
+![configuration 2](images/configuration_2.png){width=100% .center}
 
 Il faut nouer les câble à l'extrémité de la prothèse comme cela :
 
