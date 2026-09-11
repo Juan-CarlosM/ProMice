@@ -16,7 +16,8 @@ The robot’s main controller is a Teensy 4.1 board ntegrated into in a custom P
 
 ![PCB teensy](images/PCB_teensy.jpg){ width=50% .center}
 
-To ensure precise control using servomotion, the stepper motors were fitted with uStepperS32 controllers. Position feedback prevents missed steps and also ensures that an absolute position is always maintained, which is an important aspect in robotic systems.
+### Stepper to servo motor 
+To ensure precise control, the stepper motors were fitted with uStepperS32 controllers to enable servo motion. Position feedback prevents missed steps and also ensures that an absolute position is always maintained, which is an important aspect in robotic systems.
 The following image, taken from beneath the motor rack, shows that only the last three motors have the controller installed, whereas the first one is mounted at the top of the articulated system.
 The explanation is that it is more accurate to measure the position of the joint locally; therefore, in our 4-DOF system, the rotation about the shoulder’s z-axis is measured locally by a driver that controls the respective actuator.
 ![uSteppers](images/uStepper_drivers.jpg){ width=50% .center}
