@@ -87,6 +87,12 @@ On insère ensuite le couple shoulder pulley sru la socket et on glisse les 2 gr
 On clipse le support cache et le support main (part 1 and 2) sur les roulements (5), et on finit en positionnant le support ustepper et l'upper shoulder magnet comme indiqué dans (6). Il vaut mieux visser ces pièce plus tard, car elles sont susceptibles de gêner lors de la suite de l'assemblage.
 ![assembly step 5&6](images/assembly_56.png){width=90% .center}
 
+### Motors suport
+
+To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
+
+![suports](images/suports.png){width=140% .center}
+
 Pour que les moteurs puissent agir sur la prothèse, on utilise du fils de pêche en guise de câble, que l'on enroule autour des poulies d'un côté et que l'on attache à l'extrémité de la prothèse de l'autre, comme détaillé ci-dessous.
 
 Pour éviter d'user la prothèse, on passe les câbles dans des [gaines](https://www.vwr.com/fr/en/product/576865/null) de 0.3mm de diamètre interne et 1.5mm de diamètre externe. On utilise des câbles d'environ 60-80cm de longueur et des gaines de 40-50cm de longueur. Il vaut mieux prendre de la marge sur la longueur des câble et couper ce qui dépasse à la fin pour faciliter les manipulations.
