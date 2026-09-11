@@ -1,31 +1,30 @@
 # 3D printing 
-ProMice esta constituida en mayor parte por piezas impresas en 3D. Se utilizan dos tecnicas muy comunes de prototipaje;
-impresion de filamento con PLA e impresion de resina 
+ProMice is made up mostly of 3D-printed parts. Two very common prototyping techniques are used:
+PLA filament printing and resin printing
 
 ![prothesis full](images/Prosthesis_full.png){width=70% .center}
 
-## impresion con resina 
-Las piezas impresas en Resina son las que requieren mayor detalle y calidad, tambien son las piezas mas pequenas. 
-Para imprimir la piezas en resina we used the [Form 4 Printer](https://formlabs.com/3d-printers/form-4/)  and the
-general purpose [grey resin](https://formlabs.com/products/grey-resin/). This resine has good balance of mechanical properties, especially 
-a soft behavior against friction and a detailed appearence. 
+Now let's describe each of the parts and their function. Each description also shows the print orientation for best results.
 
-El parametraje de la impresora para el tamano de capa es el de base. 
+## Resin-printed parts
+Resin-printed parts are those that require the highest level of detail and quality; they are also the smallest parts.
+To print the resin parts, we used the [Form 4 Printer](https://formlabs.com/3d-printers/form-4/) and the
+general-purpose [gray resin](https://formlabs.com/products/grey-resin/). This resin offers a good balance of mechanical properties, particularly
+a soft response to friction and a detailed finish.
+
+The printer settings for layer height are the default ones.
 
 ![layer thickness](images/layers_thickness.png){ width=70% .center }
 
 ![grey resin](images/grey_resin.png){ width=50% .center }
 
 
-En la imagen de abajo mostramos el modelo 3D de las piezas que se imprimen en resina Se trata de el sistema que alberga las articulaciones, 
-las poleas y los sistemas de tension para los actuating cables . 
+The image below shows the 3D model of the parts that are printed in resin. These are the front assembly that houses the joints and the pulleys with their
+tensioning system for the actuating cables.
 
-Ahora describamos cada una de las piezas y su funcion. Cada descripcion muestra tambien la orientacion de impresion para mejores resultados 
-ademas veamos su preparacion depues d el aimpresion para su ensamblaje
-empezaremos de la pieza que representa el efector final de l aprotesis
+![Resin parts](images/resin_parts.jpg){width=70% .center}
 
 
-## Pieces description 
 
 ### The forearm 
 
@@ -73,7 +72,7 @@ cercano al brazo tambien tiene 4 agujeros cuyo proposito se detalla en la seccio
  
 Orientation for 3D printing :
  
-![ball_arm_printing](images/rotule.png){width=50% .center}
+![ball_arm_printing](images/ball_arm_printing.png){width=50% .center}
 
  
 ### The socket
@@ -125,6 +124,8 @@ faltan imagenes en resina de las otras dos piezas
  Orientation for 3D printing :
   INSERER IMAGE
 ![shoulder ball bearing housing](images/shoulder_ball_bearing_housing.png){width=70% .center} 
+
+
 ### Shoulder rotatory pieces 
 ![shoulder rotatory pieces 3D](images/shoulder_rotatory_pieces_3D.png){width=60% .center}
 
