@@ -13,6 +13,13 @@ cmo se muestra a continuacion y uti
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
+
+### Motors suport
+
+To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
+
+![suports](images/suports.png){width=140% .center}
+
 Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut le poncer pour diminuer les frottements avec la socket si nécessaire. On doit pouvoir bouger la rotule dans toutes les directions avec 1 seul doigts, sans forcer.
 
 On insère au fond de la rotule_short un enroulement de 3mm, puis on vient glisser le T-shaft à l'interieur. Puis on glisse un roulement de l'autre côté du T et on referme avec la sphere complement.
