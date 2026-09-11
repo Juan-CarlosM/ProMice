@@ -82,4 +82,4 @@ describe the yaw lock system
 ![Yaw-lock system](images/yaw_lock_system.png){id="yaw_lock_system" width=70% .center }
 
 
-![Ball joint 3D](images/ballJoint_3D.jpg){width=50% .center}
+![Ball joint 3D](images/ballJoint_3D.jpg){width=70% .center}
