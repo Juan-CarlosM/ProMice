@@ -19,11 +19,12 @@ The robot’s main controller is a Teensy 4.1 board ntegrated into in a custom P
 ### Stepper to servo motor 
 To ensure precise control, the stepper motors were fitted with [uStepperS32](https://www.ustepper.com/shop/#!/products/ustepper-s32) controllers to enable servo motion. Position feedback prevents missed steps and also ensures that an absolute position is always measured, which is an important aspect in robotic systems.
 
-The following image, taken from beneath the motor rack, shows that only the last three motors have the controller installed, whereas the first one is mounted at the top of the articulated system.
-The explanation is that it is more accurate to measure the position of the joint locally; therefore, in our 4-DOF system, the rotation about the shoulder’s z-axis is measured locally by a driver that controls the respective actuator.
+The following image, taken from beneath the motor rack, shows the drivers installation. Exceptionally the first motor has no driver mounted, instead it is mounted on the top of the articulated system.
+It is done this way to measure the position of the joint locally; therefore, in our 4-DOF system, the rotation about the shoulder’s z-axis is measured locally by the driver that controls the respective actuator.
+
 ![uSteppers](images/uStepper_drivers.jpg){ width=50% .center}
 
-## Embedded hall sensors 
+### Embedded hall sensors 
 
 The last two remaining degrees of freedom of the shoulder (spherical joint) are measured using a 3D Hall sensor in a socket-ball configuration. The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
 The following image shows the position of the sensor directly above the ball cavity in the socket containing the joint.
