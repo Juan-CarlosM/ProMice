@@ -20,7 +20,7 @@ Enfin on vient insérer l'aimant dans son emplacement en veillant à ce qu'il ne
 ![ball arm assembly](images/ball_arm_assembly.png){width=40% .center}
 
 ### Assembling of the elbow joint 
-### Elbow joint ball bearings
+## Elbow joint ball bearings
 El resultado de soldar los pines en los mini rodamientos requiere modificar un poco las cavidades en el antebrazo. 
 incluso si se puede hacer esta modificacion en el modelo 3D es muy posible que a esta escala la impresion no sea 
 lo suficintemente precisa. Buscamos raspar la pieza intentando hacer la forma de la soldadura de estano mostrada 
