@@ -30,4 +30,4 @@ The following image shows the position of the sensor directly above the ball cav
 
 ![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){width=50% .center}
 
-The final degree of freedom (the elbow) is also measured using a Hall sensor positioned perpendicular to the axis of rotation. This encoding is achieved thanks to its small, meticulously constructed bearing system, which is fitted with a tiny magnet. Its manufacture and installation are described in the section [Assembling & instrumentation] (assembling_instrumentation.md#Elbow-joint-ball-bearings]
+The final degree of freedom (the elbow) is also measured using a Hall sensor positioned perpendicular to the axis of rotation. This encoding is achieved thanks to its small, meticulously constructed bearing system, which is fitted with a tiny magnet. Its manufacture and installation are described in the section [Assembling & instrumentation](assembling_instrumentation.md#elbow-joint-ball-bearings]
