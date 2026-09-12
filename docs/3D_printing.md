@@ -4,7 +4,7 @@ PLA filament printing and resin printing
 
 ![prothesis full](images/Prosthesis_full.png){width=70% .center}
 
-Now let's describe each of the parts and their function. Each description also shows the print orientation for best results.
+Now let's describe each of the parts and their function. Each description also shows the print orientation for quality and functional results.
 
 ## Resin-printed parts
 Resin-printed parts are those that require the highest level of detail and quality; they are also the smallest parts.
@@ -19,7 +19,7 @@ The printer settings for layer height are the default ones.
 ![grey resin](images/grey_resin.png){ width=50% .center }
 
 
-The image below shows the 3D model of the parts that are printed in resin. These are the front assembly that houses the joints and the pulleys with their
+The image below shows the 3D model of the parts that are printed in resin. These are: the frontal structure where the joints are located and the pulleys with their
 tensioning system for the actuating cables.
 
 ![Resin parts](images/resin_parts.jpg){width=70% .center}
@@ -30,23 +30,22 @@ tensioning system for the actuating cables.
 
 ![forearm 3D](images/forearm_3D.png){width=60% .center}
 
-The forearm es la extremidad del sistema porque no hay articulacion de muneca, which means there is a hand but there is not wrist joint. 
-La punta de los dedos es punto del efector final, esta hecha mediante el escaner de una pata real de raton
-por lo que sus dimensiones respetan las de una pata de raton real, en los dedos se pueden ver pequenas cavidades para los cables de un sensor 
-capacitivo, la idea es poder detectar el tacto de forma puntual. 
-La parte trasera tiene una cavidad para instalar el [sensor hall](https://www.ti.com/product/TMAG5273?qgpn=tmag5273) o encoder. La cavidad 
-esta alineada con el eje de rotacion del codo y justo a la altura del eje tenemos las cavidades para insertar the
-elbow ball bearings. Ortogonales al eje de rotacion de la articulacion se encuentran 
-los dos agujeros por dond epasan los actuating cables que dirigen la articulacion.
+The forearm is the end effector of the system, and there is no wrist joint. It was created by scanning a real mouse leg. The fingertips serve as the end effector. On the fingers, you can see small recesses for the wires of a capacitive sensor; the idea is to be able to detect touch at specific points.
 
-
+The rear section has a recess for fitting the [Hall sensor](https://www.ti.com/product/TMAG5273?qgpn=tmag5273) or encoder. The cavity
+is aligned with the elbow’s axis of rotation, and directly at the height of the axis are the grooves for inserting the
+elbow ball bearings. Perpendicular to the joint’s axis of rotation are the two holes through which the actuating cables pass
 
 ![forearm labels](images/forearm_labels.png){width=60% .center}
 
+Regarding the orientation for printing, it can be placed vertically as depicted below, or horizontally. A vertical position improves the details
+of the capacitive sensor cavities, but the holes for the actuating cables could get clogged, so they should be done manually. 
+The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
+In both cases you will obtain a functional piece.
+
 ![forearm resin](images/forearm_resin.jpeg){width=30% .center}
  
-Orientation for 3D printing :
-![forearm printing](images/forearm_printing.png){width=30% .center}
+![forearm printing](images/forearm_printing.png){width=30% alighn=left}
 
 ### The ball-arm of the ball joint
 
