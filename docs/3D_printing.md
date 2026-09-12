@@ -79,9 +79,9 @@ in its positioning relative to the Hall sensor in the socket. It is therefore ad
 The socket is also divided into two parts so that it can be assembled with the ball, and we use a ring to hold the two parts together.
 ![socket 3D](images/socket_3D.png){width=60% .center}
 
-On both parts, we can see various grooves and recesses. The larger part has 9 cylindrical recesses, 8 of which are
+On both parts, we can see various grooves and cavities. The larger part has 9 cylindrical cavities, 8 of which are
 arranged radially and symmetrically, whilst one is in the centre.
-The sheath for the Bowden cable is inserted into the 8 radial recesses. The spherical recess that houses the ball has a housing into which a mini bearing is inserted; this forms part of the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
+The sheath for the Bowden cable is inserted into the 8 radial cavities. The spherical cavity that houses the ball has a housing into which a mini bearing is inserted; this forms part of the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
 Directly in the centre, above the spherical cavity, is the cavity for the ball joint Hall sensor, which will measure the movement of the joint. This cavity is
 connected to the ninth cylindrical cavity to allow the sensor cables to pass through.
 The second part of the socket is symmetrical to the lower part of the first, except that it does not house a bearing.
@@ -89,10 +89,11 @@ Its function is to hold the ball in place together with part one.
 
 ![socket labels](images/socket_labels.png){width=60% .center}
 
-
+Given that we must avoid creating supports within the spherical cavity during the printing process and ensure that the cylindrical cavities remain free from deformation, the printing orientation must be vertical.
+![socket_printing](images/socket_printing.png){width=70% .center}
 ![Socket parts](images/socket_parts.jpeg){ width=40% .center } 
   
-![socket_printing](images/socket_printing.png){width=70% .center}
+
 
 
 ### Shoulder ball bearing housing
