@@ -12,7 +12,7 @@ The articulated front end is the part represented in the robot model. This is wh
 ![Bowden actuation](images/front_bowden.jpg){ width=70% .center}
 
 ## Electronics & instruentation 
-The robot’s main controller is a Teensy 4.1 board ntegrated into in a custom PCB to manage connections.
+The robot’s main controller is a Teensy 4.1 board integrated in a custom PCB to manage connections.
 
 ![PCB teensy](images/PCB_teensy.jpg){ width=50% .center}
 
@@ -20,7 +20,7 @@ The robot’s main controller is a Teensy 4.1 board ntegrated into in a custom P
 To ensure precise control, the stepper motors were fitted with [uStepperS32](https://www.ustepper.com/shop/#!/products/ustepper-s32) controllers to enable servo motion. Position feedback prevents missed steps and also ensures that an absolute position is always measured, which is an important aspect in robotic systems.
 
 The following image, taken from beneath the motor rack, shows the drivers installation. Exceptionally the first motor has no driver mounted, instead it is mounted on the top of the articulated system.
-It is done this way to measure the position of the joint locally; therefore, in our 4-DOF system, the rotation about the shoulder’s z-axis is measured locally by the driver that controls the respective actuator.
+It is done this way to measure the rotation about the shoulder’s z-axis locally, while the driver still controls the respective actuator.
 
 ![uSteppers](images/uStepper_drivers.jpg){ width=50% .center}
 
@@ -31,8 +31,8 @@ The last two remaining degrees of freedom of the shoulder (spherical joint) are 
 
 
 The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
-The following image shows the position of the sensor directly above the ball cavity in the socket containing the joint.
+The following image shows the position of the sensor directly above the ball cavity in the socket that contains the joint.
 
 ![Hall sensors socket and elbow](images/hall_sensors_socket.jpg){width=70% .center}
 
-The final degree of freedom (the elbow) is also measured using a Hall sensor positioned perpendicular to the axis of rotation. This encoding is achieved thanks to its small, meticulously constructed bearing system, which is fitted with a tiny magnet. Its manufacture and installation are described in the section [Assembling & instrumentation - Elbow joint ball bearings](assembling_instrumentation.md#elbow-joint-ball-bearings).
+The last degree of freedom (the elbow) is also measured using a Hall sensor positioned perpendicular to the axis of rotation. This encoding is achieved thanks to its small, meticulously constructed bearing system, which is fitted with a tiny magnet. Its manufacture and installation are described in the section [Assembling & instrumentation - Elbow joint ball bearings](assembling_instrumentation.md#elbow-joint-ball-bearings).
