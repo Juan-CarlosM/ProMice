@@ -141,7 +141,7 @@ Esta ultima pieza sostiene un uStepper driver para medir la rotacion del hombre 
 
 ![top encoder base printing](images/top_encoder_base_printing.png){width=45% .center}
 
-\\
+\
 ### Pulleys
 ![pulley views](images/pulley_views.png){width=75% .center}
 
