@@ -47,6 +47,9 @@ In both cases you will obtain a functional piece.
  
 ![forearm printing](images/forearm_printing.png){width=30% align=left}
 
+
+
+
 ### The ball-arm of the ball joint
 
 
