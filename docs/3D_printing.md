@@ -101,19 +101,19 @@ Given that we must avoid creating supports within the spherical cavity during th
 
 ![shoulder ball bearing housing 3D](images/shoulder_ball_bearing_housing_3D.png){width=80% .center}
 
-This section is composed by 3 piece. it holds the shoulder Z-axis rotation system. It has housings for two ball bearings and two cavities for the PTFE tube. La pieza mas gra,de es la
-parte que sostiene la parte frontal de la protesis, en la imagen de abajo se muestra senalado el front support hole para apoyar la protesis en un
+This section consists of three parts. It houses the shoulder Z-axis rotation system. It has housings for two ball bearings and two recesses for the Bowden cable. The largest part is the
+component that supports the front of the prosthesis; the following image shows the front support hole marked, which is used to secure the prosthesis to a
 [Flex arm](https://www.amazon.fr/SMALLRIG-Articul%C3%A9-Friction-R%C3%A9glable-Moniteur/dp/B08B63WXWN/ref=sr_1_1?crid=36M1VY295M2MQ&dib=eyJ2IjoiMSJ9.KGiIRm_QPLJhUIhU1N34kqAYeY66ar65T2RxIAyC5f-uMuk5aTKTYd3H7nni7IM6WjRBQcNbQ9WdEJuWjIoZFVrEm2gYyOMpcHyqmOA4SWdRUADsrTYoYQMwC7yEsQ6xcVR144ers6Tz1gCvJFgjxIjzeC-KBF_7Zjg-uiVb4PxhTXkaV829QS1jBANfmplZqVrv-mAeqohvgv2w3wQRbfktaMZ0KMstzPFnAle9ixHhLMXd_0YWc8hwDBu47y6c5cgRjOTXP1nDM0HJygyaWxgcuB6_G2oyH0hdsHEWegw.Qr0gYVoHgxusC7XTGdkxMi8Gfpx3oLuNlquboS8tCac&dib_tag=se&keywords=bras%2Bmagique&qid=1786965479&sprefix=braz%2Bma%2Caps%2C147&sr=8-1&th=1).
-
+The two remaining pieces are complementary parts designed to hold the bearings and to hold the Bowden cable.
  
 ![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center}
 
-Las dos piezas restantes son complementos para sostener los rodamientos y para sostener el  [PTFE Tube](https://fr.vwr.com/store/product/576865/null)
+
 
 
 ![shoulder case 2 resin](images/shoulder_case_2_resin.jpeg){ width=40% .center }
 
-faltan imagenes en resina de las otras dos piezas 
+
  
  Orientation for 3D printing :
   INSERER IMAGE
@@ -123,9 +123,7 @@ faltan imagenes en resina de las otras dos piezas
 ### Shoulder rotatory pieces 
 ![shoulder rotatory pieces 3D](images/shoulder_rotatory_pieces_3D.png){width=60% .center}
 
-Este es un set de tres piezas que transmiten la rotacion en Z del hombro al resto d ela protesis. La pizea en el top va insertada en la polea, 
-tiene una cavidad para un iman que queda justo debajo de un encoder para medir la rotacion. La polea lleva atados los actuating cables 
-como lo muestra the red dashed line en la figura de abajo. La pieza de mas abajo es la conexion entre la polea y el socket.  
+This is a set of three components that transmit Z-axis rotation from the shoulder to the rest of the prosthesis. The top component is inserted into the pulley and has a recess for a magnet situated directly beneath an encoder used to measure rotation. The actuating cables are attached to the pulley, as shown by the red line in the figure below. The bottom component forms the connection between the pulley and the socket.
 
 ![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
  
