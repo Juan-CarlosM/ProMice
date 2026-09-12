@@ -43,7 +43,7 @@ of the capacitive sensor cavities, but the holes for the actuating cables could 
 The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
 In both cases you will obtain a functional piece.
 
-![forearm resin](images/forearm_resin.jpeg){width=30% align=right}
+![forearm resin](images/forearm_resin.jpeg){width=30% align=left}
  
 ![forearm printing](images/forearm_printing.png){width=30% align=left}
 
