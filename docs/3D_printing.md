@@ -1,10 +1,9 @@
 # 3D printing 
-ProMice is made up mostly of 3D-printed parts. Two very common prototyping techniques are used:
-PLA filament printing and resin printing
+
 
 ![prothesis full](images/Prosthesis_full.png){width=70% .center}
-
-Now let's describe each of the parts and their function. Each description also shows the print orientation for quality and functional results.
+ProMice is made up mostly of 3D-printed parts. Two very common prototyping techniques are used:
+PLA filament printing and resin printing. In this section we will describe each of the parts and their function. In each description we wil share the print orientation for quality and functional results.
 
 ## Resin-printed parts
 Resin-printed parts are those that require the highest level of detail and quality; they are also the smallest parts.
