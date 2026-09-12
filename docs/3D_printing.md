@@ -43,61 +43,49 @@ of the capacitive sensor cavities, but the holes for the actuating cables could 
 The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
 In both cases you will obtain a functional piece.
 
-![forearm resin](images/forearm_resin.jpeg){width=30% .center}
+![forearm resin](images/forearm_resin.jpeg){width=30% align=right}
  
-![forearm printing](images/forearm_printing.png){width=30% alighn=left}
+![forearm printing](images/forearm_printing.png){width=30% align=left}
 
 ### The ball-arm of the ball joint
 
 ![ball arm 3D](images/ball_arm_3D.png){width=60% .center}
 
-El diseno de esta pieza y sus dimensiones estan detallados en la seccion [Mechanical design](mechanical_design.md). se trata de la bola
-de la ball joint. esta bola esta seccionada de la cual la parte mas frand erepresenta un 70% d ela esfera aproximadamente.
-La seccion grande tiene cavidades para integrar lo que llamamos [Yaw-lock system](mechanical_design.md#yaw_lock_system).
-El resto es una especie de tapa para completar la esfera. Aunque tiene un diametro de 8mm su diseno  la vuelve relativemnnte sencilla 
-de ensamblar.
+This ball-arm is divided into two parts; the larger section has chambers for integrating what we call the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
+The rest is a sort of cover to complete the sphere. Although this piece has a tiny sphere, its design makes it relatively simple to assemble.
+The design of the component and its dimensions are detailed in the [Mechanical design](mechanical_design.md) section.
 
+This piece was designed to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
+a Hall sensor linearisation phase. On the top there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
 
 ![ball arm labels](images/ball_arm_labels.png){width=70% .center}
 
-![ball arm resin](images/ball_arm_resin.jpeg){ width=30% .center}
+Resin printing is also a layer-by-layer printing technique. This results in ovalisation of cylindrical cavities and holes if they are printed horizontally.
+Given that the geometry of the ball-arm contains both horizontal and vertical cylindrical cavities, priority must be given to those requiring greater printing precision.
+The magnet cavity is the top priority, as any printing distortion there would result in unwanted displacement and misalignment of the magnet, which would cause asymmetry
+in its positioning relative to the Hall sensor in the socket. It is therefore advisable to print the ball-arm in a vertical position.
 
-add 3D model, the printing orientation and resin model
-description of the piece cleanine etc.
-
-the arm of the ball is a stick with a design in the lower part that allws the attachment of the actuating cables. 
-Tambien tiene una cavidad longitudinal al brazo en l aque se inserta la varilla que sostiene la articulacion del codo. 
-cercano al brazo tambien tiene 4 agujeros cuyo proposito se detalla en la seccion de [Encoders linearization](encoders_linearization.md)
- 
-Orientation for 3D printing :
- 
 ![ball_arm_printing](images/ball_arm_printing.png){width=50% .center}
+![ball arm resin](images/ball_arm_resin.jpeg){ width=30% .center}
 
  
 ### The socket
 
 ![socket 3D](images/socket_3D.png){width=60% .center}
 
-El socket tambien esta dividido en dos piezas para poder ensamblarse con la bola y usamos un anillo para mantener las dos piezas juntas.
-En ambas piezas podemos notar diferentes ranuras y cavidades. La pieza uno es la mas grande, tiene 9 cavidades cilindricas de las cuales 8 estan 
-distribuidas radial y simetricamente y una esta en el centro.
-En las 8 cavidades radieales se inserta un [PTFE Tube](https://fr.vwr.com/store/product/576865/null) with an internal diameter of 0.3mm 
-and external diameter of 1.5mm para reducir el radio y por lo tanto el back lash de los actuating cables. En l acabidad esferica 
-que alberga la bola cuenta con un housing donde se inserta un mini rodamiento que forma parte del [Yaw-lock system](mechanical_design.md#yaw_lock_system).
-Justo en el centro se encuentra la cavidad del ball joint hall sensor que medira el movimiento de la articulacion. Esta cavidad esta
-conectada a la novena cavidad cilindrica para pasar los cables del sensor. 
-
+The socket is also divided into two parts so that it can be assembled with the ball, and we use a ring to hold the two parts together.
+On both parts, we can see various grooves and recesses. The larger part has 9 cylindrical recesses, 8 of which are
+arranged radially and symmetrically, whilst one is in the centre.
+The sheath for the Bowden cable is inserted into the 8 radial recesses. The spherical recess that houses the ball has a housing into which a mini bearing is inserted; this forms part of the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
+Directly in the centre, above the spherical cavity, is the cavity for the ball joint Hall sensor, which will measure the movement of the joint. This cavity is
+connected to the ninth cylindrical cavity to allow the sensor cables to pass through.
+The second part of the socket is symmetrical to the lower part of the first, except that it does not house a bearing.
+Its function is to hold the ball in place together with part one.
 
 ![socket labels](images/socket_labels.png){width=60% .center}
 
 
-La otra parte de socket es simetrica a la parte baja de la primera, con la excepcion de que esta no alberga rodamiento su funcion es 
-contener la esfera en conjunto con la pieza uno. The socket includes a ring thar fastens the two pieces toguether 
-
-
 ![Socket parts](images/socket_parts.jpeg){ width=40% .center } 
- 
-Orientation for 3D printing :
   
 ![socket_printing](images/socket_printing.png){width=70% .center}
 
