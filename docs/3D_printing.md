@@ -43,9 +43,9 @@ of the capacitive sensor cavities, but the holes for the actuating cables could 
 The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
 In both cases you will obtain a functional piece.
 
-![forearm resin](images/forearm_resin.jpeg){width=30% align=left}
+![forearm resin](images/forearm_resin.jpeg){width=30% .center}
  
-![forearm printing](images/forearm_printing.png){width=30% align=left}
+![forearm printing](images/forearm_printing.png){width=30% .center}
 
 
 
@@ -74,9 +74,11 @@ in its positioning relative to the Hall sensor in the socket. It is therefore ad
  
 ### The socket
 
-![socket 3D](images/socket_3D.png){width=60% .center}
+
 
 The socket is also divided into two parts so that it can be assembled with the ball, and we use a ring to hold the two parts together.
+![socket 3D](images/socket_3D.png){width=60% .center}
+
 On both parts, we can see various grooves and recesses. The larger part has 9 cylindrical recesses, 8 of which are
 arranged radially and symmetrically, whilst one is in the centre.
 The sheath for the Bowden cable is inserted into the 8 radial recesses. The spherical recess that houses the ball has a housing into which a mini bearing is inserted; this forms part of the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
