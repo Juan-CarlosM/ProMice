@@ -49,13 +49,13 @@ In both cases you will obtain a functional piece.
 
 ### The ball-arm of the ball joint
 
-![ball arm 3D](images/ball_arm_3D.png){width=60% .center}
 
 This ball-arm is divided into two parts; the larger section has chambers for integrating what we call the [Yaw-lock system](mechanical_design.md#yaw_lock_system).
-The rest is a sort of cover to complete the sphere. Although this piece has a tiny sphere, its design makes it relatively simple to assemble.
-The design of the component and its dimensions are detailed in the [Mechanical design](mechanical_design.md) section.
+The rest is a sort of cover to complete the sphere. The design of the piece and its dimensions are detailed in the [Mechanical design](mechanical_design.md) section.
 
-This piece was designed to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
+![ball arm 3D](images/ball_arm_3D.png){width=60% .center}
+
+This piece was made to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
 a Hall sensor linearisation phase. On the top there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
 
 ![ball arm labels](images/ball_arm_labels.png){width=70% .center}
