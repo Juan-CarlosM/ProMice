@@ -71,7 +71,7 @@ We calculated a desired range of motion $\theta_d$ by the following formulas:
 
 
 The next step was to chose the magnet dimentions and the sensor-magnet air gap. From the commercially available magnets wee took three different
-sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thikness. Diameters were $1$, $2$ and $3$ $mm$.
+sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thickness. Diameters were $1$, $2$ and $3$ $mm$.
 
 ![Magnet placement](images/Ball_magnet_sensor.png){ width=55% .center}
 
@@ -123,7 +123,7 @@ pitch and roll rotations (rotation around the $x$-axis and the $y$-axis) and can
 
 ![Yaw-lock system](images/yaw_lock_system.png){id="yaw_lock_system" width=70% .center }
 
-The ball bearings have a $1$ $mm$ thikness, an inner diameter of $1$ $mm$ and an outer diameter of $3$ $mm$. The T-shaft was crafted using a steel rod and tin soldering. 
+The ball bearings have a $1$ $mm$ thickness, an inner diameter of $1$ $mm$ and an outer diameter of $3$ $mm$. The T-shaft was crafted using a steel rod and tin soldering. 
 
 ![Yaw-lock system "d"](images/YLS_expanded.png){width=50% .center}
 
