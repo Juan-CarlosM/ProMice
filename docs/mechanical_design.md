@@ -71,11 +71,11 @@ We calculated a desired range of motion $\theta_d$ by the following formulas:
 
 
 The next step was to chose the magnet dimentions and the sensor-magnet air gap. From the commercially available magnets wee took three different
-sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thikness. Diameters were $1$, $2$ and $3$ $mm$
+sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thikness. Diameters were $1$, $2$ and $3$ $mm$.
 
 ![Magnet placement](images/Ball_magnet_sensor.png){ width=55% .center}
 
-the minimum sensor-magnet air gap has to be calculated in order to avoid colisions between them. 
+The minimum sensor-magnet air gap has to be calculated in order to avoid colisions between them. 
 
 \begin{equation} \label{eq:AG}
     AG_{min} = l_{a-m}\left(\sqrt{1+(\frac{d_m}{l_{a-m}})^2}-1\right)
@@ -115,7 +115,7 @@ the ball joint. This decoupling is necessary because it would be impossible to a
 
 ![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
-This results in locking the Z-axis rotation of the ball joint. Therefore, the second major stage of mechanical design consisted of a mechanism
+This results in locking the Z-axis rotation of the ball joint. Therefore, the second major stage of the mechanical design consisted of a mechanism
 that allows for only two degrees of freedom. This design presented an interesting mechanical challenge, as the 2DOF rotation mechanism
 had to be housed inside the ball joint; otherwise, the joint would take up too much space. The proposed solution is what we have called
 the Yaw-lock system. It is a tiny mechanism consisting of three mini bearings and a T-shaped rotation shaft. This mechanism allows for
@@ -123,5 +123,9 @@ pitch and roll rotations (rotation around the $x$-axis and the $y$-axis) and can
 
 ![Yaw-lock system](images/yaw_lock_system.png){id="yaw_lock_system" width=70% .center }
 
+The ball bearings have a $1$ $mm$ thikness, an inner diameter of $1$ $mm$ and an outer diameter of $3$ $mm$. The T-shaft was crafted using a steel rod and tin soldering. 
 
 ![Yaw-lock system "d"](images/YLS_expanded.png){width=50% .center}
+
+!!! info
+    The fabrication of the T-shaft is detailed in [Tutorial](tutorial.md) -> [Soldering](solderingtutorial.md)
