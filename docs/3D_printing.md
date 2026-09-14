@@ -120,7 +120,7 @@ The two remaining pieces are complementary parts designed to hold the bearings a
 ![shoulder ball bearing housing](images/shoulder_ball_bearing_housing.png){width=70% .center} 
 
 
-### Shoulder rotatory pieces 
+### Shoulder rotary pieces 
 ![shoulder rotatory pieces 3D](images/shoulder_rotatory_pieces_3D.png){width=60% .center}
 
 This is a set of three components that transmit Z-axis rotation from the shoulder to the rest of the prosthesis. The top component is inserted into the pulley and has a recess for a magnet situated directly beneath an encoder used to measure rotation. The actuating cables are attached to the pulley, as shown by the red line in the figure below. The bottom component forms the connection between the pulley and the socket.
