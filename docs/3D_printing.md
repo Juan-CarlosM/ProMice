@@ -14,7 +14,6 @@ general-purpose [gray resin](https://formlabs.com/products/grey-resin/). This re
 a soft response to friction and a detailed finish.
 !!! note
     The printer settings for layer height are the default ones.
-The printer settings for layer height are the default ones.
 
 ![layer thickness](images/layers_thickness.png){ width=70% .center }
 
