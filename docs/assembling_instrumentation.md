@@ -43,6 +43,8 @@ El poqueno agujero en la cavidad del sensor hall sirve para comprobar que el eje
 del codo, debemos obtener algo como en la siguiente ficura. 
 
 ![Elbow joint axis](images/elbow_joint_axis.png){ width=60% .center }
+Une fois l'axe bien aligné, on peut coller l'aimant sur l'axe du T-shape. On utilise un autre aimant, plus gros, pour pourvoir appuyer le petit aimant contre et ainsi le positionner plus facilement. On colle la partie arrondie de l'aimant contre l'axe du T-shape.
+![Elbow joint magnet](images/elbow_joint_magnet.png){ width=90% .center }
 ### Assembling of the socket 
 Pour que les deux parties de la socket puisse tenir ensemble, on a gratté au scalpel les deux reliefs de fixation pour les affiner, car ils ne rentraient pas dans leurs trous dédiés.
 Suite à ça, l’emboitement était possible mais les 2 pièces ne tenaient toujours pas dans la position emboitée. Il a fallu retirer à l’aide d’une fraise (cylindrique) un petit relief présent au fond de chacun des trous.
