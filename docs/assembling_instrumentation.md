@@ -1,6 +1,7 @@
 # Assembling and instrumentation
 ## Pieces assembling
 ### Assembling the ball-arm 
+![ball arm assembly](images/ball_arm_assembly.png){width=40% .center}
 El en samblaje de la ball arm puede requerir de pequenos detallados. Por ejemplo, importante que los pequenos rodamientos del 
 [Yaw-lock system](mechanical_design.md#yaw_lock_system) puedan insertarse correctamente. Hemos usado herramientas de tallado para mejorar 
 la redondez de la cavidad si es necesario
@@ -13,18 +14,16 @@ cmo se muestra a continuacion y uti
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
+Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut le poncer pour diminuer les frottements avec la socket si nécessaire. On doit pouvoir bouger la rotule dans toutes les directions avec 1 seul doigts, sans forcer.
 
+On insère au fond de la rotule_short un enroulement de 3mm, puis on vient glisser le T-shaft à l'interieur. Puis on glisse un roulement de l'autre côté du T et on referme avec la sphere complement.
+Enfin on vient insérer l'aimant dans son emplacement en veillant à ce qu'il ne dépasse pas pour éviter des problèmes d'usures plus tard.
+![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center}
 ### Motors suport
 
 To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
 
 ![suports](images/suports.png){width=140% .center}
-
-Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut le poncer pour diminuer les frottements avec la socket si nécessaire. On doit pouvoir bouger la rotule dans toutes les directions avec 1 seul doigts, sans forcer.
-
-On insère au fond de la rotule_short un enroulement de 3mm, puis on vient glisser le T-shaft à l'interieur. Puis on glisse un roulement de l'autre côté du T et on referme avec la sphere complement.
-Enfin on vient insérer l'aimant dans son emplacement en veillant à ce qu'il ne dépasse pas pour éviter des problèmes d'usures plus tard.
-![ball arm assembly](images/ball_arm_assembly.png){width=40% .center}
 
 ### Assembling of the elbow joint 
 ## Elbow joint ball bearings
@@ -33,10 +32,7 @@ incluso si se puede hacer esta modificacion en el modelo 3D es muy posible que a
 lo suficintemente precisa. Buscamos raspar la pieza intentando hacer la forma de la soldadura de estano mostrada 
 en la siguiente figura
 
-this photo is just an example it has to be replaced by a better one
-
-![Elbow_ball_bearings](images/elbow_ball_bearings.jpeg){id="elbow_ball_bearings" width=40% .center }
-
+![Elbow_ball_bearings](images/elbow_ball_bearings.png){id="elbow_ball_bearings" width=70% .center }
 
 Las cavidades de los mini rodamientos han sido repasadas con herramienta giratoria y uan punta de tallado.
 Los dos agujeros para los pines han sido repasados con una broca de 1mm.
@@ -118,5 +114,7 @@ Une fois les câbles enroulés autour de la poulie, on les attache aux star whee
 
 ![pulley cable](images/full_pulley_cable.png){width=90% .center}
 
-Le sens d'enroulement permet de faire en sorte que lorsqu'on visse, la tension du câble augment et lorsque l'on dévisse, sa tension diminue.
+!!! info
+
+    Le sens d'enroulement permet de faire en sorte que lorsqu'on visse, la tension du câble augment et lorsque l'on dévisse, sa tension diminue, et non l'inverse.
 ![pulley screw](images/pulley_screw.png){width=80% .center}
