@@ -12,7 +12,8 @@ Resin-printed parts are those that require the highest level of detail and quali
 To print the resin parts, we used the [Form 4 Printer](https://formlabs.com/3d-printers/form-4/) and the
 general-purpose [gray resin](https://formlabs.com/products/grey-resin/). This resin offers a good balance of mechanical properties, particularly
 a soft response to friction and a detailed finish.
-
+!!! note
+    The printer settings for layer height are the default ones.
 The printer settings for layer height are the default ones.
 
 ![layer thickness](images/layers_thickness.png){ width=70% .center }
