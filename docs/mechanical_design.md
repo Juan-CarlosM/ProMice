@@ -128,4 +128,4 @@ The ball bearings have a $1$ $mm$ thikness, an inner diameter of $1$ $mm$ and an
 ![Yaw-lock system "d"](images/YLS_expanded.png){width=50% .center}
 
 !!! info
-    The fabrication of the T-shaft is detailed in [Tutorial](tutorial.md) -> [Soldering](solderingtutorial.md)
+    The fabrication of the T-shaft is detailed in [Tutorial](tutorial.md) -> [Soldering](soldering.md)
