@@ -19,6 +19,10 @@ a soft response to friction and a detailed finish.
 
 ![grey resin](images/grey_resin.png){ width=50% .center }
 
+!!! info
+    Resin printing is also a layer-by-layer printing technique. 
+    This results in ovalisation of cylindrical cavities and holes if they are printed horizontally. Therefore, the printing orientation of the pieces is based on 
+    the prioritisation of certain cavities and holes vertical position.
 
 The image below shows the 3D model of the parts that are printed in resin. These are: the frontal structure where the joints are located and the pulleys with their
 tensioning system for the actuating cables.
@@ -34,8 +38,8 @@ tensioning system for the actuating cables.
 The forearm is the end effector of the system, and there is no wrist joint. It was created by scanning a real mouse leg. The fingertips serve as the end effector. On the fingers, you can see small recesses for the wires of a capacitive sensor; the idea is to be able to detect touch at specific points.
 
 The rear section has a recess for fitting the [Hall sensor](https://www.ti.com/product/TMAG5273?qgpn=tmag5273) or encoder. The cavity
-is aligned with the elbow’s axis of rotation, and directly at the height of the axis are the grooves for inserting the
-elbow ball bearings. Perpendicular to the joint’s axis of rotation are the two holes through which the actuating cables pass
+is aligned with the elbow's axis of rotation, and directly at the height of the axis are the grooves for inserting the
+elbow ball bearings. Perpendicular to the joint's axis of rotation are the two holes through which the actuating cables pass
 
 ![forearm labels](images/forearm_labels.png){width=60% .center}
 
@@ -44,11 +48,8 @@ of the capacitive sensor cavities, but the holes for the actuating cables could 
 The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
 In both cases you will obtain a functional piece.
 
-![forearm resin](images/forearm_resin.jpeg){width=30% .center}
+![forearm resin](images/forearm_print_resin.png){width=70% .center}
  
-![forearm printing](images/forearm_printing.png){width=30% .center}
-
-
 
 
 ### The ball-arm of the ball joint
@@ -59,22 +60,24 @@ The rest is a sort of cover to complete the sphere. The design of the piece and 
 
 ![ball arm 3D](images/ball_arm_3D.png){width=60% .center}
 
-This piece was made to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
+This piece was made to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. 
+The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
 a Hall sensor linearisation phase. On the top there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
 
 ![ball arm labels](images/ball_arm_labels.png){width=70% .center}
 
-Resin printing is also a layer-by-layer printing technique. This results in ovalisation of cylindrical cavities and holes if they are printed horizontally.
-Given that the geometry of the ball-arm contains both horizontal and vertical cylindrical cavities, priority must be given to those requiring greater printing precision.
-The magnet cavity is the top priority, as any printing distortion there would result in unwanted displacement and misalignment of the magnet, which would cause asymmetry
-in its positioning relative to the Hall sensor in the socket. It is therefore advisable to print the ball-arm in a vertical position.
 
-![ball_arm_printing](images/ball_arm_printing.png){width=50% .center}
-![ball arm resin](images/ball_arm_resin.jpeg){ width=30% .center}
+Given that the geometry of the ball-arm contains both horizontal and vertical cylindrical cavities, the vertical priority must be given to those requiring greater printing precision.
+The magnet cavity is the top priority, as any printing distortion there would result in unwanted displacement and misalignment of the magnet, which would cause asymmetry
+in its positioning relative to the Hall sensor in the socket. It is therefore advisable to print the ball-arm in a vertical position. 
+
+![ball_arm_printing](images/ball_arm_print_resin.png){width=90% .center}
+
+From the image avobe we can notice the deformation on the resin piece due to the horizontal orientation of that cavity during printing. A post-printing 
+craving will be necessary for the inner pieces to fit correctly. 
 
  
 ### The socket
-
 
 
 The socket is also divided into two parts so that it can be assembled with the ball, and we use a ring to hold the two parts together.
@@ -91,9 +94,8 @@ Its function is to hold the ball in place together with part one.
 ![socket labels](images/socket_labels.png){width=60% .center}
 
 Given that we must avoid creating supports within the spherical cavity during the printing process and ensure that the cylindrical cavities remain free from deformation, the printing orientation must be vertical.
-![socket_printing](images/socket_printing.png){width=70% .center}
-![Socket parts](images/socket_parts.jpeg){ width=40% .center } 
-  
+![socket_printing](images/socket_print_resin.png){width=90% .center}
+ 
 
 
 
@@ -107,8 +109,6 @@ component that supports the front of the prosthesis; the following image shows t
 The two remaining pieces are complementary parts designed to hold the bearings and to hold the Bowden cable.
  
 ![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center}
-
-
 
 
 ![shoulder case 2 resin](images/shoulder_case_2_resin.jpeg){ width=40% .center }
@@ -133,39 +133,40 @@ Orientation for 3D printing :
 ### Top encoder base. 
 ![top encoder base 3D](images/top_encoder_base_3D.png){width=60% .center}
 
-Esta ultima pieza sostiene un uStepper driver para medir la rotacion del hombre en el eje Z 
+This final component houses a uStepper driver to measure shoulder rotation along the Z-axis
 
-![top encoder base](images/top_encoder_base.png){width=45% .center}
+![top encoder base](images/top_encoder_base.jpg){width=100% .center}
 
-![top encoder base](images/top_encoder_base_resin.jpeg){width=45% align=left}
 
-![top encoder base printing](images/top_encoder_base_printing.png){width=45% .center}
 
-                                                                                                                      
+
+ 
 ### Pulleys
-![pulley views](images/pulley_views.png){width=75% .center}
 
 
-
-<p style="color: #999999;">There are four pulleys in total, each mounted on a motor. They are used to transmit the motors’ rotation to the prosthesis, allowing it to move along its different axes. Motion is transmitted via wires, which are attached to the end of the prosthesis on one side and wound around the pulley on the other, as shown below:</p>
-
-![pulley cable](images/pulley_cable.png){width=75% .center}
-
-<p style="color: #999999;">The tension of the wires can be adjusted by turning the corresponding screw: turning it clockwise increases the tension on the wire, while turning it counterclockwise decreases it.</p>
+There are four pulleys in total, each mounted on a motor. They are used to transmit the motors' rotation to the prosthesis, allowing it to move along its different axes.
+Motion is transmitted via wires, which are attached to the end of the prosthesis on one side and wound around the pulley on the other.
 
 
-![pulley screw](images/pulley_screw.png){width=75% .center}
+The pulleys integrate a wire tension adjustment system. The tension of the wires can be adjusted by turning the corresponding screw: turning it clockwise increases the tension on the wire, while turning it 
+counterclockwise decreases it. 
+
+![pulley views](images/pulley_labels.png){width=75% .center}
  
 Orientation for 3D printing :
  
 ![pulley printing](images/pulley_printing.png){width=70% .center}
 
-## impresion con PLA
+## PLA-printed parts
 
-The motors rack and PCB housing are printed in PLA, this pieces do not require a high level of precision. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.
+The motors rack and PCB housing are printed in PLA, this pieces do not require a high level of detail. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.
 ![PLA parts](images/PLA_parts.jpg)
 
-Orientation for 3D printing :
+!!! tip
+    It is advisable to print the parts in the orientation shown in the images below.
+    This results in less support material and produces a very aesthetic result.
+    The infill density should be at least 30% to ensure good strength.
+
 ![motors suport](images/motors_suport_printing.png){width=70% .center}
  
 ![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
