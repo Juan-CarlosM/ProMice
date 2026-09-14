@@ -1,4 +1,5 @@
 ﻿
+
 ## Shoulder ball-joint-type 
 [ProMice prosthesis](index.md#mouse_leg) shoulder is a 3DOF joint from which only $\alpha_1$ is measured.
  $\alpha_2$ and $\alpha_2$ are degrees of freedom coupled by a universal joint. 
@@ -7,31 +8,58 @@
 
 This is a system difficult to instrument if we want to measure the angles. Choosing from the typical encoding 
 techniques would mean to instal a sensor on each axe, like a pottentiometer, an optical encoder or a hall sensor for example. 
-Cependant il existe des capteurs à effet Hall qui mesurent les composantes x,y et z du champ magnétique. Cette caractéristique 
-permet d'estimer la position d'un aimant qui pend face au capteur, notamment les rotations ortogonales à l'axe z du capteur. 
-En partant de cette idée, nous avons decidé d'implementer un configuration de joint de type rotule (socket-ball) en integrant le capteur Hall 3D 
-à l'intérieur de la coque qui maintient la rotule. Dans la section [Sensors](sensors.md), vous pouvez trouver plus de détails sur 
-l'utilization du capteur, tels le numéro de composant, les types de données, le calcul des angles, connexions capteur - micro, etc. 
+However, there are Hall-effect sensors that measure the x, y and z components of the magnetic field. This feature
+makes it possible to estimate the position of a magnet facing of the sensor.
+ 
 
-Pour élaborer une telle articulation nous avons dû considerer, avant tout, la taille de l'ancienne version de ProMice ansi que celle
-du capteur. Ces deux contraintes nous ont conduits au choix de dimensions suivants. 
+!!! info
+    In the [Sensors](sensors.md) section, you can find further details on
+    the use of the sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
+
+
+Building on this idea, we decided to replace the shoulder universal joint by a ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
+inside the housing socket and a disc magnet inlaid in the ball. 
+
+In addition to this, to make all joints instrumented, a second Hall sensor is integrated on the elbow axis. 
+
+![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center }
+
+
+
+In order to design such a joint, we first had to take into account the size of the previous version of ProMice as well as that
+of the Hall sensor. These two constraints led us to choose the key dimensions. 
+
+
+![Old ProMice version size](images/old_promice_size.png){width=80% .center}
+
+![Hall sensor size](images/hall_sensor_size.png){width=80% . center}
+
+!!! info
+    Hall sensor dimentions are in mm
 ## Ball joint design
+
+For the design, it was necessary to 3D print a sphere with a rod attached and a socket. We carried out a series of iterations
+of 3D printing to determine what would be a reasonable size whilst meeting the dimentions constraints.
+
+Given the limitations of resin 3D printing observed on the spherical surface of the ball as well as on the inside of the socket,
+we chose a diameter of $8$ $mm$ for the ball and $3$ $mm$ for the stick.
+
+![Hall sensor size](images/ball_size.png){width=50% .center}
+
+!!! info
+    In the assemblings, it is important to allow for a tolerance between pieces.
+    In our case, there is a difference of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
+    This tolerance also applies to the holes.
+
 ### Ampitud of movement of ball joint
-Pour la conception, il a été necessaire d'imprimer une sphère avec une tige attachée et une coque. Nous avons fait une série d'iterations
-d'impersion 3D pour déterminer quelle pouvait être une taille raisonable en respectant les contraintes mentionées. 
-Vues les limites de l'impresion 3D en resine remarquées sur la surface spherique de la boule ansi que celle à l'intérieur de la coque, 
-nous avons choisi un diamètre de $8$ $mm$ pour la sphère et de $3$ $mm$ pour la tige. Il est important de considèrer une tolerance d'une pièce 
-par rapport a l'autre. Dans notre cas, il y a un écart de 0.04 mm entre le diemètre de la sphère et celui de lintérierur de la coque.
-Cette tolérance fonction aussi pour les trous. 
-
-
-El parametro mas importante al momento de disenar el socket que contiene la bola es la amplitud de movimiento
-que esta va a permitir. Tambien realizamos alguna simulaciones para ver la atenuacion del campo magnetico segun 
-la inclinacion de la torula. por lo tanto
+The most important parameter when designing the socket that holds the ball is the range of movement
+it will allow. We also carried out some simulations to examine the attenuation of the magnetic field depending on
+the angle of the arm. The following image shows motion range $\theta_d$ allowed by the sockets geometry. 
 
 
 ![Amplitude](images/Socket_chord.png){ width=38% .center }
 
+We calculated a desired range of motion $\theta_d$ by the following formulas: 
 
 \begin{equation} \label{eq:theta_chord}
     \theta_c = arcsin(\frac{d_s}{2r})+\theta_d
@@ -41,45 +69,59 @@ la inclinacion de la torula. por lo tanto
     c = 2*r*sin(\theta_c)
 \end{equation}
 
-To chose the size of the magnet and the magnet-sensor gap. [Hall sensor simulation](sensors.md#sensor-simulations)
+
+The next step was to chose the magnet dimentions and the sensor-magnet air gap. From the commercially available magnets wee took three different
+sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thikness. Diameters were $1$, $2$ and $3$ $mm$
 
 ![Magnet placement](images/Ball_magnet_sensor.png){ width=55% .center}
+
+the minimum sensor-magnet air gap has to be calculated in order to avoid colisions between them. 
 
 \begin{equation} \label{eq:AG}
     AG_{min} = l_{a-m}\left(\sqrt{1+(\frac{d_m}{l_{a-m}})^2}-1\right)
 \end{equation} 
 
-![Air Gap simulation](images/AirGap_plot.png){width=47% align=left}
-![Magnet diameter simulation](images/MagDiam_plot.png){ width=47% align=left}
+
+To chose the size of the magnet and the magnet-sensor gap, we have performed some [Hall sensor simulations](sensors.md#sensor-simulations). 
+In the following plot, on the left you can see the magnet density vs tilt angle for the 3 available diameters. As expected, the largest magnet allows 
+more tilt sensing, whereas the other two have an important magnetic density drop before the 30 degrees. Therefore we keep the largest magnet.
 
 
+![Air Gap simulation](images/AG_MD_plot.png){width=95% .center}
 
+The air gap simulation (shown on the right side) was performed using the chosen magnet (3 mm diameter). It is important to remark that the tilt pivots on the $y$ axis, meaning that there should not be 
+magnetic density variatins on this axis. However the $1$ $mm$ airgap causes variation on the $y$ axis. This variation is called cross measuring, and It is an intrinsic effect of the sensor's point measurement.
+To avoid this effect as much as we can, the $1.5$ $mm$ airgap is the best option. 
 
+We have summarized the design dimensions of the ball joint in the following table.
 
-
-|  Ball joint design parameters  |       Value       |
+|  Ball joint design parameters  |         Value        |
 |:------------------------------:|:-------------:  |
 | Ball radius                    | $r$ = 4 𝑚𝑚        |
 | Amplitude of movement          | $𝛼_{2,3}$ = ±35°|
 | Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚    |
 | Magnet thikness                | $th_m$ = 1 𝑚𝑚
-| Magnet-sensor gap              | 𝐴𝐺  = 1 𝑚𝑚      |
+| Magnet-sensor gap              | 𝐴𝐺  = 1.5 𝑚𝑚      |
 |Socket-ball tolerance           | $T$ = 0.02 𝑚𝑚   |
 | Stick diameter                 | $𝑑_𝑠$ = 3 𝑚𝑚    |
 |Socket chord                    | $c$ = 8 𝑚𝑚 |
 
 
-Add formulas here
-
 
 ## Yaw-lock system
 
+The shoulder joint is a ball-and-socket joint in which rotation about the z-axis is transmitted via an upper pulley located above
+the ball joint. This decoupling is necessary because it would be impossible to actuate the three degrees of freedom if they were coupled inside the current ball joint's design.
 
+![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
-
-describe the yaw lock system
+This results in locking the Z-axis rotation of the ball joint. Therefore, the second major stage of mechanical design consisted of a mechanism
+that allows for only two degrees of freedom. This design presented an interesting mechanical challenge, as the 2DOF rotation mechanism
+had to be housed inside the ball joint; otherwise, the joint would take up too much space. The proposed solution is what we have called
+the Yaw-lock system. It is a tiny mechanism consisting of three mini bearings and a T-shaped rotation shaft. This mechanism allows for
+pitch and roll rotations (rotation around the $x$-axis and the $y$-axis) and can be assembled inside the ball of the joint.
 
 ![Yaw-lock system](images/yaw_lock_system.png){id="yaw_lock_system" width=70% .center }
 
 
-![Ball joint 3D](images/ballJoint_3D.jpg){width=70% .center}
+![Yaw-lock system "d"](images/YLS_expanded.png){width=50% .center}
