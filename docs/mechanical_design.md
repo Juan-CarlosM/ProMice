@@ -50,7 +50,7 @@ To chose the size of the magnet and the magnet-sensor gap. [Hall sensor simulati
 \end{equation} 
 
 ![Air Gap simulation](images/AirGap_plot.png){width=47% align=left}
-![Magnet diameter simulation](images/MagDiam_plot.png){ width=47% align=right}
+![Magnet diameter simulation](images/MagDiam_plot.png){ width=47% align=left}
 
 
 
