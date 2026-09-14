@@ -50,14 +50,14 @@ To chose the size of the magnet and the magnet-sensor gap. [Hall sensor simulati
 \end{equation} 
 
 ![Air Gap simulation](images/AirGap_plot.png){width=47% align=left}
-![Magnet diameter simulation](images/MagDiam_plot.png){ width=47% align=right}
+![Magnet diameter simulation](images/MagDiam_plot.png){ width=47% align=left}
 
 
 
 
 
 
-|  Ball joint design parameters  |                 |
+|  Ball joint design parameters  |       Value       |
 |:------------------------------:|:-------------:  |
 | Ball radius                    | $r$ = 4 𝑚𝑚        |
 | Amplitude of movement          | $𝛼_{2,3}$ = ±35°|
