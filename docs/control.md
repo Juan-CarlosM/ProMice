@@ -17,6 +17,8 @@
     
     - Joint anglze $\theta_i$ is the angle between $x_{i-1}$ to $x_i$ measured about $z_i$
 
+
+
 The system 3 is a supplementary system to add rotations to the spherical joint. This allows to respect DH restrictions,
 such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between system 2 and system 4.
 
