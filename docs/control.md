@@ -3,7 +3,7 @@
 ## Modified denavit hartenberg 
 
 
-!!! list "MDH convenction"
+!!! list "MDH convention"
 
     - Twist angle $\alpha_{i-1}$ is the angle between $z_{i-1}$ to $z_i$ measured about $x_{i-1}$
     
