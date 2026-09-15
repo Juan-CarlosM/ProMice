@@ -28,3 +28,22 @@
           mask-image: var(--md-admonition-icon--printer-3d-nozzle);
 }
 
+:root {
+  --md-admonition-icon--printer-3d-nozzle: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 4v4h6V8zm8 0v4h6V8zm-8 6v4h6v-4zm8 0v4h6v-4z"/></svg>
+')
+}
+.md-typeset .admonition.table,
+.md-typeset details.table {
+  border-color: rgb(25, 51, 0);
+}
+.md-typeset .table > .admonition-title,
+.md-typeset .table > summary {
+  background-color: rgba(25, 51, 0, 0.1);
+}
+.md-typeset .table > .admonition-title::before,
+.md-typeset .table > summary::before {
+  background-color: rgb(25, 51, 0);
+  -webkit-mask-image: var(--md-admonition-icon--table);
+          mask-image: var(--md-admonition-icon--table);
+}
+
