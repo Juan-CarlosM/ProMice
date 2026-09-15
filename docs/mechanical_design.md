@@ -91,16 +91,17 @@ To avoid such effect as much as we can, the $1.5$ $mm$ air gap is the best optio
 
 The design dimensions of the ball joint are summarised in the following table.
 
-|  Ball joint design parameters  |         Value        |
-|:------------------------------:|:-------------:  |
-| Ball radius                    | $r$ = 4 𝑚𝑚        |
-| Amplitude of movement          | $𝛼_{2,3}$ = ±35°|
-| Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚    |
-| Magnet thikness                | $th_m$ = 1 𝑚𝑚
-| Magnet-sensor gap              | 𝐴𝐺  = 1.5 𝑚𝑚      |
-|Socket-ball tolerance           | $T$ = 0.02 𝑚𝑚   |
-| Stick diameter                 | $𝑑_𝑠$ = 3 𝑚𝑚    |
-|Socket chord                    | $c$ = 8 𝑚𝑚 |
+!!! table "Table 1: Ball joint design parameters"
+    |  parameters  |         Value        |
+    |:------------------------------:|:-------------:  |
+    | Ball radius                    | $r$ = 4 𝑚𝑚        |
+    | Amplitude of movement          | $𝛼_{2,3}$ = ±35°|
+    | Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚    |
+    | Magnet thikness                | $th_m$ = 1 𝑚𝑚
+    | Magnet-sensor gap              | 𝐴𝐺  = 1.5 𝑚𝑚      |
+    |Socket-ball tolerance           | $T$ = 0.02 𝑚𝑚   |
+    | Stick diameter                 | $𝑑_𝑠$ = 3 𝑚𝑚    |
+    |Socket chord                    | $c$ = 8 𝑚𝑚 |
 
 
 
