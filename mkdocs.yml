@@ -2,7 +2,7 @@ site_name: ProMice
 theme:   
   icon:
     admonition:
-       note: octicons/tag-16
+       note: fontawesome/solid/pen
        abstract: octicons/checklist-16
        info: octicons/info-16
        tip: octicons/squirrel-16
