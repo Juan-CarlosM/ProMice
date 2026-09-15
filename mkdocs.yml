@@ -14,8 +14,8 @@ theme:
        bug: octicons/bug-16
        example: octicons/beaker-16
        quote: octicons/quote-16
-       3D print : material/printer-3d-nozzle
-       3D : material/printer-3d
+       3D print: material/printer-3d-nozzle
+       3D: material/printer-3d
        
   logo: images/Logo_white.png
   name: material
