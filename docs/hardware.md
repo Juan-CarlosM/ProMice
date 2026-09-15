@@ -1,5 +1,8 @@
 # Hardware
-Like any robotic system, ProMice comprises actuators, mechanical support structures, articulated structures, a motion transmission system, electronics and instrumentation. Below is a general description of the ProMice hardware. Details regarding materials and assemblies can be found in the section [Tutorial](3D_printing.md).
+Like any robotic system, the overal ensemble of ProMice comprises actuators, mechanical support structures, articulated structures, a motion transmission system, electronics and instrumentation. Below is a general description of the ProMice hardware. 
+
+!!! info
+    Details regarding materials and subassemblies can be found in the section [Tutorial](3D_printing.md).
 
 ## Actuators and their suport
 The system has four Nema 17 stepper motors as actuators, which are mounted on a 3D-printed rack made from PLA. The motors are fitted with a resin-printed pulley and a tensioning system for the actuation cables.
