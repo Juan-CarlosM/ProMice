@@ -15,23 +15,23 @@ inside the housing socket and a disc-type magnet inlaid in the ball.
 
 In addition to this, to make all joints instrumented, a second Hall sensor is integrated on the elbow axis. 
 
-!!! info
-    In the [Sensors](sensors.md) section, you can find further details on
-    the use of the 3D Hall sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
+
 
 
 ![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center }
-
+!!! info
+    In the [Sensors](sensors.md) section, you can find further details on
+    the use of the 3D Hall sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
 
 The dimensions of the new joint had to be as close as possible to the previous version ones, also a housing for the Hall sensor must fit inside.
 
 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
-![Hall sensor size](images/hall_sensor_size.png){width=70% . center}
+![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
 
 !!! info
-    Hall sensor dimentions are in mm.
+    Hall sensor dimensions are in mm.
     
 ## Ball joint design
 
