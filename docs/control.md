@@ -5,9 +5,9 @@
 
 
 
-![Denavit hartenber model](images/MDH_model.jpg){width=400 align=left}
+![Denavit hartenber model](images/MDH_model.jpg){width=400 align=right}
 
-!!! list inline end "MDH convenction"
+!!! list inline "MDH convenction"
 
     - Twist angle $\alpha_{i-1}$ is the angle between $z_{i-1}$ to $z_i$ measured about $x_{i-1}$
     
