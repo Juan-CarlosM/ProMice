@@ -92,6 +92,7 @@ To avoid such effect as much as we can, the $1.5$ $mm$ air gap is the best optio
 The design dimensions of the ball joint are summarised in the following table.
 
 !!! table "Table 1: Ball joint design parameters"
+    The design dimensions of the ball joint are summarised in the following table.
 
 |  Parameters  |         Value        |
 |:------------------------------:|:-------------:  |
