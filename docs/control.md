@@ -5,7 +5,7 @@
 
 
 
-![Denavit hartenber model](images/MDH_model.jpg){width=400 align=left}
+![Denavit hartenber model](images/MDH_model.jpg){width=450 align=left}
 
 !!! list inline "MDH convenction"
 
