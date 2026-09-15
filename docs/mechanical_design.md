@@ -1,6 +1,4 @@
 ﻿
-
-## Shoulder ball-joint-type 
 [ProMice prosthesis](index.md#mouse_leg) shoulder is a 3DOF joint from which only $\alpha_1$ is measured.
  $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint. 
  
