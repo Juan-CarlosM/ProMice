@@ -29,7 +29,7 @@ Enfin, on rallonge les câbles issus des 2 capteurs en venant souder un autre c�
 
 ![sensor sleeve](images/sensor_sleeve.png){width=100% .center} 
 
- On ajoute les cosses à sertir et on enfile les câbles dans leur connecteur, en s'assurant de faire correspondre les PIN du capteurs avec les indications sur la carte.
+ On ajoute les cosses à sertir et on enfile les câbles dans leur connecteur, en s'assurant de faire correspondre les PIN du capteurs avec les indications sur la carte. On branche le capteur de la rotule sur HS1 et celui de la patte sur HS2.
 
 IMAGE connecteurs
 !!! note

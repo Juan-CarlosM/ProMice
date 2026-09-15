@@ -2,18 +2,30 @@
 
 ## Modified denavit hartenberg 
 
-Twist angle $\alpha_{i-1}$ is the angle between $z_{i-1}$ to $z_i$ measured about $x_{i-1}$
 
-Link length $a_{i-1}$ is the distance from $z_{i-1}$ to $z_i$ measured along $x_{i-1}$
+!!! list "MDH convention"
 
-Offset length $d_{i-1}$ is the distance from $x_{i-1}$ to $x_i$ measured along $z_i$
+    - Twist angle $\alpha_{i-1}$ is the angle between $z_{i-1}$ to $z_i$ measured about $x_{i-1}$
+    
+    - Link length $a_{i-1}$ is the distance from $z_{i-1}$ to $z_i$ measured along $x_{i-1}$
+    
+    - Offset length $d_{i-1}$ is the distance from $x_{i-1}$ to $x_i$ measured along $z_i$
+    
+    - Joint anglze $\theta_i$ is the angle between $x_{i-1}$ to $x_i$ measured about $z_i$
 
-Joint anglze $\theta_i$ is the angle between $x_{i-1}$ to $x_i$ measured about $z_i$
+![Denavit hartenber model](images/MDH_model.jpg){width=500 .center}
+
 
 The system 3 is a supplementary system to add rotations to the spherical joint. This allows to respect DH restrictions,
 such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between system 2 and system 4.
 
-![Denavit hartenber model](images/MDH_model.jpg){width=500 .center}
+
+
+
+
+
+
+
 ![Modified Denavit hartenber table](images/Table_MDH.png){width .center}
 
 \[
