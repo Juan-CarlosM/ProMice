@@ -7,11 +7,11 @@
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
 
 The main enhancement ProMice need is to locally measure the angular joint positions for a better and easier control. From the typical encoding 
-techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example.
+techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example, not to mention that the current joint design is not intended to host sensors. 
 
-Nevertheless, there are Hall-effect sensors that measure the x, y and z components of the magnetic field. This feature
-makes it possible to estimate the 3D position of a magnet facing of the sensor. However, the current joint design results difficult to instrument. 
- 
+There are Hall-effect sensors that measure the $x$, $y$ and $z$ components of the magnetic field. This feature
+makes it possible to estimate the 3D position of a magnet facing of the sensor. 
+
 Building on this idea, we decided to replace the shoulder universal joint by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
 inside the housing socket and a disc-type magnet inlaid in the ball. 
 
@@ -28,16 +28,16 @@ In addition to this, to make all joints instrumented, a second Hall sensor is in
 The dimensions of the new joint had to be as close as possible to the previous version ones, also a housing for the Hall sensor must fit inside.
 
 
-![Old ProMice version size](images/old_promice_size.png){width=80% .center}
+![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
-![Hall sensor size](images/hall_sensor_size.png){width=80% . center}
+![Hall sensor size](images/hall_sensor_size.png){width=70% . center}
 
 !!! info
     Hall sensor dimentions are in mm.
     
 ## Ball joint design
 
-The ball joint consists on a 3D printed a sphere with a rod attached and a socket. We carried out a series of iterations
+The ball joint consists on a 3D printed sphere with a rod attached and a socket. We carried out a series of iterations
 of 3D printing to determine what would be a reasonable size whilst meeting the dimentions constraints.
 
 The observed limitations of resin 3D printing on the spherical surface of the ball as well as on the inside of the socket, led to 
@@ -45,13 +45,13 @@ fixing a diameter of $8$ $mm$ for the ball and $3$ $mm$ for the stick.
 
 ![Hall sensor size](images/ball_size.png){width=50% .center}
 
-!!! info
+!!! note
     When designing assembly pieces for resin printing, it is important to allow for a tolerance between pieces.
     In our case, there is a difference of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
     This tolerance also applies to the holes and pieces fitting inside others.
 
 ### Ampitud of movement of ball joint
-After dimension constraints the most important parameter when designing the socket that holds the ball is the range of movement
+After the dimension constraints impossed by the previous version of ProMice, the most important parameter when designing the socket that holds the ball is the range of movement
 it will allow. The following image shows motion range $\theta_d$ allowed by the sockets geometry. 
 
 
