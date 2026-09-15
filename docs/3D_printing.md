@@ -129,9 +129,10 @@ The two remaining pieces are complementary parts designed to hold the bearings a
 This is a set of three components that transmit Z-axis rotation from the shoulder to the rest of the prosthesis. The top component is inserted into the pulley and has a recess for a magnet situated directly beneath an encoder used to measure rotation. The actuating cables are attached to the pulley, as shown by the red line in the figure below. The bottom component forms the connection between the pulley and the socket.
 
 ![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
- 
-!!! printer-3d "Orientation for 3D printing"
+
+ !!! printer-3d "Orientation for 3D printing"
     ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=70% .center} 
+    
 ### Top encoder base. 
 ![top encoder base 3D](images/top_encoder_base_3D.png){width=60% .center}
 
