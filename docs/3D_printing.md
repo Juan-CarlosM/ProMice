@@ -130,7 +130,7 @@ This is a set of three components that transmit Z-axis rotation from the shoulde
 
 ![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
 
- !!! printer-3d "Orientation for 3D printing"
+!!! printer-3d "Orientation for 3D printing"
     ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=70% .center} 
     
 ### Top encoder base. 
