@@ -30,9 +30,9 @@ Enfin, on rallonge les câbles issus des 2 capteurs en venant souder un autre c�
 
 ![sensor sleeve](images/sensor_sleeve.png){width=100% .center} 
 
- On ajoute les cosses à sertir et on enfile les câbles dans leur connecteur, en s'assurant de faire correspondre les PIN du capteurs avec les indications sur la carte.
+ On ajoute les cosses à sertir et on enfile les câbles dans leur connecteur, en s'assurant de faire correspondre les PIN du capteurs avec les indications sur la carte. On branche le capteur de la rotule sur HS1 et celui de la patte sur HS2.
 
-IMAGE connecteurs
+![sensor_connectors](images/sensor_connectors.jpeg){width=100% .center} 
 
 ### Câblage entre les drivers
 On commence par relier les alimentations (en <span style="color: #000000;"> noir</span> et <span style="color: #D60404;"> rouge</span> sur le schéma) des drivers 1, 2 et 3 à la board du driver 1. L'alimentation du driver 4 est reliée à la board qui est insérée dessus.
