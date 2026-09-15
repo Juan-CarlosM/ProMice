@@ -120,3 +120,4 @@ Une fois les câbles enroulés autour de la poulie, on les attache aux star whee
 
     Le sens d'enroulement permet de faire en sorte que lorsqu'on visse, la tension du câble augment et lorsque l'on dévisse, sa tension diminue, et non l'inverse.
 ![pulley screw](images/pulley_screw.png){width=80% .center}
+Pour finir, on positionne les visses et on visse les caches par dessus. On ajuste les visses pour faire en sorte que tout les cables soient sous tension. De cette façon, la prothèse bouge dès l'instant ou le moteur tourne, sans temps de latence.
