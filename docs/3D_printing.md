@@ -19,7 +19,7 @@ a soft response to friction and a detailed finish.
 
 ![grey resin](images/grey_resin.png){ width=50% .center }
 
-!!! 3D print
+!!! printer-3d-nozzle
     Resin printing is also a layer-by-layer printing technique. 
     This results in ovalisation of cylindrical cavities and holes if they are printed horizontally. Therefore, the printing orientation of the pieces is based on 
     the prioritisation of certain cavities and holes vertical position.
