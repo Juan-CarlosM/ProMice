@@ -164,6 +164,11 @@ counterclockwise decreases it.
 The motors rack and PCB housing are printed in PLA, this pieces do not require a high level of detail. PLA also produces less brittle parts, which is essential for supporting the weight of the motors.
 ![PLA parts](images/PLA_parts.jpg)
 
+![Motors support](images/motor_support.png)
+
+![Teensy support](images/teensy_suport2.png)
+
+
 !!! tip
     It is advisable to print the parts in the orientation shown in the images below.
     This results in less support material and produces a very aesthetic result.
