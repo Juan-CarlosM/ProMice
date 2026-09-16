@@ -43,9 +43,10 @@ nav:
     - Assembling & instrumentation : assembling_instrumentation.md
     - Electronics: electronics.md
     - Encoders linearization: encoders_linearization.md
-    - Control : control.md
     - Materials: materials.md
-    
+  - Control: 
+     - Control: control.md
+     - MDH model: modified_denavit_hartenberg.md
   
 plugins:
   - search
