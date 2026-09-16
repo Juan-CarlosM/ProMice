@@ -114,7 +114,7 @@ the ball joint. This decoupling is necessary because it would be impossible to a
 ![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
 
-Since rotation about the $z$-axis is provided by the upper pulley, the $z$-axis rotation of the ball joint must be constrained. This prevents undesired yaw motion during joint actuation.
+Since rotation about the $z$-axis is provided by the upper pulley, the $z$-axis rotation of the ball joint must be locked. This prevents undesired yaw motion during joint actuation.
 
 Consequently, the second major stage of the mechanical design focused on developing a mechanism that restricts the ball joint to two rotational degrees of freedom (2DOF). This presented an interesting mechanical challenge: the rotation-limiting mechanism had to be integrated inside the ball joint to avoid increasing its overall size beyond the dimensional constraints.
 
