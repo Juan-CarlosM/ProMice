@@ -24,7 +24,7 @@ a soft response to friction and a detailed finish.
     This results in ovalisation of cylindrical cavities and holes if they are printed horizontally. Therefore, the printing orientation of the pieces is based on 
     the prioritisation of certain cavities and holes vertical position.
 
-The image below shows the 3D model of the parts that are printed in resin. These are: the frontal structure where the joints are located and the pulleys with their
+The image below shows the 3D model of the parts that are printed in resin. These are: the frontal structure where the joints are located and the motors pulleys with their
 tensioning system for the actuating cables.
 
 ![Resin parts](images/resin_parts.jpg){width=70% .center}
@@ -35,11 +35,11 @@ tensioning system for the actuating cables.
 
 ![forearm 3D](images/forearm_3D.png){width=60% .center}
 
-The forearm is the end effector of the system, and there is no wrist joint. It was created by scanning a real mouse leg. The fingertips serve as the end effector. On the fingers, you can see small recesses for the wires of a capacitive sensor; the idea is to be able to detect touch at specific points.
+The forearm leads to the end segment of the system, it doesn't feature a wrist joint. It was created by scanning a real mouse leg. The fingertips represent the end effector. On the fingers, you can see small recesses for the wires of a capacitive sensor; the idea is to be able to detect touch at specific points.
 
 The rear section has a recess for fitting the [Hall sensor](https://www.ti.com/product/TMAG5273?qgpn=tmag5273) or encoder. The cavity
-is aligned with the elbow's axis of rotation, and directly at the height of the axis are the grooves for inserting the
-elbow ball bearings. Perpendicular to the joint's axis of rotation are the two holes through which the actuating cables pass
+is aligned with the elbow's axis of rotation, as well as the grooves for inserting the
+elbow ball bearings. The two holes through which the actuating cables passes, are perpendicular to the joint's axis of rotation.
 
 ![forearm labels](images/forearm_labels.png){width=60% .center}
 
