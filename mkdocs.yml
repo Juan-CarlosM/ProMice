@@ -45,7 +45,7 @@ nav:
     - Encoders linearization: encoders_linearization.md
     - Materials: materials.md
   - Control: 
-     - Control architecture: control.md
+     - Control architecture: control_architecture.md
      - MDH model: modified_denavit_hartenberg.md
   
 plugins:
