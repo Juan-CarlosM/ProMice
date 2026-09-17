@@ -47,7 +47,8 @@ nav:
   - Control: 
      - Control architecture: control_architecture.md
      - MDH model: modified_denavit_hartenberg.md
-  
+  - Codes: 
+     - Arduino examples: codes.md
 plugins:
   - search
   - table-reader
