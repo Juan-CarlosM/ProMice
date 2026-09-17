@@ -17,16 +17,17 @@
 === "Exemple - Clignotement controlé par un potentiomètre"
 
     ``` c
-      int capteurPin = A0;   // select the input pin for the potentiometer
+    int capteurPin = A0;   // select the input pin for the potentiometer
     int ledPin = 13;      // select the pin for the LED
+    int capteurVal = 0;
     
     void setup() {
       pinMode(ledPin, OUTPUT);
     }
 
     void loop() {
-      int capteurValue = analogRead(sensorPin);
-      cl_LED(sensorValue);
+      capteurVal = analogRead(capteurPin);
+      cl_LED(capteurVal);
     }
 
     void cl_LED(int attente)
