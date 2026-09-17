@@ -16,7 +16,7 @@ void loop() {
 }
 ```
 
-=== "Example - Clignotement controlé par un potentiomètre"
+=== "Exemple - Clignotement controlé par un potentiomètre"
 ``` c
 int sensorPin = A0;   // select the input pin for the potentiometer
 int ledPin = 13;      // select the pin for the LED
