@@ -30,6 +30,7 @@ theme:
     - search.suggest
     - content.code.copy
     - content.code.select
+    - content.tabs.link
     
 nav:
   - Home: index.md
@@ -77,6 +78,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   
 extra_javascript:
   - javascripts/mathjax.js
