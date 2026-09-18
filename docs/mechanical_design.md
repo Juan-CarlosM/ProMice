@@ -4,16 +4,24 @@
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
 
-The main enhancement ProMice need is to locally measure the angular joint positions for a better and easier control. From the typical encoding 
+The main enhancement ProMice need is to locally measure the angular joint positions for a better and easier control, therfore instrumenting the joints is necesary. From the typical encoding 
 techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example, not to mention that the current joint design is not intended to host sensors. 
 
-There are Hall-effect sensors that measure the $x$, $y$ and $z$ components of the magnetic field. This feature
-makes it possible to estimate the 3D position of a magnet facing of the sensor. 
+3D Hall-effect sensors measure the $x$, $y$ and $z$ components the magnetic fields. They can be a  suitable instrumentation option cause they make it it possible to estimate the 3D position of a magnet facing of the sensor. 
 
-Building on this idea, we decided to replace the shoulder universal joint by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
-inside the housing socket and a disc-type magnet inlaid in the ball. 
+![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
-In addition to this, to make all joints instrumented, a second Hall sensor is integrated on the elbow axis. 
+Since we intend to make ProMice instrumentable, the modifications have to keep the current dimensions of the prosthesis as much as possible and at the same time feature room for the hall sensor. 
+
+![Old ProMice version size](images/old_promice_size.png){width=70% .center}
+
+![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
+
+!!! info
+    Hall sensor dimensions are in mm.
+
+Building on this idea, we have redesigned the last 3 joints of ProMice aiming to an instrumented joint structure. The shoulder universal joint has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
+inside the housing socket and a disc-type magnet inlaid in the ball. The last joint (elbow) is also instrumented with a hall sensor
 
 
 
@@ -23,15 +31,7 @@ In addition to this, to make all joints instrumented, a second Hall sensor is in
     In the [Sensors](sensors.md) section, you can find further details on
     the use of the 3D Hall sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
 
-The dimensions of the new joint had to be as close as possible to the previous version ones, also a housing for the Hall sensor must fit inside.
 
-
-![Old ProMice version size](images/old_promice_size.png){width=70% .center}
-
-![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
-
-!!! info
-    Hall sensor dimensions are in mm.
     
 ## Ball joint design
 
