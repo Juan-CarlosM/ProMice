@@ -20,8 +20,8 @@ Since we intend to make ProMice instrumentable, the modifications have to keep t
 !!! info
     Hall sensor dimensions are in mm.
 
-Building on this idea, we have redesigned the last 3 joints of ProMice aiming to an instrumented joint structure. The shoulder universal joint has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
-inside the housing socket and a disc-type magnet inlaid in the ball. The last joint (elbow) is also instrumented with a hall sensor
+Building on this idea, we have redesigned the last 3 joints of ProMice aiming to an instrumented joints structure. The shoulder universal joint has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
+inside the housing socket and a disc-type magnet inlaid in the ball. The last joint (elbow) is also instrumented with a hall sensor.
 
 
 
