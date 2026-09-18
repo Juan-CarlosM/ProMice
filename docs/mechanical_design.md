@@ -27,7 +27,7 @@ inside the housing socket and a disc-type magnet inlaid in the ball. The last jo
 
 
 ![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center }
-!!! info
+!!! info Sensors
     In the [Sensors](sensors.md) section, you can find further details on
     the use of the 3D Hall sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
 
@@ -126,5 +126,5 @@ The ball bearings have a $1$ $mm$ thickness, an inner diameter of $1$ $mm$ and a
 
 ![Yaw-lock system "d"](images/YLS_expanded.png){width=50% .center}
 
-!!! info
+!!! info T-shaft
     The fabrication of the T-shaft is detailed in [Tutorial](3D_printing.md) -> [Soldering](soldering.md)
