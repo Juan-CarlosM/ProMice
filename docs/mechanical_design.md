@@ -109,7 +109,7 @@ The design dimensions of the ball joint are summarised in the following table.
 ## Yaw-lock system
 
 The shoulder joint is a ball-and-socket joint in which rotation about the z-axis is transmitted via an upper pulley located above
-the ball joint. This decoupling is necessary because it would be impossible to actuate the three degrees of freedom if they were coupled inside the current ball joint's design.
+the ball joint as shown in the picture below. This decoupling is necessary because it would be impossible to actuate the three degrees of freedom if they were coupled inside the current ball joint's design.
 
 ![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
