@@ -10,7 +10,7 @@ The system has four Nema 17 stepper motors as actuators, which are mounted on a 
 ![Motors and rack](images/motors_rack.jpg){ width=70% .center}
 ## Transmission and articulations system 
 ProMice is a cable-driven robotic mouse paw that uses a Bowden-cable-type system for motion transmission. The actuator wire is a 0.2mm thin [stainless steel wire](https://www.filinox.com/fr/terre-mer-culture/609-o-02-mm-fil-inox-316l-v4a-14404-corde-a-piano-poli-qualite-contact-alimentaire-500-metres-3663431002356.html) and the sheath is [PTFE Tube](https://fr.vwr.com/store/product/576865/null).
-The articulated front end is the part represented in the robot model. This is where its four degrees of freedom are located: three at the shoulder (spherical joint) and one at the elbow. 
+The articulated front end is the part represented in the [robot model](modified_denavit_hartenberg.md). This is where its four degrees of freedom are located: three at the shoulder (spherical joint) and one at the elbow. 
 
 ![Bowden actuation](images/front_bowden.jpg){ width=70% .center}
 
