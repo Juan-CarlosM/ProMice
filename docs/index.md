@@ -27,7 +27,7 @@ of the prosthesis is lost. The tracking system is also susceptible to positional
 perform a recalibration, which takes a considerable amount of time. Another consideration is the space occupied by the system. During experiments,
 extreme care is required to avoid touching the cameras and accidentally misplacing them.
 
-Researchers of ESME Research lab, [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/) and [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/)
+Researchers of [ESME Research lab](https://www.esme.fr/recherche/?utm_source=google&utm_medium=cpc&utm_id=22974811112&utm_campaign=Lead_ConversionsSite_2627&utm_content&utm_group=PostBac_Ingenieur_France_DMCESME229&utm_ionis=true&gad_source=1&gad_campaignid=22974811112&gbraid=0AAAAADRH3KrmN2MLtSkjeCZxNDBHxlmuW&gclid=Cj0KCQjwt9jVBhDXARIsAFSP-6dIbec-2N89EwGvHTBe0z69UIRWr0LSH_ujMvyNW7YkZzdKS-jPD2MaAimGEALw_wcB), [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/) and [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/)
 have colaborated to the project to develope new version of ProMice. It primarily addresses the limitations of camera-based motion tracking systems.
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
