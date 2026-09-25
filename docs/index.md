@@ -33,7 +33,7 @@ This new version uses 3D Hall effect sensors embedded in the prosthesis joints t
 
 ![leg](images/ProMice_V2.png){ width=60% .center }
 
-To adapt the sensors to the prosthesis, a ball-and-socket joint was designed that moves in two degrees of freedom
+To adapt the sensors to the prosthesis, a ball-and-socket joint was designed. It moves in two degrees of freedom
 ($a_2$ and $a_3$) and features an internal ball bearing system to prevent rotation about its own axis, 
 since this rotation is already accounted for by $a_1$. The Hall effect sensor in the ball-and-socket joint measures $a_2$ and $a_3$, 
 while a second Hall sensor measures the rotation of $a_4$ .
