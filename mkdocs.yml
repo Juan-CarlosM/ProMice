@@ -31,6 +31,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.tabs.link
+    - navigation.footer
     
 nav:
   - Home: index.md
@@ -57,7 +58,11 @@ plugins:
 
 extra:
   generator: false
-
+  social: 
+    - icon: octicons/mail-16
+      link: e-mail<juan-carlos.martinez-rocha@esme.fr>
+  copyright: Copyright &copy; 2025-2026 Juan C. Martinez
+  generator: true
 markdown_extensions:
   - attr_list
   - pymdownx.blocks.caption
