@@ -156,7 +156,7 @@ counterclockwise decreases it.
 
 ![pulley views](images/pulley_labels.png){width=75% .center}
  
-!!! printer-3d "Orientation for 3D printing" 
+!!! printer-3d "Pulleys" 
     ![pulley printing](images/pulley_printing.png){width=70% .center}
 
 ## PLA-printed parts
@@ -173,7 +173,8 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
     It is advisable to print the parts in the orientation shown in the images below.
     This results in less support material and produces a very aesthetic result.
     The infill density should be at least 30% to ensure good strength.
-
+    
+!!! printer-3d "Motors rack"
 ![motors suport](images/motors_suport_printing.png){width=70% .center}
- 
+!!! printer-3d "PCB housing" 
 ![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
