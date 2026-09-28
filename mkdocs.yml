@@ -57,12 +57,12 @@ plugins:
   - table-reader
 
 extra:
-  generator: false
+  generator: true
   social: 
     - icon: octicons/mail-16
       link: e-mail<juan-carlos.martinez-rocha@esme.fr>
   copyright: Copyright &copy; 2025-2026 Juan C. Martinez
-  generator: true
+  
 markdown_extensions:
   - attr_list
   - pymdownx.blocks.caption
