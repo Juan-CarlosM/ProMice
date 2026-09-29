@@ -3,7 +3,7 @@ Haptic Exploration and Reflex Motor control In a Neuroprosthesis :
 Project HERMIN aims to develop and explore for the first time 
 adaptive shared-control strategy in a bidirectional neuroprosthesis with direct sensory feedback 
 from the prosthesis to the cerebral cortex. To achieve this goal, researcher [Luc Estebanez](https://neuropsi.cnrs.fr/annuaire/luc-estebanez/) and 
-his team at  Paris - Saclay Neuro Sciences Institute; [NeuroPsi](https://neuropsi.cnrs.fr/), have developed ProMice, a miniaturised mouse forelimb prosthesis with 4 degrees-of-freedom.
+his team at  Paris - Saclay Neuro Sciences Institute; [NeuroPsi](https://neuropsi.cnrs.fr/), have developed ProMice V1, a miniaturised mouse forelimb prosthesis with 4 degrees-of-freedom.
 ## ProMice Prosthesis
 
 ![mouse_leg](images/Mouse_Leg.png){id="mouse_leg" width=70% .center }
@@ -21,7 +21,7 @@ triangulation, using one camera as a reference relative to the other.
 The prosthesis has three more IR LEDs to create a virtual reference space.
 
 
-## ProMice - Instrumented version
+## ProMice V2 - Instrumented version
 Camera-based motion tracking presented certain limitations. If the IR LED moves out of the camera's framing, the position
 of the prosthesis is lost. The tracking system is also susceptible to positional disturbances or misalignment, making it necessary to
 perform a recalibration, which takes a considerable amount of time. Another consideration is the space occupied by the system. During experiments,
