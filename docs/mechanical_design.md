@@ -1,6 +1,6 @@
 ﻿
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
- $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate joint position measurements. 
+ $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
 
