@@ -1,6 +1,6 @@
 # Soldering 
 
-The prosthesis uses small bearing and shaft systems in its joints $a_2$, $a_3$, and $a_4$. They consist of two small 
+The prosthesis uses small bearing and shaft systems in its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small 
 T-shaped shafts and four mini bearings. To build these systems, we must manufacture the T-shafts from 1-mm-diameter
 steel rod using tin solder and phosphoric acid. Two of the four bearings have a pin soldered radially to them using 
 the same technique as for the T-shafts. Soldering tiny steel parts is complicated using traditional techniques
@@ -37,8 +37,6 @@ of the piece and repeat the process on the other side.
 ![T-shaft mold](images/T_shaft_mold_resin_2.png){width=40% .center}
 
 
-anadir el cautin soldando imagen
-
 
 The result looks like this: 
 
@@ -52,4 +50,3 @@ Finally, we add two drops of phosphoric acid and can begin soldering.
 
 ![Ball bearing soldering](images/ball_bearing_mold_solder.png){width=90% .center}
 
-add photo ball bearing soldering result
