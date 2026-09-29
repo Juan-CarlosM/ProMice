@@ -119,8 +119,7 @@ The two remaining pieces are complementary parts designed to hold the bearings a
 
  
 !!! printer-3d "Shoulder ball bearing housing"
-    INSERER IMAGE
-    ![shoulder ball bearing housing](images/shoulder_case_resin.jpeg){ width=40% .center } 
+    ![shoulder ball bearing housing](images/shoulder_case_resin.png){ width=40% .center } 
 
 
 ### Shoulder rotary pieces 
