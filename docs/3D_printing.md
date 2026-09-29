@@ -119,7 +119,7 @@ The two remaining pieces are complementary parts designed to hold the bearings a
 
  
 !!! printer-3d "Shoulder ball bearing housing"
-    ![shoulder ball bearing housing](images/shoulder_case_resin.png){ width=40% .center } 
+    ![shoulder ball bearing housing](images/shoulder_case_resin.png){ width=70% .center } 
 
 
 ### Shoulder rotary pieces 
@@ -129,8 +129,8 @@ This is a set of three components that transmit $z$-axis rotation from the shoul
 
 ![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
 
-!!! printer-3d "Orientation for 3D printing"
-    ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=70% .center} 
+!!! printer-3d "Shoulder rotary pieces"
+    ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=90% .center} 
     
 ### Top encoder base. 
 ![top encoder base 3D](images/top_encoder_base_3D.png){width=60% .center}
