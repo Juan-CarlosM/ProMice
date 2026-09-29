@@ -46,7 +46,7 @@ of the capacitive sensor cavities, but the holes for the actuating cables could 
 The horizontal position does not present the clogged holes sproblems, but trades with the surface and capacitive sensor details. 
 In both cases you will obtain a functional piece.
 
-!!! printer-3d "Forearm"
+!!! printer-3d "Forearm print orientation"
     ![forearm resin](images/forearm_print_resin.png){width=70% .center}
  
 
@@ -72,7 +72,7 @@ Given that the geometry of the ball-arm contains both horizontal and vertical cy
 The magnet cavity is the top priority, as any printing deformation there would result in unwanted displacement and misalignment of the magnet, which would cause asymmetry
 in its positioning relative to the Hall sensor in the socket. It is therefore advisable to print the ball-arm in a vertical position. 
 
-!!! printer-3d "Ball arm"
+!!! printer-3d "Ball arm print orientation"
     ![ball_arm_printing](images/ball_arm_print_resin.png){width=90% .center}
 
 !!! info inline end "Info Ball-arm"
@@ -98,7 +98,7 @@ Its function is to hold the ball in place together with part one.
 ![socket labels](images/socket_labels.png){width=60% .center}
 
 Given that we must avoid creating supports within the spherical cavity during the printing process and ensure that the cylindrical cavities remain free from deformation, the printing orientation must be vertical.
-!!! printer-3d "Socket"
+!!! printer-3d "Socket print orientation"
     ![socket_printing](images/socket_print_resin.png){width=90% .center}
  
 
@@ -115,11 +115,9 @@ The two remaining pieces are complementary parts designed to hold the bearings a
  
 ![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center}
 
-
-
  
-!!! printer-3d "Shoulder ball bearing housing"
-    ![shoulder ball bearing housing](images/shoulder_case_resin.png){ width=70% .center } 
+!!! printer-3d "Shoulder ball bearing housing print orientation"
+    ![shoulder ball bearing housing](images/shoulder_case_resin.png){ width=90% .center } 
 
 
 ### Shoulder rotary pieces 
@@ -129,14 +127,14 @@ This is a set of three components that transmit $z$-axis rotation from the shoul
 
 ![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
 
-!!! printer-3d "Shoulder rotary pieces"
+!!! printer-3d "Shoulder rotary pieces print orientation"
     ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=90% .center} 
     
 ### Top encoder base. 
 ![top encoder base 3D](images/top_encoder_base_3D.png){width=60% .center}
 
 This final component houses a uStepper driver to measure shoulder rotation along the Z-axis
-!!! printer-3d "Top encoder base"
+!!! printer-3d "Top encoder base print orientation"
     ![top encoder base](images/top_encoder_base.jpg){width=100% .center}
 
 
@@ -153,7 +151,7 @@ counterclockwise decreases it.
 
 ![pulley views](images/pulley_labels.png){width=75% .center}
  
-!!! printer-3d "Pulleys" 
+!!! printer-3d "Pulleys print orientation" 
     ![pulley printing](images/pulley_printing.png){width=70% .center}
 
 ## PLA-printed parts
@@ -171,8 +169,8 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
     This results in less support material and produces a very aesthetic result.
     The infill density should be at least 30% to ensure good strength.
     
-!!! printer-3d "Motors rack"
+!!! printer-3d "Motors rack print orientation"
     ![motors suport](images/motors_suport_printing.png){width=70% .center}
 
-!!! printer-3d "PCB housing" 
+!!! printer-3d "PCB housing print orientation" 
     ![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
