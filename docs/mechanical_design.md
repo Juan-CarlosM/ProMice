@@ -1,17 +1,17 @@
 ﻿
-[ProMice prosthesis](index.md#mouse_leg) shoulder is a 3DOF joint from which only $\alpha_1$ is measured.
- $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint. 
+The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
+ $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate joint position measurements. 
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
 
-The main enhancement ProMice need is to locally measure the angular joint positions for a better and easier control, therfore instrumenting the joints is necesary. From the typical encoding 
-techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example, not to mention that the current joint design is not intended to host sensors. 
+The main enhancement intended for ProMice V1  is to locally measure the angular joint positions for a better and easier control, therefore instrumenting the joints was necessary. From the typical encoding 
+techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example, not to mention that ProMice V1 joints design is not intended to host sensors. 
 
 3D Hall-effect sensors measure the $x$, $y$ and $z$ components the magnetic fields. They can be a  suitable instrumentation option cause they make it it possible to estimate the 3D position of a magnet facing of the sensor. 
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
-Since we intend to make ProMice instrumentable, the modifications have to keep the current dimensions of the prosthesis as much as possible and at the same time feature room for the hall sensor. 
+Since we intend ProMice V2 with instrumented joints as an optimised version of ProMice V1, the modifications had to keep the dimensions of ProMice V1 as unchanged as possible. The optimization entails the integration of the hall sensor. 
 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
