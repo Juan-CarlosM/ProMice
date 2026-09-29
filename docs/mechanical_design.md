@@ -5,9 +5,9 @@ The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
 
 The main enhancement ProMice V1  needed, was to locally measure the angular joint positions for a better and easier control, therefore, instrumenting the joints was necessary. From the typical encoding 
-techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall sensor for example. However, ProMice V1 joints design was not intended to host sensors. 
+techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall-effect sensor for example. However, ProMice V1 joints design was not intended to host sensors. 
 
-Among the different encoding devices, 3D Hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Since space for sensors within dimension constraints was a major limitation, this sensor was the most suitable instrumentation option. The reason is that  they make it it possible to estimate the 3D position of a magnet facing of the sensor. 
+Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Since space for sensors within dimension constraints was a major limitation, this sensor was the most suitable instrumentation option. The reason is that  they make it it possible to estimate the 3D position of a magnet facing of the sensor. 
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
@@ -21,7 +21,7 @@ The optimization entailed the integration of the hall sensor.
 !!! info
     Hall sensor dimensions are in mm.
 
-Building on this idea, we have redesigned the last 3 joints of ProMice aiming to an instrumented joints structure. The shoulder universal joint has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D Hall sensor
+Building on this idea, we have redesigned the last 3 joints of ProMice V1. The shoulder universal joint has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D hall-effect sensor
 inside the housing socket and a disc-type magnet inlaid in the ball. The last joint (elbow) is also instrumented with a hall sensor.
 
 
