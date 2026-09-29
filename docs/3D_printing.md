@@ -116,7 +116,7 @@ The two remaining pieces are complementary parts designed to hold the bearings a
 ![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center}
 
 
-![shoulder case 2 resin](images/shoulder_case_2_resin.jpeg){ width=40% .center }
+![shoulder case 2 resin](images/shoulder_case_resin.jpeg){ width=40% .center }
 
 
  
