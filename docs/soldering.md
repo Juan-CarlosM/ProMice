@@ -1,11 +1,13 @@
 # Soldering 
 
-The prosthesis uses small bearing and shaft systems in its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small 
-T-shaped shafts and four mini bearings. To build these systems, we must manufacture the T-shafts from 1-mm-diameter
-steel rod using tin solder and phosphoric acid. Two of the four bearings have a pin soldered radially to them using 
-the same technique as for the T-shafts. Soldering tiny steel parts is complicated using traditional techniques
-However,  it is possible to solder steel with tin thanks to boric acid, because it removes or dissolves oxides from 
-the surface and prevents new oxides from forming while the part is hot.
+The prosthesis relys on small bearing-shaft mechanisms for its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small T-shaped shafts and four mini bearings.
+
+![Joints mechanisms](images/joints_mecha.png){width=90% .center}
+
+T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To join two pieces of steel with tin, we use phosphoric acid. Adding the acid right before soldering removes or dissolves oxides from 
+the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. 
+
+Phosphoric acid 
 To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and 
 two resin-printed molds for the T-shaft and the mini bearings, respectively.
 
@@ -42,7 +44,7 @@ The result looks like this:
 
 ![T-shaft mold](images/mold_t_shaft_soldered.png){width=40% .center}
 
-## Elbow_ball bearings
+## Elbow ball bearings
 
 The process is very similar: we place our pre-cut pin in the slot along with the bearing, add the mold insert, and then
 add two pieces of tin-one in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
