@@ -67,7 +67,7 @@ Then :
 
 \begin{equation} \label{eq:chord}
     c = 2*r*sin(\theta_c)
-\end{equation}*
+\end{equation}
 
 Where $c$ is the cord that cuts the circle of the socket allowing a maxmimum amplitud of movement $\theta_d$
 
