@@ -55,7 +55,7 @@ To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole
 
 ### Instrumentation
 For our prosthesis, we need two sensors to track the movement of the two joints and thus determine the position of the limb at any given time.
-###Soldering
+
 The sensor's [datasheet](https://www.ti.com/lit/ds/symlink/tmag5273.pdf?ts=1777974658121&ref_url=https%253A%252F%252Fwww.ti.com%252Fsitesearch%252Fde-de%252Fdocs%252Funiversalsearch.tsp%253FlangPref%253Dde-DE%2526nr%253D8%2526searchTerm%253DTMAG5273A1QDBVR) provides the pinout of the sensor:
 ![sensor_PIN](images/sensor_pin.png){width=50% .center}
 
