@@ -1,4 +1,5 @@
-﻿
+﻿ProMice V1 control is don with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system and aimed for an optimization. The major enhancements presented by ProMice V2 have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
+ 
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
  $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
@@ -7,11 +8,11 @@ The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only
 The main enhancement ProMice V1  needed, was to locally measure the angular joint positions for a better and easier control, therefore, instrumenting the joints was necessary. From the typical encoding 
 techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall-effect sensor for example. However, ProMice V1 joints design was not intended to host sensors. 
 
-Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Since space for sensors within dimension constraints was a major limitation, this sensor was the most suitable instrumentation option. The reason is that  they make it it possible to estimate the 3D position of a magnet facing of the sensor. 
+Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Working with tiny robotic systems always falls into dimension constraints. In addition, space for sensors within those dimension constraints was a major limitation. Since 3D hall-effect sensors make it possible to estimate the 3D position of a magnet facing of the sensor, they were our best instrumentation option. 
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
-ProMice V2 with instrumented joints has been conceived  as an optimised version of ProMice V1. This meant that the modifications had to keep the dimensions as unchanged as possible with respect to ProMice V1. 
+Being ProMice V2 with instrumented joints an optimised version of ProMice V1, meant that the modifications had to keep the dimensions as unchanged as possible with respect to ProMice V1. 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
 The optimization entailed the integration of the hall sensor. 
