@@ -45,10 +45,10 @@ of the piece and repeat the process on the other side.
 
 The result looks like this: 
 
-![T-shaft mold](images/mold_t_shaft_soldered.png){width=40% .center}
+![T-shaft finish](images/mold_t_shaft_soldered.png){width=40% .center}
 
 ## Elbow ball bearings
-
+![Ball bearing pin](images/ball_bearing_pin.png){width=40% .center}
 The process is very similar: we place our pre-cut pin in the slot along with the bearing, add the mold insert, and then
 add two pieces of tin-one in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
 Finally, we add two drops of phosphoric acid and can begin soldering.
