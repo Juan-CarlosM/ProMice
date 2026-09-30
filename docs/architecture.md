@@ -1,7 +1,6 @@
 
-The prosthesis is composed of four UStepperS32 motors, which communicate via a serial connection with a central microcontroller, a Teensy 4.1. The microcontroller is responsible for the low-level control of the motors and allows commands to be sent either in Cartesian or joint coordinates.
+The prosthesis is actuated by four Nema 17 stepper motors motors, which communicate via serial connection with a central microcontroller, a Teensy 4.1. The microcontroller is responsible for the low-level control of the motors and allows commands to be sent either in Cartesian or joint position coordinates.
 The software also incorporates the geometric and kinematic models of the prosthesis, in particular to enable control based on Cartesian coordinates. In addition, it handles the data acquired from the Hall-effect sensors, which provide the joint positions of the prosthesis via an I²C bus.
-
 
 ![General structure](images/Prosthesis_diagram1.png){ width=100% .center }
 
