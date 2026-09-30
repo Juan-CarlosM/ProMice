@@ -2,9 +2,11 @@
 Haptic Exploration and Reflex Motor control In a Neuroprosthesis :
 Project HERMIN aims to develop and explore for the first time 
 adaptive shared-control strategy in a bidirectional neuroprosthesis with direct sensory feedback 
-from the prosthesis to the cerebral cortex. To achieve this goal, researcher [Luc Estebanez](https://neuropsi.cnrs.fr/annuaire/luc-estebanez/) and 
-his team at  Paris - Saclay Neuro Sciences Institute; [NeuroPsi](https://neuropsi.cnrs.fr/), have developed ProMice V1, a miniaturised mouse forelimb prosthesis with 4 degrees-of-freedom.
-## ProMice Prosthesis
+from the prosthesis to the cerebral cortex. To achieve this goal, researchers have developed ProMice, a miniaturised mouse forelimb prosthesis with 4 degrees-of-freedom. In this project is deployed in colaboration betwen laboratories of research in France. Researcher  [Luc Estebanez](https://neuropsi.cnrs.fr/annuaire/luc-estebanez/) and 
+his team at  Paris - Saclay Neuro Sciences Institute ([NeuroPsi](https://neuropsi.cnrs.fr/)) have developed the first version of ProMice and work on the Brain-Compute Interface (BCI). Researcher [Maria Makarov](https://l2s.centralesupelec.fr/u/makarov-maria/brouillon-auto/) and her team at the Signals and Systems Laboratory ([L2S](https://l2s.centralesupelec.fr/)) work on high level shared control techniques and researchers of [ESME Research lab](https://www.esme.fr/recherche/?utm_source=google&utm_medium=cpc&utm_id=22974811112&utm_campaign=Lead_ConversionsSite_2627&utm_content&utm_group=PostBac_Ingenieur_France_DMCESME229&utm_ionis=true&gad_source=1&gad_campaignid=22974811112&gbraid=0AAAAADRH3KrmN2MLtSkjeCZxNDBHxlmuW&gclid=Cj0KCQjwt9jVBhDXARIsAFSP-6dIbec-2N89EwGvHTBe0z69UIRWr0LSH_ujMvyNW7YkZzdKS-jPD2MaAimGEALw_wcB), [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/) and [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/)
+colaborate to the project to develope new version of ProMice.
+
+## ProMice V1 Prosthesis
 
 ![mouse_leg](images/Mouse_Leg.png){id="mouse_leg" width=70% .center }
 
@@ -27,8 +29,7 @@ of the prosthesis is lost. The tracking system is also susceptible to positional
 perform a recalibration, which takes a considerable amount of time. Another consideration is the space occupied by the system. During experiments,
 extreme care is required to avoid touching the cameras and accidentally misplacing them.
 
-Researchers of [ESME Research lab](https://www.esme.fr/recherche/?utm_source=google&utm_medium=cpc&utm_id=22974811112&utm_campaign=Lead_ConversionsSite_2627&utm_content&utm_group=PostBac_Ingenieur_France_DMCESME229&utm_ionis=true&gad_source=1&gad_campaignid=22974811112&gbraid=0AAAAADRH3KrmN2MLtSkjeCZxNDBHxlmuW&gclid=Cj0KCQjwt9jVBhDXARIsAFSP-6dIbec-2N89EwGvHTBe0z69UIRWr0LSH_ujMvyNW7YkZzdKS-jPD2MaAimGEALw_wcB), [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/) and [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/)
-have colaborated to the project to develope new version of ProMice. It primarily addresses the limitations of camera-based motion tracking systems.
+ It primarily addresses the limitations of camera-based motion tracking systems.
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
 ![leg](images/ProMice_V2.png){ width=60% .center }
