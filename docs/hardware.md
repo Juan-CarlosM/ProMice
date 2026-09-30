@@ -30,7 +30,7 @@ It is done this way to measure the rotation about the shoulder’s [$z$-axis](me
 ### Embedded hall sensors 
 
 !!! info inline end "Info Sensors"
-    The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom by measuring the three components of the magnetic field from a magnet embedded in the ball of the joint.
+    The [Sensors](sensors.md) section details the use of spherical coordinates to estimate both degrees of freedom. 
     
 The last two remaining degrees of freedom of the shoulder (spherical joint) are measured using a 3D Hall sensor in a socket-ball configuration. 
 
