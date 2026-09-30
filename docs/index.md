@@ -29,7 +29,7 @@ of the prosthesis is lost. The tracking system is also susceptible to positional
 perform a recalibration, which takes a considerable amount of time. Another consideration is the space occupied by the system. During experiments,
 extreme care is required to avoid touching the cameras and accidentally misplacing them.
 
- It primarily addresses the limitations of camera-based motion tracking systems.
+Promice V2 is the neu verson of ProMice developed by [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/) and [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/). It primarily addresses the limitations of camera-based motion tracking systems.
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
 ![leg](images/ProMice_V2.png){ width=60% .center }
