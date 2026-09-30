@@ -10,7 +10,7 @@ the surface and prevents new oxides from forming while the part is hot. Like thi
 !!! info inline end "Info molds"
     The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds).
     
-To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and the following two resin-printed molds for the T-shaft and the mini bearings, respectively.
+To solder these mini parts, we used a standard soldering iron capable of reaching a temperature of 300 degrees and the  resin-printed molds shown below for the T-shaft and the mini bearings respectively.
 
 ![Soldering molds](images/molds_resin.png){width=80% .center}
 
