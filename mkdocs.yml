@@ -38,8 +38,9 @@ nav:
   - System Overview:
     - Structure: architecture.md
     - Mechanical design: mechanical_design.md
-    - Sensors: sensors.md
     - Hardware: hardware.md
+    - Sensors: sensors.md
+    
   - Tutorial: 
     - 3D printing: 3D_printing.md
     - Soldering: soldering.md
