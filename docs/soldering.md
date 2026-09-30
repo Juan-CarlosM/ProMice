@@ -1,6 +1,6 @@
 # Soldering 
 
-The prosthesis relies on small bearing-shaft mechanisms for its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small T-shaped shafts and four mini bearings.
+The prosthesis relies on small bearing-shaft mechanisms to compose its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small T-shaped shafts and four mini bearings.
 
 ![Joints mechanisms](images/joints_mecha.png){width=90% .center}
 
