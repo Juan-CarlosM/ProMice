@@ -117,7 +117,7 @@ The design dimensions of the ball joint are summarised in the following table.
 The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$ is transmitted via an upper pulley located above the ball joint as shown in the picture below. Rotation is measured with an encoder on the top of the pulley.
  
 
-![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
+![shoulder rotation on Z](images/z_rotation.png){id="z_rotation" width=60% .center}
 
 
 Since rotation about the $z$-axis is provided by the upper pulley, we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint respect to the socket must be locked. This prevents undesired yaw motion during joint actuation.
