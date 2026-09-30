@@ -8,7 +8,7 @@ T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To 
 the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel rod surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. 
 
 !!! info inline end "Info molds"
-    The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds)
+    The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds).
     
 To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and the following two resin-printed molds for the T-shaft and the mini bearings, respectively.
 
