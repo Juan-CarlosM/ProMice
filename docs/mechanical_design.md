@@ -1,6 +1,6 @@
 ﻿ProMice V1 control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system and aimed for an optimization. The major enhancements presented by ProMice V2 have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
 
-##Shoulder
+## Shoulder
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
 $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
