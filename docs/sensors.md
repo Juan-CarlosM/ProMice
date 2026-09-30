@@ -1,5 +1,5 @@
 As described in the mechanical section, the joint position is measured with a 3D hall effect sensor. 
-In the ProMice V2 protethis , the sensor used is a [TMAG5273](https://www.ti.com/product/TMAG5273?qgpn=tmag5273)
+In the ProMice V2 protethis , the sensor used is a [TMAG5273](https://www.ti.com/product/TMAG5273?qgpn=tmag5273).
 
 ![TMAG5273](images/TMAG5273.png){ width=40% .center } 
 
