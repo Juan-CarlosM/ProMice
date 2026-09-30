@@ -4,7 +4,7 @@ Like any robotic system, the overal ensemble of ProMice comprises actuators, mec
 !!! info
     Details regarding materials and subassemblies can be found in the section [Tutorial](3D_printing.md).
 
-## Actuators and their suport
+## Actuators and their support
 The system has four Nema 17 stepper motors as actuators, which are mounted on a 3D-printed rack made from PLA. The motors are fitted with a resin-printed pulley and a tensioning system for the actuation cables.
 
 ![Motors and rack](images/motors_rack.jpg){ width=70% .center}
