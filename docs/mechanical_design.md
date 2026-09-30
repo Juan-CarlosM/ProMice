@@ -81,7 +81,8 @@ The minimum sensor-magnet air gap has to be calculated in order to avoid colisio
 \begin{equation} \label{eq:AG}
     AG_{min} = l_{a-m}\left(\sqrt{1+(\frac{d_m}{l_{a-m}})^2}-1\right)
 \end{equation} 
-where $l_{a-m}$ is the anchor-magnet lenght and $d_m$ is the magnet diameter. 
+
+Where $l_{a-m}$ is the anchor-magnet lenght and $d_m$ is the magnet diameter. 
 
 To decide the most suitable magnet diameter and the magnet-sensor air gap, we have performed some [Hall sensor simulations](sensors.md#sensor-simulations). 
 In the following plot, on the left you can see the magnet density vs tilt angle for the 3 available diameters. As expected, the largest magnet allows 
@@ -119,7 +120,7 @@ The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$
 ![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
 
-Since rotation about the $z$-axis is provided by the upper pulley we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint must be locked. This prevents undesired yaw motion during joint actuation.
+Since rotation about the $z$-axis is provided by the upper pulley, we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint must be locked. This prevents undesired yaw motion during joint actuation.
 
 ![ball undesired rotation](images/ball_u_rotation.png) {width=45% .center}
 
