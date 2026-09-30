@@ -64,11 +64,12 @@ We calculated a desired range of motion $\theta_d$ by the following formulas:
 Where $\theta_c$ is the angle that geometrically relates de thikness of the stick $d_s$ the bal radius $r$ and the desired amplitude of movement $\theta_d$ in degrees. 
 
 Then : 
+
 \begin{equation} \label{eq:chord}
     c = 2*r*sin(\theta_c)
 \end{equation}*
 
-Where $c$ is our cord that cuts the circle of the socket allowing a maxmimum amplitud of movement $\theta_d$
+Where $c$ is the cord that cuts the circle of the socket allowing a maxmimum amplitud of movement $\theta_d$
 
 Next, we select the magnet dimensions and the sensor-magnet air gap. From the commercially available magnets wee took three different
 sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thickness. Diameters were $1$, $2$ and $3$ $mm$.
