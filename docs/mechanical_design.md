@@ -120,14 +120,14 @@ The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$
 ![shoulder rotation on Z](images/z_rotation.png){width=60% .center}
 
 
-Since rotation about the $z$-axis is provided by the upper pulley, we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint must be locked. This prevents undesired yaw motion during joint actuation.
+Since rotation about the $z$-axis is provided by the upper pulley, we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint respect to the socket must be locked. This prevents undesired yaw motion during joint actuation.
 
 ![ball undesired rotation](images/ball_u_rotation.png){width=45% .center}
 
 
 Consequently, the second major stage of the mechanical design focused on developing a mechanism that restricts the ball joint to two rotational degrees of freedom. This presented an interesting mechanical challenge: the rotation-lock mechanism had to be integrated inside the ball joint to avoid increasing its overall size beyond the dimensional constraints.
 
-The proposed solution, referred to as the [Yaw-lock system](mechanical_design.md#yaw_lock_system), is a compact mechanism composed of three miniature bearings and a T-shaped rotational shaft. It allows the joint to perform pitch and roll rotations, corresponding to rotations about the $x$ and $y$ ($\alpha_2$ and \alpha_3$) axes, respectively, while constraining rotation about the $z$-axis respect to the socket. The mechanism is designed to fit entirely within the ball of the joint, ensuring that the required range of motion is achieved without increasing the joint's external dimensions.
+The proposed solution, referred to as the [Yaw-lock system](mechanical_design.md#yaw_lock_system), is a compact mechanism composed of three miniature bearings and a T-shaped rotational shaft. It allows the joint to perform pitch and roll rotations, corresponding to rotations about the $x$ and $y$ ($\alpha_2$ and $\alpha_3$) axes, respectively, while constraining rotation about the $z$-axis respect to the socket. The mechanism is designed to fit entirely within the ball of the joint, ensuring that the required range of motion is achieved without increasing the joint's external dimensions.
 
 ![Yaw-lock system](images/yaw_lock_system.png){id="yaw_lock_system" width=70% .center }
 
