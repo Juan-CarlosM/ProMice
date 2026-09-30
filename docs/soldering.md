@@ -5,17 +5,20 @@ The prosthesis relys on small bearing-shaft mechanisms for its joints $\alpha_2$
 ![Joints mechanisms](images/joints_mecha.png){width=90% .center}
 
 T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To join two pieces of steel with tin, we use phosphoric acid. Adding the acid right before soldering removes or dissolves oxides from 
-the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. 
+the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel rod surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. 
 
-Phosphoric acid 
-To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and 
-two resin-printed molds for the T-shaft and the mini bearings, respectively.
+!!! info inline end "Info molds"
+    The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds)
+    
+To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and the following two resin-printed molds for the T-shaft and the mini bearings, respectively.
+
+![Soldering molds](images/molds_resin.png){width=90% .center}
 
 ## T-shaft fabrication
 
-The T-shaft consists of two segments, one 6 mm and the other 4.5 mm.
+The T-shaft consists of two segments, one of 6 mm and the other 4.5 mm lenght.
 
-Include a diagram of the T-shaft with dimensions and two diagrams showing where they are used.
+
 
 First, you need to cut the two segments using our rotary tool and a metal-cutting blade.
 
