@@ -1,8 +1,9 @@
-
-
-sensor [TMAG5273](https://www.ti.com/product/TMAG5273?qgpn=tmag5273)
+As described in the mechanical section, the joint position is measured with a 3D hall effect sensor. 
+In the ProMice V2 protethis , the sensor used is a [TMAG5273](https://www.ti.com/product/TMAG5273?qgpn=tmag5273)
 
 ![TMAG5273](images/TMAG5273.png){ width=40% .center } 
+
+
 
 
 ## Sensor simulations
@@ -15,11 +16,14 @@ the sensor. You can set the geometry of your magnet, the kind of movement (joyst
 The simulator uses [Magpylib package](https://www.sciencedirect.com/science/article/pii/S2352711020300170) to compute magnetic fields.
 In section [Ball joint design](mechanical_design.md#ball-joint-design) We used Magpylib to simulate the magnetic field of a magnet of our choice. You can do interpolations to simulate different magnet-sensor gaps too.
 
-The TMAG connection from [datasheet](https://www.ti.com/lit/ds/symlink/tmag5273.pdf?ts=1777974658121&ref_url=https%253A%252F%252Fwww.ti.com%252Fsitesearch%252Fde-de%252Fdocs%252Funiversalsearch.tsp%253FlangPref%253Dde-DE%2526nr%253D8%2526searchTerm%253DTMAG5273A1QDBVR)
+## Espherical coordinates for 3D position estimation
+![Ball Joint coordinates](images/ball_sensor_coor.png){ width=40% .center } 
+
+The TMAG connection from the [datasheet](https://www.ti.com/lit/ds/symlink/tmag5273.pdf? ts=1777974658121&ref_url=https%253A%252F%252Fwww.ti.com%252Fsitesearch%252Fde-de%252Fdocs%252Funiversalsearch.tsp%253FlangPref%253Dde-DE%2526nr%253D8%2526searchTerm%253DTMAG5273A1QDBVR) is:
 
 ![TMAG5273 connection](images/TMAG_connection.png){ width=70% .center }
 
-![Ball Joint coordinates](images/ball_sensor_coor.png){ width=40% .center } 
+
 
 
 
