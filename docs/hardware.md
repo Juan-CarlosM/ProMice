@@ -23,7 +23,7 @@ The robot’s main controller is a Teensy 4.1 board integrated in a custom PCB t
 To ensure precise control, the stepper motors were fitted with [uStepperS32](https://www.ustepper.com/shop/#!/products/ustepper-s32) controllers to enable servo motion. Position feedback prevents missed steps and also ensures that an absolute position is always measured, which is an important aspect in robotic systems.
 
 The following image, taken from beneath the motor rack, shows the drivers installation. Exceptionally the first motor has no driver mounted, instead it is mounted on the top of the articulated system.
-It is done this way to measure the rotation about the shoulder’s z-axis locally, while the driver still controls the respective actuator.
+It is done this way to measure the rotation about the shoulder’s [$z$-axis](mechanical_design_md#z_rotation) locally, while the driver still controls the respective actuator.
 
 ![uSteppers](images/uStepper_drivers.jpg){ width=50% .center}
 
