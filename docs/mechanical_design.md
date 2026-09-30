@@ -112,7 +112,7 @@ The design dimensions of the ball joint are summarised in the following table.
 
 
 
-## Yaw-lock system
+## Yaw-lock system 
 
 The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$ is transmitted via an upper pulley located above the ball joint as shown in the picture below. Rotation is measured with an encoder on the top of the pulley.
  
