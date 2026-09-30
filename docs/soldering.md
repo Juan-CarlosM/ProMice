@@ -12,13 +12,13 @@ the surface and prevents new oxides from forming while the part is hot. Like thi
     
 To solder these mini parts, we will use a standard soldering iron capable of reaching a temperature of 300 degrees and the following two resin-printed molds for the T-shaft and the mini bearings, respectively.
 
-![Soldering molds](images/molds_resin.png){width=90% .center}
+![Soldering molds](images/molds_resin.png){width=80% .center}
 
 ## T-shaft fabrication
 
 The T-shaft consists of two segments, one of 6 mm and the other 4.5 mm lenght.
 
-
+![T-shaft dimensions](images/T-shaft_dim.png){width=50% .center}
 
 First, you need to cut the two segments using our rotary tool and a metal-cutting blade.
 
@@ -48,7 +48,7 @@ The result looks like this:
 ![T-shaft finish](images/mold_t_shaft_soldered.png){width=40% .center}
 
 ## Elbow ball bearings
-![Ball bearing pin](images/ball_bearing_pin.png){width=40% .center}
+![Ball bearing pin](images/ball_bearing_pin.png){width=50% .center}
 The process is very similar: we place our pre-cut pin in the slot along with the bearing, add the mold insert, and then
 add two pieces of tin-one in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
 Finally, we add two drops of phosphoric acid and can begin soldering.
