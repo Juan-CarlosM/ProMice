@@ -64,9 +64,8 @@ extra:
   generator: true
   social: 
     - icon: octicons/mail-16
-      link: Outlook<juan-carlos.martinez-rocha@esme.fr>
-      name: e-mail
-  copyright: Copyright &copy; 2025-2026 Juan C. Martinez
+      link: mailto:<juan-carlos.martinez-rocha@esme.fr>
+      copyright: Copyright &copy; 2025-2026 Juan C. Martinez
   
 markdown_extensions:
   - attr_list
