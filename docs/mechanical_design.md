@@ -4,7 +4,7 @@
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
 $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
-![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center }
+![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center .on-glb}
 
 The main enhancement ProMice V1  needed, was to locally measure the angular joint positions for a better and easier control, therefore, instrumenting the joints was necessary. From the typical encoding 
 techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall-effect sensor for example. However, ProMice V1 joints design was not intended to host sensors. 
@@ -26,7 +26,7 @@ The optimization entailed the integration of the hall sensor.
 ProMice V1's joints $\alpha_2$, $\alpha_3$ and $\alpha_4$ have been redisigned. The shoulder universal joint ($\alpha_2$, $\alpha_3$) has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D hall-effect sensor inside the housing socket and a disc-type magnet inlaid in the ball. The last joint ($\alpha_3$ or elbow) is also instrumented with a hall sensor.
 
 
-![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center }
+![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center .on-glb}
 !!! info Sensors
     In the [Sensors](sensors.md) section, you can find further details on
     the use of the 3D hall-effect sensor, such as the component number, data types, angle calculations, sensor-microcontroller connections, etc. 
