@@ -2,7 +2,7 @@
 
 The prosthesis relies on small bearing-shaft mechanisms to compose its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small T-shaped shafts and four mini bearings.
 
-![Joints mechanisms](images/joints_mecha.png){width=90% .center}
+![Joints mechanisms](images/joints_mecha.png){width=90% .center .on-glb}
 
 T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To join two pieces of steel with tin, we use phosphoric acid. Adding the acid right before soldering removes or dissolves oxides from 
 the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel rod surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. 
