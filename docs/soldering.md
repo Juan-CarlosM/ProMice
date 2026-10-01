@@ -56,9 +56,10 @@ These ball bearings have a pin soldered radially as you can se below.
 The process to solder a pin to the bearing is very similar to the T-shaft process. Place your pre-cut pin in the slot along with the bearing, add the mold lid, and then
 add two little bits of tin in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
 Finally, add two drops of phosphoric acid and fuse the little tin bits with the soldering iron by pushing them into the bearing-rod union. 
-
-!!! warning "Soldered bearings"
-    If the tin soldered the balls inside the ballbearing the piece will be usless. 
-    ![Soldering fail](images/mini_ballbearings_fail.png){width=40% .center .on-glb}
     
 ![Ball bearing soldering](images/ball_bearing_mold_solder.png){width=90% .center .on-glb}
+
+!!! warning "Soldered bearings"
+    If there is tin inside the ballbearing after the process, the piece wont be useful. 
+    
+    ![Soldering fail](images/mini_ballbearings_fail.png){width=40% .center .on-glb}
