@@ -1,7 +1,7 @@
  
 # Control Architecture
 
-![Control diagram](images/Control_diagram.png){width=100% .center}
+![Control diagram](images/Control_diagram.png){width=100% .center .on-glb}
 
 ## Inverse Kinematics via DLS with Null Space 
 
