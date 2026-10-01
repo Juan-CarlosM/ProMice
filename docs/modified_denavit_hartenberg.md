@@ -21,7 +21,7 @@ such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between 
 
 
 
-![Modified Denavit hartenber table](images/Table_MDH.png){width .center}
+![Modified Denavit hartenber table](images/Table_MDH.png){width .center .on-glb}
 
 \[
 {}^{i-1}T_i =
