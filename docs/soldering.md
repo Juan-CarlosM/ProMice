@@ -59,6 +59,6 @@ Finally, add two drops of phosphoric acid and fuse the little tin bits with the 
 
 !!! warning "Soldered bearings"
     If the tin soldered the balls inside the ballbearing the piece will be usless. 
-    ![Soldering fail](images/mini_ballbearings_fail.png){width=90% .center .on-glb}
+    ![Soldering fail](images/mini_ballbearings_fail.png){width=40% .center .on-glb}
     
 ![Ball bearing soldering](images/ball_bearing_mold_solder.png){width=90% .center .on-glb}
