@@ -1,7 +1,8 @@
 # Assembling and instrumentation
 ## Pieces assembling
 ### Assembling the ball-arm 
-![ball arm assembly](images/ball_arm_assembly.png){width=40% .center}
+![ball arm assembly](images/ball_arm_assembly.png){width=40% .center .on-glb}
+
 El en samblaje de la ball arm puede requerir de pequenos detallados. Por ejemplo, importante que los pequenos rodamientos del 
 [Yaw-lock system](mechanical_design.md#yaw_lock_system) puedan insertarse correctamente. Hemos usado herramientas de tallado para mejorar 
 la redondez de la cavidad si es necesario
@@ -19,7 +20,7 @@ Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut 
 To ensure that the ball arm can move properly once inserted into the prosthesis, it can be sanded if necessary to reduce friction with the socket. The ball joint should be able to move freely in all directions using a single finger, without applying force.
 A 3 mm winding is inserted at the bottom of the rotule_short, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere complement. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
 
-![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center}
+![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center .on-glb}
 ### Motors suport
 
 To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
@@ -61,17 +62,17 @@ The sensor's [datasheet](https://www.ti.com/lit/ds/symlink/tmag5273.pdf?ts=17779
 
 he colors associated with each PIN correspond to the color of the cable soldered to it. The two ground PINs were soldered together onto a single cable.
  
- ![sensor_soldering_setup](images/sensor_soldering_setup.png){width=140% .center}
+ ![sensor_soldering_setup](images/sensor_soldering_setup.png){width=140% .center .on-glb}
 
 The cables must not protrude beyond the surface of the sensor, otherwise the sensor will not fit into its designated slot within the socket. For this reason, we solder the cables to the inner side of the PINs.
 
 ![sensor_soldering](images/sensor_soldering.png){width=80% .center}
-![sensor_in_prothesis](images/sensor_in_prothesis.png){width=80% .center}
+![sensor_in_prothesis](images/sensor_in_prothesis.png){width=80% .center .on-glb}
 
 ### Pulley adjustement
 The holes for the wires can be cleared using a Dremel with a 0.5 mm drill bit. The hole should not be drilled from scratch; instead, the existing hole should be cleared by following its original path. The hole should be drilled from the outside toward the inside of the part using a 0.5 mm drill bit.
 
-![pulley_holes_clogged](images/pulley_holes_clogged.png){width=80% .center}
+![pulley_holes_clogged](images/pulley_holes_clogged.png){width=80% .center .on-glb}
 The screw holes must be enlarged using a Dremel with a 1.5 mm drill bit to facilitate the insertion of the screws during assembly. The holes for the wire-pulling mechanism and the covers are enlarged in the same way. These holes are then tapped to facilitate screw insertion during subsequent assembly.
 
 ![pulley_threading](images/pulley_threading.png){width=80% .center}
