@@ -10,7 +10,7 @@ the surface and prevents new oxides from forming while the part is hot. Like thi
 !!! info inline end "Info molds"
     The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds).
     
-To solder these mini parts, we used a standard soldering iron capable of reaching a temperature of 300 degrees and the  resin-printed molds shown below for the T-shaft and the mini bearings respectively.
+To solder these mini parts, we used a standard soldering iron capable of reaching a temperature of 300 degrees. To accurately form the soldered joints, we used the resin-printed molds shown below for the T-shaft and the mini bearings respectively.
 
 ![Soldering molds](images/molds_resin.png){width=80% .center}
 
@@ -30,22 +30,20 @@ One tip that will help you make a good joint is to taper the end of the
 longer segment slightly and position it so that it comes into contact with the shorter segment. Next, rotate it until the two small, worn sides of the longer segment are oriented to the sides, roughly as shown in the figure.
 
 
-![T-shaft mold and segments](images/T_shaft_mold_resin.png){width=40% .center}
+![T-shaft mold and segments](images/T_shaft_mold_resin.png){width=40% .center .on-glb}
 
-Next, you add the mold lid. The mold has a hole for inserting the soldering iron to solder both sides of the piece.
-The hole is aligned with the joint, ensuring a precise solder joint.
-Then you add a piece of solder through the hole on the first side, then add at least two drops of phosphoric acid. We proceed to solder the first side
+Next, you add the mold lid. The mold and the lid have a hole for inserting the tin, the acid and the soldering iron to solder both sides of the piece.
+The hole is aligned with the joint, ensuring a precise joint soldering.
+Then you add a piece of solder through the hole on the first side and add at least two drops of phosphoric acid. Proceed to solder the first side
 of the piece and repeat the process on the other side.
 
 
-
-![T-shaft mold](images/T_shaft_mold_resin_2.png){width=40% .center}
-
+![T-shaft mold](images/T_shaft_mold_resin_2.png){width=40% .center .on-glb}
 
 
 The result should look like this on both sides of the T-shaft: 
 
-![T-shaft finish](images/mold_t_shaft_soldered.png){width=40% .center}
+![T-shaft finish](images/mold_t_shaft_soldered.png){width=40% .center .on-glb}
 
 It is important that the joint is uniform as in the image and that you used enough tin to make a strong union. 
 
@@ -55,9 +53,12 @@ These ball bearings have a pin soldered radially as you can se below.
 
 ![Ball bearing pin](images/ball_bearing_pin.png){width=50% .center}
 
-The process to solder a pin to the bearing is very similar to the T-shaft proces: Place your pre-cut pin in the slot along with the bearing, add the mold lid, and then
+The process to solder a pin to the bearing is very similar to the T-shaft process. Place your pre-cut pin in the slot along with the bearing, add the mold lid, and then
 add two little bits of tin in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
-Finally, add two drops of phosphoric acid and fuse the little tin bits with the soldering iron.
+Finally, add two drops of phosphoric acid and fuse the little tin bits with the soldering iron by pushing them into the bearing-rod union. 
 
+!!! warning "Soldered bearings"
+    If the tin soldered the balls inside the ballbearing the piece will be usless. 
+    ![Soldering fail](images/mini_ballbearings_fail.png){width=90% .center .on-glb}
+    
 ![Ball bearing soldering](images/ball_bearing_mold_solder.png){width=90% .center .on-glb}
-
