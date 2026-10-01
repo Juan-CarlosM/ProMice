@@ -34,6 +34,7 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-table-reader-plugin
           pip install pymdown-extensions
+          pip install mkdocs-glightbox
 
       - name: Build MkDocs
         run: mkdocs build
