@@ -59,10 +59,8 @@ nav:
 plugins:
   - search
   - table-reader
-  - glightbox
-    skip_classes:
-        - skip-lightbox
-    zoomable: true
+  - glightbox:
+      manual: true
 extra:
   generator: true
   social: 
