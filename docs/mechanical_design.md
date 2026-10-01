@@ -13,7 +13,7 @@ Among the different encoding devices, 3D hall-effect sensors stand out. They mea
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
-Being ProMice V2 with instrumented joints an optimised version of ProMice V1, meant that the modifications had to keep the dimensions as unchanged as possible with respect to ProMice V1. 
+Since ProMice V2 is an optimised version of ProMice V1 incorporating instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of ProMice V1. 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
 The optimization entailed the integration of the hall sensor. 
