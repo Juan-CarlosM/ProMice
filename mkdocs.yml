@@ -1,4 +1,7 @@
 site_name: ProMice
+site_author: Juan C. Martinez
+copyright: Copyright &copy; 2025-2026 Juan C. Martinez
+
 theme:   
   icon:
     admonition:
@@ -65,7 +68,7 @@ extra:
   social: 
     - icon: octicons/mail-16
       link: mailto:<juan-carlos.martinez-rocha@esme.fr>
-      copyright: Copyright &copy; 2025-2026 Juan C. Martinez
+     
   
 markdown_extensions:
   - attr_list
