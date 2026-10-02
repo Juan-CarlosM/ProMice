@@ -15,9 +15,9 @@ the surface and prevents new oxides from forming while the part is hot. Like thi
     
 
 
-To accurately form the soldered joints, we used the resin-printed molds shown below for the T-shaft and the mini bearings respectively.
-!!! info inline end 
+To accurately form the soldered joints, we used the resin-printed molds shown below for the T-shaft and the mini bearings respectively. !!! info inline end 
     You will find links to buy these materials in section [Materials](materials.md), as well as the molds' 3D
+
 
 ![Soldering molds](images/molds_resin.png){width=80% .center}
 
