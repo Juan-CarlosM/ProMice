@@ -1,17 +1,16 @@
 # Assembling and instrumentation
-## Pieces assembling
-### Assembling the ball-arm 
+## Assembling the ball-arm 
+La primera seccion de la protesis que vamos a ensamblar es la ball joint arm. En la siguiente imagen vemos todos los componentes. 
+
 ![ball arm assembly](images/ball_arm_assembly.png){width=40% .center .on-glb}
 
-El en samblaje de la ball arm puede requerir de pequenos detallados. Por ejemplo, importante que los pequenos rodamientos del 
-[Yaw-lock system](mechanical_design.md#yaw_lock_system) puedan insertarse correctamente. Hemos usado herramientas de tallado para mejorar 
-la redondez de la cavidad si es necesario
+Como se describe en la seccion [3D printing](3D_printing.md) aunque l aimpresion en resina es un agran aliada en prototipos pequenos y con alto grado de detalle, esta tiene sus limites. La camara del [Yaw-lock system](mechanical_design.md#yaw_lock_system) puede requerir de pequenos detallados. Si la cavidad de los mini rodamientos quedo deformada, habra que tallar el interior cuidadosamente para devolcer la forma cilindrica.
 
-![YLS ball bearings cav3](images/YLS_ball_bearings_cav1.jpg){ width=30% .center}
+Se debe ser muy cuidadoso para que que los pequenos rodamientos del puedan insertarse correctamente y que tengan a la vez un buen ajuste. Para tallar el interior de la bola hemos usado el craving bit que se muestra abajo 
+![YLS ball bearings cav3](images/ball_arm_craving.png){ width=50% .center}.
 
-posteriormente nosotros hemos utilizado una punta plana de desarmadpr con el diametro exacto de los baleros (3 mm)  giramos 
-en el interior para dar mejor forma. Debe ser con mucho cuidado para evitar quebrar la pieza 
-cmo se muestra a continuacion y uti
+Posteriormente nosotros hemos utilizado una punta plana de desarmadpr con el diametro exacto de los baleros (3 mm). Giramos y presionamos  
+en el interior para dar mejor forma. Debe ser con mucho cuidado para evitar quebrar la pieza como se muestra a continuacion.
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
