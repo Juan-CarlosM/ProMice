@@ -7,7 +7,7 @@ The first element of the prosthesis you have to assemble is the ball joint arm.
 As described in the [3D printing](3D_printing.md) section, although resin printing is a great ally for small, highly detailed prototypes, it does have its limitations. The chamber of the [Yaw-lock system](mechanical_design.md#yaw_lock_system) may require small, detailed adjustments. If the cavity for the mini bearings suffered deformation, the interior will need to be carefully carved to restore its cylindrical shape.
 
 To carve the inside of the ball, we used the carving bit shown in the following image.
-![YLS ball bearings cav3](images/ball_arm_craving.png){ width=50% .center}.
+![YLS ball bearings cav3](images/ball_arm_craving.png){ width=70% .center .on-glb}.
 
 
 We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You must rotate and apply pressure to the inside to shape it better. 
@@ -17,18 +17,20 @@ We then used a flat screwdriver tip with the exact diameter of the ball bearings
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
 
-
+--------insert image of ball bearing insert test
 
 If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
-You can sand down the pieces to reduce friction with the socket, removing any remaining material from the support and, if necessary, adjusting the shape. Use 800-grit sandpaper to degrade and a 100-grit to polish it down. 
+If necessary, you can sand down the pieces to reduce friction with the socket, removing any remaining material from the support and  adjusting the shape. Use 800-grit sandpaper to degrade and a 100-grit to polish it down. 
 
-
-To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
-
+![Ball arm sanding](images/ball_arm_sanding.png){ width=70% .center .on-glb}
 
 A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
 
 ![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center .on-glb}
+
+To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
+
+
 ### Motors suport
 
 To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
