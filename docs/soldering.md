@@ -7,11 +7,11 @@ The prosthesis relies on small bearing-shaft mechanisms to compose its joints $\
 T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To join two pieces of steel with tin, we use phosphoric acid. Adding the acid right before soldering removes or dissolves oxides from 
 the surface and prevents new oxides from forming while the part is hot. Like this, the tin will fuse with the steel rod surface.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. To solder these mini parts, we used a standard soldering iron capable of reaching a temperature of 300 degrees.
 
-![Soldering materials](images/soldering_metrials.jepg){width=80% .center}
+![Soldering materials](images/soldering_metrials.jpeg){width=80% .center}
 
 !!! tip
     The phosforic acid will abrade the soldering iron tip after several uses. We recomend that you use an old tip for this specific task and that you use a different tip for Electronic components soldering. 
-    ![Soldering iron tip](images/soldering_iron_tip.jepg){width=60% .center .on-glb}
+    ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=60% .center .on-glb}
     
 
 
