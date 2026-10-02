@@ -33,7 +33,7 @@ Promice V2 is the neu verson of ProMice developed by [Juan Carlos Martinez](http
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
 ![leg](images/ProMice_V2.png){ width=60% .center  .on-glb}
-![leg](ProMice_V2_video.mp4){ width=60% .center}
+
 To adapt the sensors to the prosthesis, a ball-and-socket joint was designed. It moves in two degrees of freedom
 ($a_2$ and $a_3$) and features an internal ball bearing system to prevent rotation about its own axis, 
 since this rotation is already accounted for by $a_1$. The Hall effect sensor in the ball-and-socket joint measures $a_2$ and $a_3$, 
