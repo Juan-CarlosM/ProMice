@@ -32,7 +32,7 @@ extreme care is required to avoid touching the cameras and accidentally misplaci
 Promice V2 is the neu verson of ProMice developed by [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/) and [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/). It primarily addresses the limitations of camera-based motion tracking systems.
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
-![leg](images/ProMice_V2.png){ width=60% .center }
+![leg](images/ProMice_V2.png){ width=60% .center  .on-glb}
 
 To adapt the sensors to the prosthesis, a ball-and-socket joint was designed. It moves in two degrees of freedom
 ($a_2$ and $a_3$) and features an internal ball bearing system to prevent rotation about its own axis, 
