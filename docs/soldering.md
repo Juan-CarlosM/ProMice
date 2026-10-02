@@ -11,7 +11,7 @@ the surface and prevents new oxides from forming while the part is hot. Like thi
 
 !!! tip
     The phosforic acid will abrade the soldering iron tip after several uses. We recomend that you use an old tip for this specific task and that you use a different tip for Electronic components soldering. 
-    ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=60% .center .on-glb}
+    ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=30% .center .on-glb}
     
 
 
