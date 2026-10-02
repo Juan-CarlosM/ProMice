@@ -12,13 +12,13 @@ image of Rod,acido and Solférino tin, and Solférino iron
 !!! tip
     The phosforic acid will abrade the soldering iron tip after several uses. We recomend that you use an old tip for this specific task and that you use a different tip for Electronic components soldering. 
 
-    add image of Solférino iron
+    add image of soldering iron
     
 
 
 To accurately form the soldered joints, we used the resin-printed molds shown below for the T-shaft and the mini bearings respectively.
-!!! info inline end "Info molds"
-    The molds' 3D files are available in the section Materials -> [Molds](materials.md#Molds).
+!!! info inline end 
+    You will find links to buy these materials in section [Materials](materials.md), as well as the molds' 3D
 
 ![Soldering molds](images/molds_resin.png){width=80% .center}
 
