@@ -1,23 +1,32 @@
 # Assembling and instrumentation
 ## Assembling the ball-arm 
-La primera seccion de la protesis que vamos a ensamblar es la ball joint arm. En la siguiente imagen vemos todos los componentes. 
+The first element of the prosthesis you have to assemble is the ball joint arm. 
 
 ![ball arm assembly](images/ball_arm_assembly.png){width=40% .center .on-glb}
 
-Como se describe en la seccion [3D printing](3D_printing.md) aunque l aimpresion en resina es un agran aliada en prototipos pequenos y con alto grado de detalle, esta tiene sus limites. La camara del [Yaw-lock system](mechanical_design.md#yaw_lock_system) puede requerir de pequenos detallados. Si la cavidad de los mini rodamientos quedo deformada, habra que tallar el interior cuidadosamente para devolcer la forma cilindrica.
+As described in the [3D printing](3D_printing.md) section, although resin printing is a great ally for small, highly detailed prototypes, it does have its limitations. The chamber of the [Yaw-lock system](mechanical_design.md#yaw_lock_system) may require small, detailed adjustments. If the cavity for the mini bearings suffered deformation, the interior will need to be carefully carved to restore its cylindrical shape.
 
-Se debe ser muy cuidadoso para que que los pequenos rodamientos del puedan insertarse correctamente y que tengan a la vez un buen ajuste. Para tallar el interior de la bola hemos usado el craving bit que se muestra abajo 
+To carve the inside of the ball, we used the carving bit shown in the following image.
 ![YLS ball bearings cav3](images/ball_arm_craving.png){ width=50% .center}.
 
-Posteriormente nosotros hemos utilizado una punta plana de desarmadpr con el diametro exacto de los baleros (3 mm). Giramos y presionamos  
-en el interior para dar mejor forma. Debe ser con mucho cuidado para evitar quebrar la pieza como se muestra a continuacion.
+
+We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You must rotate and apply pressure to the inside to shape it better. 
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
-Pour que le ball arm puisse bien se mouvoir une fois dans la prothèse, on peut le poncer pour diminuer les frottements avec la socket si nécessaire. On doit pouvoir bouger la rotule dans toutes les directions avec 1 seul doigts, sans forcer.
+You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
-To ensure that the ball arm can move properly once inserted into the prosthesis, it can be sanded if necessary to reduce friction with the socket. The ball joint should be able to move freely in all directions using a single finger, without applying force.
-A 3 mm winding is inserted at the bottom of the rotule_short, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere complement. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
+
+
+
+If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
+You can sand down the pieces to reduce friction with the socket, removing any remaining material from the support and, if necessary, adjusting the shape. Use 800-grit sandpaper to degrade and a 100-grit to polish it down. 
+
+
+To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
+
+
+A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
 
 ![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center .on-glb}
 ### Motors suport
