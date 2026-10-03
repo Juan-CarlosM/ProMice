@@ -1,4 +1,4 @@
-﻿ProMice V1 control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system and aimed for an optimization. The major enhancements presented by ProMice V2 have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
+﻿ProMice V1 control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. The major enhancements presented by ProMice V2 have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
 
 ## Shoulder
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
@@ -35,7 +35,7 @@ ProMice V1's joints $\alpha_2$, $\alpha_3$ and $\alpha_4$ have been redisigned. 
     
 ## Ball joint design
 
-The ball joint consists on a 3D printed sphere with a rod attached and a socket. We carried out a series of iterations
+The ball joint consists on a 3D printed sphere with a stalk attached and a socket. We carried out a series of iterations
 of 3D printing to determine what would be a reasonable size whilst meeting the dimentions constraints.
 
 The observed limitations of resin 3D printing on the spherical surface of the ball as well as on the inside of the socket, led to 
