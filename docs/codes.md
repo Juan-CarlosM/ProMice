@@ -38,3 +38,32 @@
       delay(attente);
     }
     ```
+
+``` c
+const int LED_PIN = 13;
+const int BUTTON_PIN = 2;
+
+bool ledState = false;
+bool lastButtonState = LOW;
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT);
+
+  digitalWrite(LED_PIN, LOW);
+}
+
+void loop() {
+  bool buttonState = digitalRead(BUTTON_PIN);
+
+  // Detectar una nueva pulsación
+  if (lastButtonState == LOW && buttonState == HIGH) {
+    ledState = !ledState;
+    digitalWrite(LED_PIN, ledState);
+
+    delay(50); // Anti-rebote
+  }
+
+  lastButtonState = buttonState;
+}
+```
