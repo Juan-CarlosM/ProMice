@@ -56,12 +56,12 @@ void setup() {
 void loop() {
   bool buttonState = digitalRead(BUTTON_PIN);
 
-  // Detectar una nueva pulsación
+  
   if (lastButtonState == LOW && buttonState == HIGH) {
     ledState = !ledState;
     digitalWrite(LED_PIN, ledState);
 
-    delay(50); // Anti-rebote
+    delay(50); 
   }
 
   lastButtonState = buttonState;
