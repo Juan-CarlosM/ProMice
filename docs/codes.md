@@ -40,7 +40,7 @@
     ```
 
 ``` c title="LED_bouton"
-const int LED_PIN = 13;
+const int LED_PIN = 12;
 const int BUTTON_PIN = 2;
 
 bool ledState = false;
