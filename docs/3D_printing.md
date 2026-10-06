@@ -164,7 +164,7 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
 
 ![Motors support](images/motor_support.png){width=70% .center}
 
-![Teensy support](images/teensy_suport2.png)
+![Teensy support](images/PCB_teensy_housing.png)
 
 
 !!! tip
