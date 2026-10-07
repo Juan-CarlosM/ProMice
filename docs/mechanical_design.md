@@ -1,5 +1,11 @@
-﻿[ProMice V1](index.md#mouse_leg) control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. It turned out to be sensitive to small cameras displacements and touch perturbations. Therefore, they concluded that an integrated sensor system for joint position measuring was necesary. 
+﻿[ProMice V1](index.md#ProMice_V1) control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. It turned out to be sensitive to small cameras displacements and touch perturbations. Therefore, they concluded that an integrated sensor system for joint position measuring was necesary. 
 In this section we presente the mechanical enhancements that gave place to [Promice V2](index.md#leg). The major modifications have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
+
+
+Since [Promice V2](index.md#leg) is an optimised version of ProMice V1 that incorporaties instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of [ProMice V1](index.md#ProMice_V1). 
+
+![Old ProMice version size](images/old_promice_size.png){width=70% .center}
+
 
 ## Shoulder
 The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
@@ -7,22 +13,20 @@ $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint an
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center .on-glb}
 
-The main enhancement ProMice V1  needed, was to locally measure the angular joint positions for a better and easier control, therefore, instrumenting the joints was necessary. From the typical encoding 
-techniques it would mean to instal a sensor on each rotation axe, like a potentiometer, an optical encoder or a hall-effect sensor for example. However, ProMice V1 joints design was not intended to host sensors. 
+From the typical encoding techniques, to instrument the joints would mean to instal a sensor on each rotation axis, like a potentiometer, an optical encoder or a hall-effect sensor for example.
+However, ProMice V1 joints design was not intended to host sensors. 
 
 Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Working with tiny robotic systems always falls into dimension constraints. Hence, space for sensors within those dimension constraints was a major limitation. Since 3D hall-effect sensors make it possible to estimate the 3D position of a magnet facing of the sensor, they suited our instrumentation needs. 
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
-
-Since ProMice V2 is an optimised version of ProMice V1 incorporating instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of ProMice V1. 
-![Old ProMice version size](images/old_promice_size.png){width=70% .center}
-
-The optimization entailed the integration of the hall sensor. 
+ 
 
 ![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
 
-!!! info
-    Hall sensor dimensions are in mm.
+!!! info inline end 
+    Hall sensor dimensions are in milimeters.
+
+
 ## A new joint structure for ProMice
 ProMice V1's joints $\alpha_2$, $\alpha_3$ and $\alpha_4$ have been redisigned. The shoulder universal joint ($\alpha_2$, $\alpha_3$) has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D hall-effect sensor inside the housing socket and a disc-type magnet inlaid in the ball. The last joint ($\alpha_3$ or elbow) is also instrumented with a hall sensor.
 
