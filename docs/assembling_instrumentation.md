@@ -16,6 +16,7 @@ We then used a flat screwdriver tip with the exact diameter of the ball bearings
 
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
+![Ball arm assembling](images/ball_arm_assembly_steps.png){ width=70% .center .on-glb}
 
 If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
 You must consider the printing support remnants, the will cause friction inside the socket and they might not let pieces to fit as as you can see in the image below. 
