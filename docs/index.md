@@ -8,7 +8,7 @@ colaborate to the project to develope a new version of ProMice.
 
 ## ProMice V1 Prosthesis
 
-![mouse_leg](images/Mouse_Leg.png){id="mouse_leg" width=70% .center }
+![ProMice V1](images/Mouse_Leg.png){id="ProMice_V1" width=70% .center }
 
 The prosthesis implements a motion-tracking system that relies on cameras and an infrared IR LED markers.
 A microcontroller triangulates the 3D position based on data from the cameras and performs position control.
@@ -32,7 +32,7 @@ extreme care is required to avoid touching the cameras and accidentally misplaci
 Promice V2 is the neu verson of ProMice developed by [Juan Carlos Martinez](https://www.esme.fr/recherche/chercheur/juan-carlos-martinez-rochas/) and [Alex Caldas](https://www.esme.fr/recherche/chercheur/alex-caldas/). It primarily addresses the limitations of camera-based motion tracking systems.
 This new version uses 3D Hall effect sensors embedded in the prosthesis joints to measure its position locally.
 
-![leg](images/ProMice_V2.png){ width=60% .center  .on-glb}
+![leg](images/ProMice_V2.png){id="ProMice_V2" width=60% .center  .on-glb}
 
 To adapt the sensors to the prosthesis, a ball-and-socket joint was designed. It moves in two degrees of freedom
 ($a_2$ and $a_3$) and features an internal ball bearing system to prevent rotation about its own axis, 
