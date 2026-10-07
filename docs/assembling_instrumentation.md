@@ -16,11 +16,14 @@ We then used a flat screwdriver tip with the exact diameter of the ball bearings
 
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
+
+If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
+You must consider the printing support remnants, the will cause friction inside the socket and they might not let pieces to fit as as you can see in the image below. 
 ![Ball arm remnants](images/ball_remnants.png){ width=70% .center .on-glb}
 
 
-If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
-If necessary, you can sand down the pieces to reduce friction with the socket, removing any remaining material from the support and  adjusting the shape. Use 800-grit sandpaper to degrade and a 100-grit to polish it down. 
+
+You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . Use 800-grit sandpaper to degrade and a 100-grit. You can use a scalpel to carefully scrape other surfaces as follows. 
 
 ![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
