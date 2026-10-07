@@ -1,7 +1,7 @@
 # 3D printing 
 
 
-![prothesis full](images/prosthesis_full.png){width=90% .center .on-glb}
+![prothesis full](images/prosthesis_full.png){width=100% .center .on-glb}
 
 ProMice is made up mostly of 3D-printed parts. Two very common prototyping techniques are used:
 PLA filament printing and resin printing. 
