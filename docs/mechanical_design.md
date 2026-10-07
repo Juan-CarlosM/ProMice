@@ -1,8 +1,8 @@
 ﻿[ProMice V1](index.md#ProMice_V1) control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. It turned out to be sensitive to small cameras displacements and touch perturbations. Therefore, they concluded that an integrated sensor system for joint position measuring was necesary. 
-In this section we presente the mechanical enhancements that gave place to [Promice V2](index.md#leg). The major modifications have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
+In this section we presente the mechanical enhancements that gave place to [Promice V2](index.md#ProMice_V2). The major modifications have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
 
 
-Since [Promice V2](index.md#leg) is an optimised version of [ProMice V1](index.md#ProMice_V1 that incorporaties instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of [ProMice V1](index.md#ProMice_V1). 
+Since [Promice V2](index.md#ProMice_V2) is an optimised version of [ProMice V1](index.md#ProMice_V1 that incorporaties instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of [ProMice V1](index.md#ProMice_V1). 
 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
