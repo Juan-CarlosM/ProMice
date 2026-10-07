@@ -30,10 +30,12 @@ A first bearing is inserted at the bottom of the ball, after which the T-shaft i
 
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
+video1
 <video controls width="800">
   <source src="videos/T_shaft_test_with_magnets.mp4" type="video/mp4">
 </video>
 
+Video2
 <video controls width="800">
   <source src="../videos/T_shaft_test_with_magnets.mp4" type="video/mp4">
 </video>
