@@ -1,7 +1,7 @@
 # 3D printing 
 
 
-![prothesis full](images/prosthesis_full.png){width=90% .center}
+![prothesis full](images/prosthesis_full.png){width=90% .center .on-glb}
 
 ProMice is made up mostly of 3D-printed parts. Two very common prototyping techniques are used:
 PLA filament printing and resin printing. 
@@ -41,7 +41,7 @@ The rear section has a recess for fitting the [Hall sensor](https://www.ti.com/p
 is aligned with the elbow's axis of rotation, as well as the grooves for inserting the
 elbow ball bearings. The two holes through which the actuating cables pass, are perpendicular to the joint's axis of rotation.
 
-![forearm labels](images/forearm_labels.png){width=60% .center}
+![forearm labels](images/forearm_labels.png){width=60% .center .on-glb}
 
 Regarding the print orientation, it can be placed vertically as depicted below, or horizontally. A vertical position improves the details
 of the capacitive sensor cavities, but the holes for the actuating cables could get clogged with resin reminings, so they should be re-drilled manually. 
@@ -67,7 +67,7 @@ This piece was made to be actuated in two degrees of freedom; therefore, the arm
 The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
 a [Hall sensor linearisation](sensor_linearization.md) phase. On the top of the ball, there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
 
-![ball arm labels](images/ball_arm_labels.png){width=70% .center}
+![ball arm labels](images/ball_arm_labels.png){width=70% .center .on-glb}
 
 
 Given that the geometry of the ball-arm contains both horizontal and vertical cylindrical cavities, the vertical priority must be given to those requiring greater printing precision.
@@ -97,7 +97,7 @@ connected to the ninth cylindrical cavity to allow the sensor cables to pass thr
 The second part of the socket is symmetrical to the lower part of the first, except that it does not house a bearing.
 Its function is to hold the ball in place together with part one.
 
-![socket labels](images/socket_labels.png){width=60% .center}
+![socket labels](images/socket_labels.png){width=60% .center .on-glb}
 
 When printing, we must avoid creating supports within the spherical cavity and to ensure that the cylindrical cavities remain free from deformation, therefore, printing orientation must be vertical.
 !!! printer-3d "Socket print orientation"
@@ -115,7 +115,7 @@ component that supports the front of the prosthesis; the following image shows t
 [Flex arm](https://www.amazon.fr/SMALLRIG-Articul%C3%A9-Friction-R%C3%A9glable-Moniteur/dp/B08B63WXWN/ref=sr_1_1?crid=36M1VY295M2MQ&dib=eyJ2IjoiMSJ9.KGiIRm_QPLJhUIhU1N34kqAYeY66ar65T2RxIAyC5f-uMuk5aTKTYd3H7nni7IM6WjRBQcNbQ9WdEJuWjIoZFVrEm2gYyOMpcHyqmOA4SWdRUADsrTYoYQMwC7yEsQ6xcVR144ers6Tz1gCvJFgjxIjzeC-KBF_7Zjg-uiVb4PxhTXkaV829QS1jBANfmplZqVrv-mAeqohvgv2w3wQRbfktaMZ0KMstzPFnAle9ixHhLMXd_0YWc8hwDBu47y6c5cgRjOTXP1nDM0HJygyaWxgcuB6_G2oyH0hdsHEWegw.Qr0gYVoHgxusC7XTGdkxMi8Gfpx3oLuNlquboS8tCac&dib_tag=se&keywords=bras%2Bmagique&qid=1786965479&sprefix=braz%2Bma%2Caps%2C147&sr=8-1&th=1).
 The two remaining pieces are complementary parts designed to hold the bearings and to hold the Bowden cable.
  
-![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center}
+![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center .on-glb}
 
 To print the two biggest pieces, give them an inclination of 45 degrees as shown below. 
 
@@ -128,7 +128,7 @@ To print the two biggest pieces, give them an inclination of 45 degrees as shown
 
 This is a set of three components that transmit $z$-axis rotation from the shoulder to the rest of the prosthesis. The top component is inserted into the pulley and has a recess for a magnet to be situated directly beneath an encoder used to measure rotation. The pulley secures the actuating cables as shown by the red line in the figure below. The bottom component forms the connection between the pulley and the socket.
 
-![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center}
+![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center .on-glb}
 
 !!! printer-3d "Shoulder rotary pieces print orientation"
     ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=100% .center} 
@@ -164,7 +164,7 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
 
 ![Motors support](images/motor_support.png){width=70% .center}
 
-![Teensy support](images/PCB_teensy_housing.png)
+![Teensy support](images/PCB_teensy_housing.png){width=80% .center .on-glb}
 
 
 !!! tip
