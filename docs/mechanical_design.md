@@ -2,7 +2,7 @@
 In this section we presente the mechanical enhancements that gave place to [Promice V2](index.md#ProMice_V2). The major modifications have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
 
 
-Since [Promice V2](index.md#ProMice_V2) is an optimised version of [ProMice V1](index.md#ProMice_V1 that incorporaties instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of [ProMice V1](index.md#ProMice_V1). 
+Since [Promice V2](index.md#ProMice_V2) is an optimised version of [ProMice V1](index.md#ProMice_V1) that incorporaties instrumented joints, the modifications have to preserve its dimensions as closely as possible to those of [ProMice V1](index.md#ProMice_V1). 
 
 ![Old ProMice version size](images/old_promice_size.png){width=70% .center}
 
