@@ -8,8 +8,8 @@ Since [Promice V2](index.md#ProMice_V2) is an optimised version of [ProMice V1](
 
 
 ## Shoulder
-The shoulder of [ProMice V1](index.md#ProMice_V1) is a 3DOF joint from which only $\alpha_1$ is measured.
-$\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
+The shoulder of [ProMice V1](index.md#ProMice_V1) is a 3DOF joint from which only $\alpha_1$ is measured. Degrees of freedom
+$\alpha_2$ and $\alpha_3$ are coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center .on-glb}
 
