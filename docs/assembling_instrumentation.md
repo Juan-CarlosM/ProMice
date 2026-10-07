@@ -16,6 +16,8 @@ We then used a flat screwdriver tip with the exact diameter of the ball bearings
 
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
+A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
+
 ![Ball arm assembling](images/ball_assem_steps.png){ width=70% .center .on-glb}
 
 If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
@@ -28,19 +30,10 @@ You might have to sand down the pieces to reduce friction with the socket, to re
 
 ![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
-A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
-
-![ball arm assembly steps](images/ball_arm_assembly_steps.png){width=100% .center .on-glb}
 
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
-video1
 
-
-Video2
-<video controls width="800">
-  <source src="/videos/T_shaft_test_with_magnets.mp4" type="video/mp4">
-</video>
 ### Motors suport
 
 To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
