@@ -26,7 +26,7 @@ You must consider the printing support remnants too. They will cause friction in
 
 
 
-You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . Use 800-grit sandpaper to degrade and a 100-grit. You can use a scalpel to carefully scrape other surfaces as follows. 
+You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . Use 800-grit sandpaper to degrade and a 100-grit to polish. You can use a scalpel to carefully scrape other surfaces if needed.
 
 ![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
