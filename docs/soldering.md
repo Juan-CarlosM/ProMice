@@ -10,7 +10,7 @@ T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To 
     
 ![Soldering materials](images/soldering_materials.jpeg){width=50% .center}
 
-!!! tip
+!!! warning "Soldering iron tip"
     The phosforic acid will abrade the soldering iron tip after several uses. We recomend that you use an old tip for this specific task and that you use a different tip for Electronic components soldering. 
     ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=30% .center .on-glb}
     
