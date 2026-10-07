@@ -30,7 +30,7 @@ A first bearing is inserted at the bottom of the ball, after which the T-shaft i
 
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
-
+<video src="../videos/T_shaft_test_with_magnets.mp4" controls width="800"></video>
 ### Motors suport
 
 To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
