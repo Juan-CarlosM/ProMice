@@ -19,7 +19,7 @@ You must be very careful with craving the piece to ensure that the small bearing
 ![Ball arm assembling](images/ball_assem_steps.png){ width=70% .center .on-glb}
 
 If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
-You must consider the printing support remnants, the will cause friction inside the socket and they might not let pieces to fit as as you can see in the image below. 
+You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
 ![Ball arm remnants](images/ball_remnants.png){ width=70% .center .on-glb}
 
 
