@@ -16,13 +16,13 @@ We then used a flat screwdriver tip with the exact diameter of the ball bearings
 
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
+![Ball arm remnants](images/ball_remnants.png){ width=70% .center .on-glb}
 
---------insert image of ball bearing insert test
 
 If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
 If necessary, you can sand down the pieces to reduce friction with the socket, removing any remaining material from the support and  adjusting the shape. Use 800-grit sandpaper to degrade and a 100-grit to polish it down. 
 
-![Ball arm sanding](images/ball_arm_sanding.png){ width=70% .center .on-glb}
+![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
 A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
 
