@@ -10,7 +10,7 @@ To carve the inside of the ball, we used the carving bit shown in the following 
 ![YLS ball bearings cav3](images/ball_arm_craving.png){ width=70% .center .on-glb}.
 
 
-We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You must rotate and apply pressure to the inside to shape it better. 
+We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You mu have to rotate and apply pressure to the inside to shape it better. 
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
@@ -20,7 +20,7 @@ A first bearing is inserted at the bottom of the ball, after which the T-shaft i
 
 ![Ball arm assembling](images/ball_assem_steps.png){ width=70% .center .on-glb}
 
-If the spherical surface of any of the parts has become deformed, you'll probably have to reshape it by hand.
+If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
 ![Ball arm remnants](images/ball_remnants.png){ width=70% .center .on-glb}
 
