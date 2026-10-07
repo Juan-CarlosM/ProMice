@@ -26,7 +26,7 @@ Thus, we adopted the 3D hall-effect sensor as device to instrument the shoulder 
 
 !!! info inline end 
     Hall sensor dimensions are in milimeters.
-![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
+![Hall sensor size](images/hall_sensor_size.png){width=750% .center .on-glb}
 
 
 ## A new joint structure for ProMice
