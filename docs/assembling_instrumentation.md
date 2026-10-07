@@ -35,7 +35,7 @@ video1
 
 Video2
 <video controls width="800">
-  <source src="../videos/T_shaft_test_with_magnets.mp4" type="video/mp4">
+  <source src="/videos/T_shaft_test_with_magnets.mp4" type="video/mp4">
 </video>
 ### Motors suport
 
