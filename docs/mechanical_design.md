@@ -8,7 +8,7 @@ Since [Promice V2](index.md#ProMice_V2) is an optimised version of [ProMice V1](
 
 
 ## Shoulder
-The shoulder of [ProMice V1](index.md#mouse_leg) is a 3DOF joint from which only $\alpha_1$ is measured.
+The shoulder of [ProMice V1](index.md#ProMice_V1) is a 3DOF joint from which only $\alpha_1$ is measured.
 $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint and they don't integrate sensors for joint position measuring. 
  
 ![Promice universal joint](images/Promice_V1_joints.png){ width=80% .center .on-glb}
@@ -16,19 +16,21 @@ $\alpha_2$ and $\alpha_3$ are degrees of freedom coupled by a universal joint an
 From the typical encoding techniques, to instrument the joints would mean to instal a sensor on each rotation axis, like a potentiometer, an optical encoder or a hall-effect sensor for example.
 However, ProMice V1 joints design was not intended to host sensors. 
 
-Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. Working with tiny robotic systems always falls into dimension constraints. Hence, space for sensors within those dimension constraints was a major limitation. Since 3D hall-effect sensors make it possible to estimate the 3D position of a magnet facing of the sensor, they suited our instrumentation needs. 
+Among the different encoding devices, 3D hall-effect sensors stand out. They measure the $x$, $y$ and $z$ components of the magnetic fields. 
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
- 
 
-![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
+Since working with tiny robotic systems always falls into dimension constraints, space for sensors was a major limitation. 
+3D hall-effect sensors make it possible to estimate the 3D position of a magnet facing of the sensor, wich means we can obtain the its orientation. 
+Thus, we adopted the 3D hall-effect sensor as device to instrument the shoulder joint. The idea was to insert a magnet and use the orientation to indicate the joint positions $\alpha_2$ and $\alpha_3$. 
 
 !!! info inline end 
     Hall sensor dimensions are in milimeters.
+![Hall sensor size](images/hall_sensor_size.png){width=70% .center}
 
 
 ## A new joint structure for ProMice
-ProMice V1's joints $\alpha_2$, $\alpha_3$ and $\alpha_4$ have been redisigned. The shoulder universal joint ($\alpha_2$, $\alpha_3$) has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates a 3D hall-effect sensor inside the housing socket and a disc-type magnet inlaid in the ball. The last joint ($\alpha_3$ or elbow) is also instrumented with a hall sensor.
+Because all joints must be instrumented, not only $\alpha_2$ and $\alpha_3$ but also $\alpha_4$ had to be redesigned. The shoulder universal joint ($\alpha_2$, $\alpha_3$) has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates the 3D hall-effect sensor inside the housing socket and a disc-type magnet inlaid in the ball. The last joint ($\alpha_3$ or elbow) is also instrumented with a hall sensor.
 
 
 ![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center .on-glb}
