@@ -37,7 +37,7 @@ If you're sure the minibearing is seated all the way to the bottom, take a 1-mil
 
 If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
 
-![Ball lid craving](images/ball_lid_craving_bit.png){width=90% .center .on-glb}
+![Ball lid craving](images/ball_lid_craving_bit.png){width=50% .center .on-glb}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
