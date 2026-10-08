@@ -51,7 +51,7 @@ of the piece and repeat the process on the other side.
 
 The result should look like this on both sides of the T-shaft: 
 
-![T-shaft finish](images/mold_t_shaft_soldered.png){width=40% .center .on-glb}
+![T-shaft finish](images/mold_t_shaft_soldered.png){id="T_shaft_finish" width=40% .center .on-glb}
 
 It is important that the joint is uniform as in the image and that you used enough tin to make a strong union. 
 
