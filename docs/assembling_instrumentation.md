@@ -27,13 +27,12 @@ When the inside of the ball is ready we can install the [Yaw-lock system](mechan
  - 5 Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
  - 6 Put on the lid ball. Verify that the T-shaft movement is not stiff.
 
-
-
 ![Ball arm assembling](images/ball_assem_steps.png){ width=70% .center .on-glb}
 
 If the teshaft moves stiffly, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
 If you're sure the minibearing is seated all the way to the bottom, take a 1-millimeter drill bit and re-drill the cavity shown in the following image.
 
+![Ball inside](images/ball_inside_drill.png){ width=70% .center}
 
 If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
 
