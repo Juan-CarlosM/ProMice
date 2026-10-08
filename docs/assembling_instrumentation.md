@@ -28,16 +28,16 @@ When the inside of the ball is ready we can install the [Yaw-lock system](mechan
  - 5 Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
  - 6 Put on the lid ball. Verify that the T-shaft movement is not stiff.
 
-![Ball arm assembling](images/ball_assem_steps.png){ width=650% .center .on-glb}
+![Ball arm assembling](images/ball_assem_steps.png){ width=50% .center .on-glb}
 
 If the teshaft moves stiffly, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
 If you're sure the minibearing is seated all the way to the bottom, take a 1-millimeter drill bit and re-drill the cavity shown in the following image.
 
-![Ball inside](images/ball_inside_drill.png){ width=50% .center}
+![Ball inside](images/ball_inside_drill.png){ width=30% .center}
 
 If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
 
-![Ball lid craving](images/ball_lid_craving_bit.png){width=40% .center .on-glb}
+![Ball lid craving](images/ball_lid_craving_bit.png){width=30% .center .on-glb}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 
@@ -62,9 +62,7 @@ After this modification, the two parts could be assembled, but they still did no
 To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
 ![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
 
-You can now proceed to assemble the socket and the ball-arm to form the ball joint,  do not forget to inlay the magnet on the ball.
-
-To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
+You can now proceed to assemble the socket and the ball-arm to form the ball joint and test the stifness of the joint. To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
 
 
