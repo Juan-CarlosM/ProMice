@@ -15,7 +15,7 @@ a soft response to friction and a detailed finish.
 !!! note
     The printer settings for layer height are the default ones.
 
-![layer thickness](images/layers_thickness.png){ width=70% .center }
+![layer thickness](images/layers_thickness.png){ width=70% .center}
 
 ![grey resin](images/grey_resin.png){ width=50% .center }
 
