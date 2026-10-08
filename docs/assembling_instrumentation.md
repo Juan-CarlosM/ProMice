@@ -60,27 +60,25 @@ To know if your joint will work well, it should be possible to move the ball joi
 
 
 
-### Assembling of the elbow joint 
-## Elbow joint ball bearings
-El resultado de soldar los pines en los mini rodamientos requiere modificar un poco las cavidades en el antebrazo. 
-incluso si se puede hacer esta modificacion en el modelo 3D es muy posible que a esta escala la impresion no sea 
-lo suficintemente precisa. Buscamos raspar la pieza intentando hacer la forma de la soldadura de estano mostrada 
-en la siguiente figura
+## Assembling of the elbow joint 
+### Elbow joint ball bearings
+To ensure the mini bearings with pins fit properly, the recesses in the forearm need to be modified slightly.
+Even if this modification can be made in the 3D model, it’s very likely that the print won’t be precise enough at this scale. 
+We’ll scrape the part, trying to create the shape of the solder joint shown in the following figure.
 
-![Elbow_ball_bearings](images/elbow_ball_bearings.png){id="elbow_ball_bearings" width=70% .center }
 
-Las cavidades de los mini rodamientos han sido repasadas con herramienta giratoria y uan punta de tallado.
-Los dos agujeros para los pines han sido repasados con una broca de 1mm.
+The following image shows how the recesses for the mini bearings have been reworked with a rotary tool and a carving bit.
+The two holes for the pins have been reamed with a 1mm drill bit.
 
 ![forearm craved](images/forearm_craved.png){ width=70% .center }
 
-El poqueno agujero en la cavidad del sensor hall sirve para comprobar que el eje esta alineado si preentaos nuestro t-shaft para la articulacion 
-del codo, debemos obtener algo como en la siguiente ficura. 
+The small hole in the Hall sensor cavity is used to check that the shaft is aligned. If you look at our T-shaft for the elbow joint,
+you should see something like what is shown in the following figure.
 
 ![Elbow joint axis](images/elbow_joint_axis.png){ width=60% .center }
 Once the shaft is properly aligned, the magnet can be glued onto the axis of the T-shape. We use a larger magnet to press the small magnet against it, making it easier to position it correctly. The rounded side of the magnet is glued against the axis of the T-shape.
 
-
+![Elbow_ball_bearings](images/elbow_ball_bearings.png){id="elbow_ball_bearings" width=70% .center }
 
 ### Instrumentation
 For our prosthesis, we need two sensors to track the movement of the two joints and thus determine the position of the limb at any given time.
