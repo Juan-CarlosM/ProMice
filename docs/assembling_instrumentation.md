@@ -10,7 +10,7 @@ To carve the inside of the ball, we used the carving bit shown in the following 
 ![YLS ball bearings cav3](images/ball_arm_craving.png){ width=70% .center .on-glb}.
 
 
-We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You mu have to rotate and apply pressure to the inside to shape it better. 
+We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You have to rotate and apply pressure to the inside to shape it better. 
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
