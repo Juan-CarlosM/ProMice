@@ -29,6 +29,6 @@ jobs:
           pip install mkdocs-table-reader-plugin
           pip install pymdown-extensions
           pip install mkdocs-glightbox
-
+          pip install mkdocs-video
       - name: Build MkDocs
         run: mkdocs build
