@@ -62,7 +62,7 @@ After this modification, the two parts could be assembled, but they still did no
 To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
 ![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
 
-You can now proceed to assemble the socket and the ball-arm to form the ball joint do not forget to inlay the magnet on the ball.
+You can now proceed to assemble the socket and the ball-arm to form the ball joint,  do not forget to inlay the magnet on the ball.
 
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
@@ -77,11 +77,11 @@ We’ll scrape the part, trying to create the shape of the solder joint shown in
 
 The following image shows how the recesses for the mini bearings have been reworked with a rotary tool and a carving bit.
 The two holes for the pins have been reamed with a 1mm drill bit.
-
-![forearm craved](images/forearm_craved.png){ width=70% .center }
-
-The small hole in the Hall sensor cavity is used to check that the shaft is aligned. If you look at our T-shaft for the elbow joint,
-you should see something like what is shown in the following figure.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ![forearm craved](images/forearm_craved.png){ width=70% .center }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              The small hole in the Hall sensor cavity is used to check that the shaft is aligned. If you look at our T-shaft for the elbow joint,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              you should see something like what is shown in the following figure.
 
 ![Elbow joint axis](images/elbow_joint_axis.png){ width=60% .center }
 Once the shaft is properly aligned, the magnet can be glued onto the axis of the T-shape. We use a larger magnet to press the small magnet against it, making it easier to position it correctly. The rounded side of the magnet is glued against the axis of the T-shape.
@@ -94,13 +94,13 @@ For our prosthesis, we need two sensors to track the movement of the two joints 
 The sensor's [datasheet](https://www.ti.com/lit/ds/symlink/tmag5273.pdf?ts=1777974658121&ref_url=https%253A%252F%252Fwww.ti.com%252Fsitesearch%252Fde-de%252Fdocs%252Funiversalsearch.tsp%253FlangPref%253Dde-DE%2526nr%253D8%2526searchTerm%253DTMAG5273A1QDBVR) provides the pinout of the sensor:
 ![sensor_PIN](images/sensor_pin.png){width=50% .center}
 
-he colors associated with each PIN correspond to the color of the cable soldered to it. The two ground PINs were soldered together onto a single cable.
+The colors associated with each PIN correspond to the color of the cable soldered to it. The two ground PINs were soldered together onto a single cable.
  
  ![sensor_soldering_setup](images/sensor_soldering_setup.png){width=140% .center .on-glb}
 
 The cables must not protrude beyond the surface of the sensor, otherwise the sensor will not fit into its designated slot within the socket. For this reason, we solder the cables to the inner side of the PINs.
 
-![sensor_soldering](images/sensor_soldering.png){width=80% .center}
+![sensor_soldering](images/sensor_soldering.png){width=80% .center .on-glb}
 ![sensor_in_prothesis](images/sensor_in_prothesis.png){width=80% .center .on-glb}
 
 ### Pulley adjustement
