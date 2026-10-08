@@ -80,7 +80,7 @@ del codo, debemos obtener algo como en la siguiente ficura.
 
 ![Elbow joint axis](images/elbow_joint_axis.png){ width=60% .center }
 Once the shaft is properly aligned, the magnet can be glued onto the axis of the T-shape. We use a larger magnet to press the small magnet against it, making it easier to position it correctly. The rounded side of the magnet is glued against the axis of the T-shape.
-![Elbow joint magnet](images/elbow_joint_magnet.png){ width=90% .center }
+
 
 
 ### Instrumentation
