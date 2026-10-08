@@ -173,7 +173,7 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
     The infill density should be at least 30% to ensure good strength.
     
 !!! printer-3d "Motors rack print orientation"
-    ![motors suport](images/motors_suport_printing.png){width=70% .center}
+    ![motors suport](images/motors_suport_printing.png){width=70% .center .on-glb}
 
 !!! printer-3d "PCB housing print orientation" 
     ![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
