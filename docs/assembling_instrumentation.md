@@ -6,7 +6,8 @@ The first element of the prosthesis you have to assemble is the ball joint arm.
 
 As described in the [3D printing](3D_printing.md) section, although resin printing is a great ally for small, highly detailed prototypes, it does have its limitations. The chamber of the [Yaw-lock system](mechanical_design.md#yaw_lock_system) may require small, detailed adjustments. If the cavity for the mini bearings suffered deformation, the interior will need to be carefully carved to restore its cylindrical shape.
 
-To carve the inside of the ball, we used the carving bit shown in the following image.
+To carve the inside of the ball, we used the cylindrical carving bit shown in the following image.
+
 ![YLS ball bearings cav3](images/ball_arm_craving.png){ width=70% .center .on-glb}.
 
 
@@ -27,7 +28,7 @@ When the inside of the ball is ready we can install the [Yaw-lock system](mechan
  - 5 Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
  - 6 Put on the lid ball. Verify that the T-shaft movement is not stiff.
 
-![Ball arm assembling](images/ball_assem_steps.png){ width=50% .center .on-glb}
+![Ball arm assembling](images/ball_assem_steps.png){ width=650% .center .on-glb}
 
 If the teshaft moves stiffly, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
 If you're sure the minibearing is seated all the way to the bottom, take a 1-millimeter drill bit and re-drill the cavity shown in the following image.
@@ -36,25 +37,32 @@ If you're sure the minibearing is seated all the way to the bottom, take a 1-mil
 
 If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
 
-![Ball lid craving](images/ball_lid_craving_bit.png){width=50% .center .on-glb}
+![Ball lid craving](images/ball_lid_craving_bit.png){width=40% .center .on-glb}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
-You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
-![Ball arm remnants](images/ball_remnants.png){ width=70% .center .on-glb}
 
 
 
-You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . Use 800-grit sandpaper to degrade and a 100-grit to polish. You can use a scalpel to carefully scrape other surfaces if needed.
+![Ball arm remnants](images/ball_remnants.png){ width=60% .center .on-glb}
+
+!!! tip 
+    You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
+
+You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . 
+Use 800-grit sandpaper to degrade and a 100-grit to polish. You can use a scalpel to carefully scrape other surfaces if needed.
 
 ![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
 
 ## Assembling of the socket 
-To ensure that the two parts of the socket can be securely assembled, we carefully scraped the two mounting features with a scalpel to make them thinner, as they did not fit into their designated holes.
-After this modification, the two parts could be assembled, but they still did not remain securely in the assembled position. We therefore had to remove a small protrusion at the bottom of each hole using a cylindrical rotary cutter (avec le dremel).
-![socket imperfections](images/socket_imperfections.png){ width=60% .center } 
+To ensure that the two parts of the socket can be securely assembled, we had to carefully scrap the two mounting features with a scalpel to make them thinner, as they did not fit into their designated holes.
+After this modification, the two parts could be assembled, but they still did not remain securely in the assembled position. We therefore had to remove a small protrusion at the bottom of each hole using a cylindrical  carving bit.
+![socket imperfections](images/socket_imperfections.png){ width=60% .center .on-glb } 
+
 To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
 ![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
+
+You can now proceed to assemble the socket and the ball-arm to form the ball joint do not forget to inlay the magnet on the ball.
 
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
