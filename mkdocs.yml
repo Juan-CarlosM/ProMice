@@ -57,6 +57,7 @@ nav:
   - Codes: 
      - Arduino examples: codes.md
 plugins:
+  - mkdocs-video
   - search
   - table-reader
   - glightbox:
