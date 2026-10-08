@@ -31,14 +31,16 @@ You might have to sand down the pieces to reduce friction with the socket, to re
 ![Ball arm sanding](images/ball_clean.png){ width=70% .center .on-glb}
 
 
+## Assembling of the socket 
+To ensure that the two parts of the socket can be securely assembled, we carefully scraped the two mounting features with a scalpel to make them thinner, as they did not fit into their designated holes.
+After this modification, the two parts could be assembled, but they still did not remain securely in the assembled position. We therefore had to remove a small protrusion at the bottom of each hole using a cylindrical rotary cutter (avec le dremel).
+![socket imperfections](images/socket_imperfections.png){ width=60% .center } 
+To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
+![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
+
 To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
 
 
-### Motors suport
-
-To make the prosthesis easier to handle, we added a support for the board on which the Teensy is mounted. This support is attached to the motor suport and helps prevent it from sagging..</p>
-
-![suports](images/suports.png){width=140% .center}
 
 ### Assembling of the elbow joint 
 ## Elbow joint ball bearings
@@ -60,12 +62,7 @@ del codo, debemos obtener algo como en la siguiente ficura.
 ![Elbow joint axis](images/elbow_joint_axis.png){ width=60% .center }
 Once the shaft is properly aligned, the magnet can be glued onto the axis of the T-shape. We use a larger magnet to press the small magnet against it, making it easier to position it correctly. The rounded side of the magnet is glued against the axis of the T-shape.
 ![Elbow joint magnet](images/elbow_joint_magnet.png){ width=90% .center }
-### Assembling of the socket 
-To ensure that the two parts of the socket can be securely assembled, we carefully scraped the two mounting features with a scalpel to make them thinner, as they did not fit into their designated holes.
-After this modification, the two parts could be assembled, but they still did not remain securely in the assembled position. We therefore had to remove a small protrusion at the bottom of each hole using a cylindrical rotary cutter (avec le dremel).
-![socket imperfections](images/socket_imperfections.png){ width=60% .center } 
-To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
-![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
+
 
 ### Instrumentation
 For our prosthesis, we need two sensors to track the movement of the two joints and thus determine the position of the limb at any given time.
