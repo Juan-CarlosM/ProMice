@@ -10,7 +10,7 @@ To carve the inside of the ball, we used the carving bit shown in the following 
 ![YLS ball bearings cav3](images/ball_arm_craving.png){ width=70% .center .on-glb}.
 
 
-We then used a flat screwdriver tip with the exact diameter of the ball bearings (3 mm). You have to rotate and apply pressure to the inside to shape it better. 
+We then used a screwdriver  flat-tip with the exact diameter of the ball bearings (3 mm). You have to rotate and apply pressure to the inside to shape it better. 
 
 ![YLS ball bearings cav3](images/YLS_ball_bearings_cav23.png){width=80% .center}
 
@@ -18,7 +18,26 @@ You must be very careful with craving the piece to ensure that the small bearing
 
 A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
 
+When the inside of the ball is ready we can install the [Yaw-lock system](mechanical_design.md#yaw_lock_system). 
+
+ - 1 First, insert a mini bearing. Make sure it doesn't go crooked into the cavity.
+ - 2 Using the 3 mm  screwdriver flat-tip, gently push the bearing until it touches the bottom of the cavity. Push evenly so it doesn't get crooked.
+ - 3 Now take your [T-shaft](soldering.md#T_shaft_finish) and insert the shorter segment into the embedded mini bearing.
+ - 4 Insert the second mini bearing by fitting it onto the ball and letting the T-shaft segment pass through it.
+ - 5 Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
+ - 6 Put on the lid ball. Verify that the T-shaft movement is not stiff.
+
+
+
 ![Ball arm assembling](images/ball_assem_steps.png){ width=70% .center .on-glb}
+
+If the teshaft moves stiffly, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
+If you're sure the minibearing is seated all the way to the bottom, take a 1-millimeter drill bit and re-drill the cavity shown in the following image.
+
+
+If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
+
+![Ball lid craving](images/ball_lid_craving_bit.png){width=90% .center .on-glb}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
