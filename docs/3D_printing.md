@@ -65,7 +65,7 @@ The rest is a sort of lid to complete the sphere.
 
 This piece was made to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. 
 The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
-a [Hall sensor linearisation](sensor_linearization.md) phase. On the top of the ball, there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
+a [Hall sensor linearisation](encoders_linearization.md) phase. On the top of the ball, there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
 
 ![ball arm labels](images/ball_arm_labels.png){width=70% .center .on-glb}
 
