@@ -40,7 +40,7 @@ If it's still too stiff after that, go over the recesses of the ball lid with th
 ![Ball lid craving](images/ball_lid_craving_bit.png){width=30% .center .on-glb}
 
 
-![type:video](videos/T_shaft_test_with_magnets.mp4){: style='width: 50%'}
+![type:video](video/T_shaft_test_with_magnets.mp4){: style='width: 50%'}
 
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
