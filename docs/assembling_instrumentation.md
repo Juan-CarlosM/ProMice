@@ -1,5 +1,7 @@
 # Assembling and instrumentation
+
 ## Assembling the ball-arm 
+
 The first element of the prosthesis you have to assemble is the ball joint arm. 
 
 ![ball arm assembly](images/ball_arm_assembly.png){width=40% .center .on-glb}
@@ -17,16 +19,16 @@ We then used a screwdriver  flat-tip with the exact diameter of the ball bearing
 
 You must be very careful with craving the piece to ensure that the small bearings can be inserted correctly and fit snugly. 
 
-A first bearing is inserted at the bottom of the ball, after which the T-shaft is inserted inside it. A bearing is then placed on the other side of the T-shaft, and the assembly is closed with the sphere lid. Finally, the magnet is inserted into its designated slot, making sure that it does not protrude from the surface to prevent potential wear issues over time.
-
 When the inside of the ball is ready we can install the [Yaw-lock system](mechanical_design.md#yaw_lock_system). 
+Since the mechanism should allow movement with low internal friction, the pieces have to be well aligned and the shaft should move up and down freely. 
+Follo these steps to assemble your ball arm. 
 
- - 1 First, insert a mini bearing. Make sure it doesn't go crooked into the cavity.
- - 2 Using the 3 mm  screwdriver flat-tip, gently push the bearing until it touches the bottom of the cavity. Push evenly so it doesn't get crooked.
- - 3 Now take your [T-shaft](soldering.md#T_shaft_finish) and insert the shorter segment into the embedded mini bearing.
- - 4 Insert the second mini bearing by fitting it onto the ball and letting the T-shaft segment pass through it.
- - 5 Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
- - 6 Put on the lid ball. Verify that the T-shaft movement is not stiff.
+  1. First, insert a mini bearing. Make sure it doesn't go crooked into the cavity.
+  2. Using the 3 mm  screwdriver flat-tip, gently push the bearing until it touches the bottom of the cavity. Push evenly so it doesn't get crooked.
+  3. Now take your [T-shaft](soldering.md#T_shaft_finish) and insert the shorter segment into the embedded mini bearing.
+  4. Insert the second mini bearing by fitting it onto the ball and letting the T-shaft segment pass through it.
+  5. Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
+  6. Put on the lid ball. Verify that the T-shaft movement is not stiff.
 
 ![Ball arm assembling](images/ball_assem_steps.png){ width=50% .center .on-glb}
 
@@ -39,13 +41,10 @@ If it's still too stiff after that, go over the recesses of the ball lid with th
 
 ![Ball lid craving](images/ball_lid_craving_bit.png){width=30% .center .on-glb}
 
-
+If you want to test stifness in a beter way you can use agnest to move the shaft, if the shaft follows the magnet like in the video, your [Yaw-lock system](mechanical_design.md#yaw_lock_system) will work perfectly 
 ![type:video](video/T_shaft_test_with_magnets.mp4){: style='width: 50%'}
 
-
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
-
-
 
 ![Ball arm remnants](images/ball_remnants.png){ width=60% .center .on-glb}
 
@@ -67,6 +66,7 @@ To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole
 ![socket bearing cavity](images/socket_bearing_cavity.png){ width=100% .center }
 
 You can now proceed to assemble the socket and the ball-arm to form the ball joint and test the stifness of the joint. To know if your joint will work well, it should be possible to move the ball joint in all directions with just one finger, without using much force. 
+
 
 
 ## Assembling of the elbow joint 
