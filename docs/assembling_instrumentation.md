@@ -21,7 +21,7 @@ You must be very careful with craving the piece to ensure that the small bearing
 
 When the inside of the ball is ready we can install the [Yaw-lock system](mechanical_design.md#yaw_lock_system). 
 Since the mechanism should allow movement with low internal friction, the pieces have to be well aligned and the shaft should move up and down freely. 
-Follo these steps to assemble your ball arm. 
+Follow these steps to assemble your ball arm. 
 
   1. First, insert a mini bearing. Make sure it doesn't go crooked into the cavity.
   2. Using the 3 mm  screwdriver flat-tip, gently push the bearing until it touches the bottom of the cavity. Push evenly so it doesn't get crooked.
@@ -32,16 +32,16 @@ Follo these steps to assemble your ball arm.
 
 ![Ball arm assembling](images/ball_assem_steps.png){ width=50% .center .on-glb}
 
-If the teshaft moves stiffly, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
-If you're sure the minibearing is seated all the way to the bottom, take a 1-millimeter drill bit and re-drill the cavity shown in the following image.
+If the T-shaft moves stiffly after assembling, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
+If you're sure the minibearing is seated all the way to the bottom and it feels still stiff, take a 1-millimeter drill bit and re-drill the cavity shown in the following image (without going through the ball).
 
 ![Ball inside](images/ball_inside_drill.png){ width=30% .center}
 
-If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below.
+If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below. Scrape the bearing recesse and ream the two little holes.
 
 ![Ball lid craving](images/ball_lid_craving_bit.png){width=30% .center .on-glb}
 
-If you want to test stifness in a beter way you can use agnest to move the shaft, if the shaft follows the magnet like in the video, your [Yaw-lock system](mechanical_design.md#yaw_lock_system) will work perfectly 
+A final stiffness test can be to move shaft with magnet like in the video. If your assembling passes this test, your [Yaw-lock system](mechanical_design.md#yaw_lock_system) will work perfectly 
 ![type:video](video/T_shaft_test_with_magnets.mp4){: style='width: 50%'}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
