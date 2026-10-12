@@ -14,6 +14,7 @@
       delay(1000);             // wait for a second
     }
     ```
+    
 === "Exemple - Clignotement controlé par un potentiomètre"
     ``` c
     int capteurPin = A0;   // select the input pin for the potentiometer
@@ -39,7 +40,7 @@
     ```
 
 
-
+Buttons
     
 === "Buton_led_pull_down"
     ``` c
@@ -69,6 +70,7 @@
       lastButtonState = buttonState;
     }
     ```
+    
 === "Buton_led_pull_up"
 ``` c
 const int LED_PIN = 12;
