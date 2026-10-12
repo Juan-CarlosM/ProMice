@@ -15,7 +15,6 @@
     }
     ```
 === "Exemple - Clignotement controlé par un potentiomètre"
-
     ``` c
     int capteurPin = A0;   // select the input pin for the potentiometer
     int ledPin = 13;      // select the pin for the LED
@@ -39,7 +38,11 @@
     }
     ```
 
-``` c title="LED_bouton"
+
+
+    
+=== "Buton_led_pull_down"
+``` c
 const int LED_PIN = 12;
 const int BUTTON_PIN = 2;
 
@@ -63,7 +66,39 @@ void loop() {
 
     delay(50); 
   }
+  lastButtonState = buttonState;
+}
+```
+=== "Buton_led_pull_up"
+```
+const int LED_PIN = 12;
+const int BUTTON_PIN = 2;
+int count = 0;
+bool ledState = false;
+bool lastButtonState = HIGH;
 
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  digitalWrite(LED_PIN, LOW);
+  Serial.begin(9600);
+}
+
+void loop() {
+  bool buttonState = digitalRead(BUTTON_PIN);
+
+
+  if (lastButtonState == HIGH && buttonState == LOW) {
+    ledState = !ledState;
+    digitalWrite(LED_PIN, ledState);
+    count++;
+    if (count > 3) {
+      count = 0;
+    }
+    delay(50); 
+  }
+  Serial.println(count);
+  //Serial.println(buttonState);
   lastButtonState = buttonState;
 }
 ```
