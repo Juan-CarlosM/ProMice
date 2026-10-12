@@ -15,62 +15,62 @@
     }
     ```
 === "Exemple - Clignotement controlé par un potentiomètre"
-    ``` c
-    int capteurPin = A0;   // select the input pin for the potentiometer
-    int ledPin = 13;      // select the pin for the LED
-    int capteurVal = 0;
-    
-    void setup() {
-      pinMode(ledPin, OUTPUT);
-    }
+``` c
+int capteurPin = A0;   // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int capteurVal = 0;
 
-    void loop() {
-      capteurVal = analogRead(capteurPin);
-      cl_LED(capteurVal);
-    }
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
 
-    void cl_LED(int attente)
-    {
-      digitalWrite(ledPin, HIGH);
-      delay(attente);
-      digitalWrite(ledPin, LOW);
-      delay(attente);
-    }
-    ```
+void loop() {
+  capteurVal = analogRead(capteurPin);
+  cl_LED(capteurVal);
+}
+
+void cl_LED(int attente)
+{
+  digitalWrite(ledPin, HIGH);
+  delay(attente);
+  digitalWrite(ledPin, LOW);
+  delay(attente);
+}
+```
 
 
 
     
 === "Buton_led_pull_down"
-``` c
-const int LED_PIN = 12;
-const int BUTTON_PIN = 2;
-
-bool ledState = false;
-bool lastButtonState = LOW;
-
-void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUTTON_PIN, INPUT);
-
-  digitalWrite(LED_PIN, LOW);
-}
-
-void loop() {
-  bool buttonState = digitalRead(BUTTON_PIN);
-
-  
-  if (lastButtonState == LOW && buttonState == HIGH) {
-    ledState = !ledState;
-    digitalWrite(LED_PIN, ledState);
-
-    delay(50); 
-  }
-  lastButtonState = buttonState;
-}
-```
+    ``` c
+    const int LED_PIN = 12;
+    const int BUTTON_PIN = 2;
+    
+    bool ledState = false;
+    bool lastButtonState = LOW;
+    
+    void setup() {
+      pinMode(LED_PIN, OUTPUT);
+      pinMode(BUTTON_PIN, INPUT);
+    
+      digitalWrite(LED_PIN, LOW);
+    }
+    
+    void loop() {
+      bool buttonState = digitalRead(BUTTON_PIN);
+    
+      
+      if (lastButtonState == LOW && buttonState == HIGH) {
+        ledState = !ledState;
+        digitalWrite(LED_PIN, ledState);
+    
+        delay(50); 
+      }
+      lastButtonState = buttonState;
+    }
+    ```
 === "Buton_led_pull_up"
-```
+``` c
 const int LED_PIN = 12;
 const int BUTTON_PIN = 2;
 int count = 0;
