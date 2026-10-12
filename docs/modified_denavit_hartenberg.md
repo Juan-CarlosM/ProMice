@@ -8,7 +8,7 @@
     
     - Joint anglze $\theta_i$ is the angle between $x_{i-1}$ to $x_i$ measured about $z_i$
 
-![Denavit hartenber model](images/MDH_model.jpg){width=500 .center .on-glb}
+![Denavit hartenber model](images/MDH_model.png){width=50 .center .on-glb}
 
 
 The system 3 is a supplementary system to add rotations to the spherical joint. This allows to respect DH restrictions,
