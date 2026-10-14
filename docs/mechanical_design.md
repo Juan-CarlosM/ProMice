@@ -109,15 +109,15 @@ The design dimensions of the ball joint are summarised in the following table.
 
 !!! table "Table 1: Ball joint design parameters"
 
-    |  Parameters  |         Value        |
-    |:------------------------------:|:-------------:  |
-    | Ball radius                    | $r$ = 4 𝑚𝑚        |
-    | Amplitude of movement          | $𝛼_{2,3}$ = ±35°|
-    | Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚    |
+    |  Parameters                    |         Value        |
+    |:------------------------------:|:---------------------|
+    | Ball radius                    | $r$ = 4 𝑚𝑚 |
+    | Amplitude of movement          | $𝛼_{2,3}$ = ±35° |
+    | Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚 |
     | Magnet thikness                | $th_m$ = 1 𝑚𝑚 |
-    | Magnet-sensor gap              | 𝐴𝐺  = 1.5 𝑚𝑚      |
-    |Socket-ball tolerance           | $T$ = 0.02 𝑚𝑚   |
-    | Stick diameter                 | $𝑑_𝑠$ = 3 𝑚𝑚    |
+    | Magnet-sensor gap              | 𝐴𝐺  = 1.5 𝑚𝑚 |
+    |Socket-ball tolerance           | $T$ = 0.02 𝑚𝑚 |
+    | Stick diameter                 | $𝑑_𝑠$ = 3 𝑚𝑚 |
     |Socket chord                    | $c$ = 8 𝑚𝑚 |
 
 
