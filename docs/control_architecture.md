@@ -1,24 +1,3 @@
- 
-# Control Architecture
-
-![Control diagram](images/Control_diagram.png){width=100% .center .on-glb}
-
-## Inverse Kinematics via DLS with Null Space 
-
-
-### Damped Least Squares (DLS) Pseudoinverse
-
-### Null space
-Secondary Task: Joint Limit Avoidance
-Cost Function: Distance to Joint Center
-
-![IKM diagram](images/IKM_diagram.png){width=80% .center}
-
-### PID
-![PID diagram](images/PID_diagram.png){width=80% .center}
-### Sigmoid 
-
-
 
 # Control Architecture
 
@@ -79,7 +58,7 @@ repeat IK_ITERS times:
 The Jacobian is **not derived analytically**. Each column is approximated by finite differences of the forward geometry (FG), perturbing one joint at a time:
 
 $$
-J_{:,\,i} = \frac{\mathrm{FG}(q + \varepsilon\, e_i) - \mathrm{FG}(q)}{\varepsilon}, \qquad \varepsilon = 10^{-6}
+J_{:,\,i} = \frac{\mathrm{FG}(q + \varepsilon\, e_i) - \mathrm{FG}(q)}{\varepsilon}, \qquad \varepsilon = 10^{-5}
 $$
 
 where \(e_i\) is the \(i\)-th canonical basis vector.
@@ -110,11 +89,6 @@ where \(e_i\) is the \(i\)-th canonical basis vector.
 !!! warning "Choosing \(\varepsilon\) with 32-bit floats"
 
     The Teensy uses single precision (`float`, ~7 significant digits). If \(\varepsilon\) is too small, the subtraction `p1 - p0` loses precision (catastrophic cancellation) and the Jacobian becomes noisy. The code uses `FK_EPS = 1e-5`. If you notice jitter or poor convergence, try values between `1e-4` and `1e-3` rad.
-
-!!! failure "Documentation vs. code mismatch"
-
-    The derivation sheet states \(\varepsilon = 10^{-6}\), while `model.h` uses `FK_EPS = 1e-5f`. The value in the code is the one that is actually running on the robot.
-
 ---
 
 ### Damped Least Squares (DLS) Pseudoinverse
