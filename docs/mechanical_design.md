@@ -55,7 +55,7 @@ During testing, we noticed that resin printing made it difficult to obtain smoot
     When designing assembly pieces for resin printing, it is important to allow for a tolerance between pieces.
     In our case, a diametral clearance of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
     This tolerance also applies to the holes and pieces fitting inside others.
-
+---
 ### Ampitude of movement of ball joint
 After the dimension constraints impossed by the previous version; ProMice V1, the most important parameter when designing the socket that holds the ball is the range of movement
 it will allow. The following image shows the motion range $\theta_d$ allowed by the socket geometry. 
@@ -119,7 +119,7 @@ The design dimensions of the ball joint are summarised in the following table.
     |Socket chord                    | $c$ = 8 𝑚𝑚 |
 
 
-
+---
 ## Yaw-lock system 
 ### z-axis rotation
 The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$ is transmitted via an upper pulley located above the ball joint as shown in the picture below. Rotation is measured with an encoder on the top of the pulley.
