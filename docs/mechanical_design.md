@@ -55,6 +55,8 @@ During testing, we noticed that resin printing made it difficult to obtain smoot
     When designing assembly pieces for resin printing, it is important to allow for a tolerance between pieces.
     In our case, a diametral clearance of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
     This tolerance also applies to the holes and pieces fitting inside others.
+
+    
 ---
 ### Ampitude of movement of ball joint
 After the dimension constraints impossed by the previous version; ProMice V1, the most important parameter when designing the socket that holds the ball is the range of movement
