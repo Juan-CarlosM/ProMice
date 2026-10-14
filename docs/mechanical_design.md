@@ -109,8 +109,8 @@ The design dimensions of the ball joint are summarised in the following table.
 
 !!! table "Table 1: Ball joint design parameters"
 
-    |  Parameters                    |         Value        |
-    |:------------------------------:|:---------------------|
+    | Parameters | Value |
+    |:----------:|:------|
     | Ball radius                    | $r$ = 4 𝑚𝑚 |
     | Amplitude of movement          | $𝛼_{2,3}$ = ±35° |
     | Magnet diameter                | $𝑑_𝑚$ = 3 𝑚𝑚 |
