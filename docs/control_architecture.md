@@ -26,7 +26,7 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
 
 The arm has **4 active joints** and the task is to place the end-effector at a **3D position** \(x_{target} = [x,\,y,\,z]^T\). Since there are 4 unknowns for 3 equations, the arm is **redundant** (1 degree of freedom is left over). That extra freedom is exploited to keep the joints away from their mechanical limits.
 
-| Symbol | Meaning | Size |
+| Symbol | Meaning |Size |
 |:------:|---------|:----:|
 | \(q\) | Joint vector \([\theta_1,\ \theta_2,\ \theta_4,\ \theta_5]^T\) in rad | 4 × 1 |
 | \(x(q)\) | End-effector position given by the forward geometry (FG) | 3 × 1 |
