@@ -122,7 +122,7 @@ $$
 
 so that \(x = A^{-1}e\) and finally \(\dot q_{task} = J^T x\).
 
-```cpp title="model.h — wdls_step() (primary task)" linenums="1" hl_lines="3-9 31-34"
+```cpp title="model.h — wdls_step() (primary task)" linenums="1" hl_lines="3-9 30-32 35-36"
 // A = J J^T + lambda^2 I   (3x3, symmetric)
 const float l2 = IK_LAMBDA * IK_LAMBDA;
 float A[3][3];
