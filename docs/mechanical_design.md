@@ -1,4 +1,4 @@
-﻿[ProMice V1](index.md#ProMice_V1) control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. It turned out to be sensitive to small cameras displacements and touch perturbations. Therefore, they concluded that an integrated sensor system for joint position measuring was necesary. 
+﻿[ProMice V1](index.md#ProMice_V1) control is done with a stereo-vision motion tracking system. Researchers have found limitations in this compound control system during experimenttations with the BCI and the mouse. It turned out to be sensitive to small displacements and touch perturbations. Therefore, they concluded that an integrated sensor system for joint position measuring was necesary. 
 In this section we presente the mechanical enhancements that gave place to [Promice V2](index.md#ProMice_V2). The major modifications have taken place in the last 3 joints : $\alpha_2$, $\alpha_3$ and $\alpha_4$.
 
 
@@ -20,9 +20,9 @@ Among the different encoding devices, 3D hall-effect sensors stand out. They mea
 
 ![TMAG5273](images/TMAG5273.png){ width=25% .center} 
 
-Since working with tiny robotic systems always falls into dimension constraints, space for sensors was a major limitation. 
-3D hall-effect sensors make it possible to estimate the 3D position of a magnet facing of the sensor, wich means we can obtain the its orientation. 
-Thus, we adopted the 3D hall-effect sensor as device to instrument the shoulder joint. The idea was to insert a magnet and use the orientation to indicate the joint positions $\alpha_2$ and $\alpha_3$. 
+Working with miniature robotic systems imposes strict dimensional constraints, significantly limiting the space available for sensor integration. Three-dimensional (3D) Hall-effect sensors offer a compact solution by estimating the position of a magnet relative to the sensor, enabling the determination of its orientation.
+
+A 3D Hall-effect sensor was selected to instrument the shoulder joint of [Promice V2](index.md#ProMice_V2). A magnet is embedded in the joint mechanism, and its orientation relative to the sensor is used to estimate the joint angles  $\alpha_2$ and $\alpha_3$.
 
 !!! info inline end 
     Hall sensor dimensions are in milimeters.
@@ -30,7 +30,9 @@ Thus, we adopted the 3D hall-effect sensor as device to instrument the shoulder 
 
 
 ## A new joint structure for ProMice
-Because all joints must be instrumented, not only $\alpha_2$ and $\alpha_3$ but also $\alpha_4$ had to be redesigned. The shoulder universal joint ($\alpha_2$, $\alpha_3$) has been replaced by an instrumented ball joint. It is a ball-socket configuration that integrates the 3D hall-effect sensor inside the housing socket and a disc-type magnet inlaid in the ball. The last joint ($\alpha_3$ or elbow) is also instrumented with a hall sensor.
+To instrument all joints, the design had to be revised to accommodate sensing at both the shoulder and elbow joints. The original shoulder universal joint, which provides the rotational degrees of freedom (\alpha_2) and (\alpha_3), was replaced with an instrumented ball-and-socket joint. In this configuration, a 3D Hall-effect sensor is embedded in the socket housing, while a disc-shaped magnet is integrated into the ball. The relative orientation of the magnet and sensor is used to estimate the shoulder joint angles (\alpha_2) and (\alpha_3).
+
+The elbow joint, corresponding to the rotational degree of freedom (\alpha_4), was also instrumented with a Hall-effect sensor.
 
 
 ![Promice universal joint](images/Promice_V2_joints.png){ width=90% .center .on-glb}
@@ -45,19 +47,18 @@ Because all joints must be instrumented, not only $\alpha_2$ and $\alpha_3$ but 
 The ball joint consists on a 3D printed sphere with a stalk attached and a socket. We carried out a series of iterations
 of 3D printing to determine what would be a reasonable size whilst meeting the dimentions constraints.
 
-The observed limitations of resin 3D printing on the spherical surface of the ball as well as on the inside of the socket, led to 
-fixing a diameter of $8$ $mm$ for the ball and $3$ $mm$ for the stick.
+During testing, we noticed that resin printing made it difficult to obtain smooth and accurate surfaces on both the ball and the inside of the socket. After several iterations, we settled on a ball diameter of $8$ $mm$ and a stem diameter of $3$ $mm$.
 
 ![Hall sensor size](images/ball_size.png){width=50% .center}
 
 !!! note
     When designing assembly pieces for resin printing, it is important to allow for a tolerance between pieces.
-    In our case, there is a difference of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
+    In our case, a diametral clearance of 0.04 mm between the diameter of the sphere and that of the inside of the socket.
     This tolerance also applies to the holes and pieces fitting inside others.
 
 ### Ampitude of movement of ball joint
-After the dimension constraints impossed by the previous version of ProMice V1, the most important parameter when designing the socket that holds the ball is the range of movement
-it will allow. The following image shows the motion range $\theta_d$ allowed by the sockets geometry. 
+After the dimension constraints impossed by the previous version; ProMice V1, the most important parameter when designing the socket that holds the ball is the range of movement
+it will allow. The following image shows the motion range $\theta_d$ allowed by the socket geometry. 
 
 
 ![Amplitude](images/Socket_chord.png){ width=38% .center }
@@ -78,7 +79,7 @@ Then :
 
 Where $c$ is the cord that cuts the circle of the socket allowing a maxmimum amplitud of movement $\theta_d$.
 
-Next, we select the magnet dimensions and the sensor-magnet air gap. From the commercially available magnets wee took three different
+Next, we selected the magnet dimensions and the sensor-magnet air gap. From the commercially available magnets wee took three different
 sizes to experiment. All of them are disc-type magnets with axial magnetization and $1$ $mm$ thickness. Diameters were $1$, $2$ and $3$ $mm$.
 
 ![Magnet placement](images/Ball_magnet_sensor.png){ width=55% .center}
@@ -91,7 +92,7 @@ The minimum sensor-magnet air gap has to be calculated in order to avoid colisio
 
 Where $l_{a-m}$ is the anchor-magnet lenght and $d_m$ is the magnet diameter. 
 
-To decide the most suitable magnet diameter and the magnet-sensor air gap, we have performed some [Hall sensor simulations](sensors.md#sensor-simulations). 
+To decide the most suitable magnet diameter and the magnet-sensor air gap, we have ran some [Hall sensor simulations](sensors.md#sensor-simulations). 
 In the following plot, on the left you can see the magnet density vs tilt angle for the 3 available diameters. As expected, the largest magnet allows 
 more tilt sensing, whereas the other two have an important magnetic density drop before the 30 degrees. Therefore we kept the largest magnet.
 
@@ -130,7 +131,6 @@ The shoulder is a 3 DOF joint in which rotation about the $z$-axis or $\alpha_1$
 Since rotation about the $z$-axis is provided by the upper pulley, we only need a 2 DOF motion in the ball joint. Thus,  $z$-axis rotation of the ball joint respect to the socket must be locked. This prevents undesired yaw motion during joint actuation.
 
 ![ball undesired rotation](images/ball_u_rotation.png){width=45% .center}
-
 
 Consequently, the second major stage of the mechanical design focused on developing a mechanism that restricts the ball joint to two rotational degrees of freedom. This presented an interesting mechanical challenge: the rotation-lock mechanism had to be integrated inside the ball joint to avoid increasing its overall size beyond the dimensional constraints.
 
