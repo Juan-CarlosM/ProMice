@@ -79,7 +79,7 @@ repeat IK_ITERS times:
 The Jacobian is **not derived analytically**. Each column is approximated by finite differences of the forward geometry (FG), perturbing one joint at a time:
 
 $$
-J_{:,\,i} = \frac{\mathrm{FG}(q + \varepsilon\, e_i) - \mathrm{FG}(q)}{\varepsilon}
+J_{:,\,i} = \frac{\mathrm{FG}(q + \varepsilon\, e_i) - \mathrm{FG}(q)}{\varepsilon}, \qquad \varepsilon = 10^{-6}
 $$
 
 where \(e_i\) is the \(i\)-th canonical basis vector.
