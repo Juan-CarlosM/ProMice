@@ -23,7 +23,7 @@ such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between 
 
 ![Modified Denavit hartenber table](images/Table_MDH.png){width .center}
 
-\[
+$$
 {}^{i-1}T_i =
 \begin{bmatrix}
 \cos\theta_i & -\sin\theta_i & 0 & a_{i-1} \\
@@ -31,4 +31,4 @@ such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between 
 \sin\theta_i\sin\alpha_{i-1} & \cos\theta_i\sin\alpha_{i-1} & \cos\alpha_{i-1} & d_i\cos\alpha_{i-1} \\
 0 & 0 & 0 & 1
 \end{bmatrix}
-\]
+$$
