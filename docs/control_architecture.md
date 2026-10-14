@@ -105,7 +105,7 @@ where \(e = x_{target} - x(q)\).
 
 !!! tip "Intuition for \(\lambda\)"
 
-    | \(\lambda\) | Behaviour |
+    | \(\lambda\) |Behaviour |
     |:-----------:|-----------|
     | Small | Accurate and fast convergence, but large joint motions near singularities |
     | Large | Smooth and safe near singularities, but slower convergence |
