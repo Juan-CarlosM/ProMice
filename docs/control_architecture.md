@@ -402,14 +402,6 @@ static const float DX = 0.0f, DY = 0.0f, DZ = 40.0f;  // global offset (mm)
 
 ---
 
-### PID
-
-!!! info "Joint-space control"
-
-    The IK produces the reference joint angles; a PID loop then makes each joint follow its reference.
-
-
-
 ### PID control
 
 !!! info "Joint-space control"
@@ -479,11 +471,7 @@ These are the values configured in the parameter file, not universal tuning valu
 
 The raw PID result is converted to an integer and limited to the permitted output range:
 
-\[
-u_i = \operatorname{constrain}
-\left(\operatorname{int}(u_{\mathrm{raw},i}),
--L_i,\ L_i\right)
-\]
+`output[i] = constrain((int)raw_output, -outputLimit[i], outputLimit[i]);`
 
 The configured maximum output magnitudes are:
 
@@ -607,9 +595,7 @@ s_i(x)=\frac{f_i(x)-s_0}{s_1-s_0}
 The configured values are:
 
 ```cpp
-const float k_sigmoid[4] = {
-    10.0f, 10.0f, 10.0f, 10.0f
-};
+const float k_sigmoid[4] = {10.0f, 10.0f, 10.0f, 10.0f};
 ```
 
 `k_sigmoid[i]` controls the steepness of the transition:
@@ -638,7 +624,7 @@ where \(T\) is the trajectory duration and \(t_0\) is its start time. With `T = 
 | Parameter | Current value(s) | Purpose |
 | --- | --- | --- |
 | `dt_control` | 10 ms nominal | Nominal PID update interval |
-| `trajDuration` | 2.0 s | Initial trajectory duration |
+| `trajDuration` | 1.0 s | Initial trajectory duration |
 | `k_sigmoid` | 10 per joint | Sigmoid transition steepness |
 | `outputLimit` | 80, 80, 80, 35 | Maximum absolute PID output |
 | `integralLimit` | 2000 per joint | Integral clamp for anti-windup |
