@@ -225,17 +225,18 @@ $$
     N(-\nabla H)=(I - J^+J)(-\nabla H) = -\nabla H + J^+J\,\nabla H\
     $$
 
-    Then
+    Then:
 
     $$
     N_g=-\nabla H + J^+J\,\nabla H\
     $$
 
+    And finally:
+    
     $$
     \Delta q = \Delta q_{task} + k_0*N_g
     $$
 
-    `Ng` accumulates: first `-grad_H[i]`, then `+ JpJ[i][j]*grad_H[j]`.
 
 
 #### Implementation
@@ -267,6 +268,7 @@ for (int i = 0; i < 4; ++i) {
     dq_out[i] = dq_task[i] + IK_NULL_K * Ng;
 }
 ```
+`Ng` accumulates: first `-grad_H[i]`, then `+ JpJ[i][j]*grad_H[j]`.
 
 
 
@@ -278,13 +280,13 @@ Combining both tasks, the update applied at every iteration is:
 
 $$
 \boxed{\;
-\dot{q} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e \;+\; k_0\,\bigl(I - J^+ J\bigr)\bigl(-\nabla H(q)\bigr)
+\Delta{q} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e \;+\; k_0\,\bigl(I - J^+ J\bigr)\bigl(-\nabla H(q)\bigr)
 \;}
 $$
 
 After each update the joints are **clamped** to their mechanical limits:
 
-```cpp title="model.h — inverseKinematics()" linenums="1" hl_lines="10-14"
+```cpp title="model.h — inverseKinematics()" linenums="1" hl_lines="17"
 bool Model::inverseKinematics(const float target[3], float q_inout[4], float dq_out[4]) {
     for (int i = 0; i < 4; ++i) dq_out[i] = 0.0f;
 
