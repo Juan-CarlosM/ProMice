@@ -61,7 +61,7 @@ where \(e_i\) is the \(i\)-th canonical basis vector.
 
 === "Code"
 
-    ```cpp title="model.h" linenums="1" hl_lines="7 8 9"
+    ```cpp title="model.h" linenums="1" hl_lines="7-11"
     void Model::numerical_jacobian(const float q_in[4], float J[3][4]) const {
         float p0[3], p1[3], qd[4];
         forwardGeometry(q_in, p0);                 // FG(q)
@@ -301,7 +301,11 @@ $$
 $$
 
 ![IKM diagram](images/IKM_diagram.png){ loading=lazy }
+/// caption
+Inverse kinematics block diagram: DLS primary task + null-space secondary task.
+///
 
+### Joints clamping
 After each update the joints are **clamped** to their mechanical limits:
 
 ```cpp title="model.h — inverseKinematics()" linenums="1" hl_lines="17"
@@ -338,9 +342,7 @@ bool Model::inverseKinematics(const float target[3], float q_inout[4], float dq_
 
 
 
-/// caption
-Inverse kinematics block diagram: DLS primary task + null-space secondary task.
-///
+
 ---
 
 ## Model class reference
@@ -423,6 +425,259 @@ PID loop for each joint.
     Describe here where the sigmoid is applied (e.g. smoothing of the reference or the control output) and its equation and parameters.
 
 ---
+
+### PID control
+
+!!! info "Joint-space control"
+
+    The inverse kinematics (IK) solver provides the target joint angles, `q_tar_deg`. Before these targets are sent to the PID controllers, the trajectory generator creates a smooth reference, `q_ref`, between the starting and goal positions. Each joint has an independent PID controller that tries to minimize the difference between its reference angle and measured angle.
+
+![PID diagram](images/PID_diagram.png){ loading=lazy }
+
+/// caption
+PID loop for each joint. The controller calculates a bounded step command and selects a motor speed based on the command magnitude.
+///
+
+#### Control error and PID law
+
+For joint \(i\), the position error is
+
+\[
+e_i[k] = q_{\mathrm{ref},i}[k] - q_{\mathrm{meas},i}[k]
+\]
+
+where `q_ref[i]` is the smoothed reference angle and `q_meas[i]` is the measured joint angle. The implementation uses a discrete PID law:
+
+\[
+u_i[k] = K_{p,i}e_i[k] + K_{i,i}I_i[k] + K_{d,i}D_i[k]
+\]
+
+The integral and derivative terms are updated each control cycle:
+
+\[
+I_i[k] = I_i[k-1] + e_i[k]\Delta t
+\]
+
+\[
+D_{\mathrm{raw},i}[k] =
+\frac{e_i[k]-e_i[k-1]}{\Delta t}
+\]
+
+The derivative is filtered with an exponential moving average (EMA):
+
+\[
+D_i[k] = \alpha_iD_i[k-1] +
+(1-\alpha_i)D_{\mathrm{raw},i}[k]
+\]
+
+This filter reduces the effect of measurement noise and sudden changes in the error. A larger `alphaDerivative[i]` smooths the derivative more strongly but makes it respond more slowly. The configured value is `0.85` for all four motors.
+
+The nominal control period is `dt_control = 10 ms` (100 Hz). The `dt` argument passed to `computePID()` must be expressed in **seconds** if the derivative and integral equations are to use standard time units. If the program passes milliseconds, convert them to seconds before using them in these equations. The actual loop period should be measured or calculated rather than assumed to be exactly nominal.
+
+#### PID gains
+
+The current per-joint gains are:
+
+| Joint index | \(K_p\) | \(K_i\) | \(K_d\) |
+| --- | ---: | ---: | ---: |
+| 0 | 15 | 0.1 | 0.08 |
+| 1 | 4 | 0.001 | 0.0005 |
+| 2 | 3 | 0.001 | 0.0005 |
+| 3 | 6 | 0.00 | 0.02 |
+
+These are the values configured in the parameter file, not universal tuning values. Each joint can require different gains because its load, inertia, gearing, sensor noise and mechanical behavior may differ. `k_p(i)`, `k_i(i)` and `k_d(i)` select the gains for the relevant joint.
+
+- **Proportional term (`Kp`)**: responds to the current position error. Increasing it usually makes the response stronger, but too much can cause overshoot or oscillation.
+- **Integral term (`Ki`)**: accumulates error over time and can compensate for persistent offsets. Too much integral action can cause overshoot and accumulated integral error.
+- **Derivative term (`Kd`)**: responds to the rate of change of error and can help damp the motion. It is sensitive to noise, which is why the derivative is filtered.
+
+#### Saturation and anti-windup
+
+The raw PID result is converted to an integer and limited to the permitted output range:
+
+\[
+u_i = \operatorname{constrain}
+\left(\operatorname{int}(u_{\mathrm{raw},i}),
+-L_i,\ L_i\right)
+\]
+
+The configured maximum output magnitudes are:
+
+| Joint index | `outputLimit` |
+| --- | ---: |
+| 0 | 80 |
+| 1 | 80 |
+| 2 | 80 |
+| 3 | 35 |
+
+This saturation prevents a controller from requesting more steps per cycle than the configured limit. The fourth motor has a lower limit than the other three.
+
+The code also limits the integral state to `[-integralLimit[i], +integralLimit[i]]`. The configured `integralLimit` is `2000` for each motor. In addition, the integral is not updated when the previous output is saturated and has the same sign as the current error. This is a simple **anti-windup** strategy: it reduces the risk of the integral term continuing to grow when the actuator is already at its limit and the error would push it further into saturation.
+
+#### Position hysteresis
+
+The controller uses two error tolerances to decide when a joint has reached its target:
+
+- `enterTol = 0.5°`: when the joint is not in position and \(|e_i| < 0.5^\circ\), it is declared to be in position.
+- `exitTol = 1.0°`: once in position, control is reactivated only when \(|e_i| > 1.0^\circ\).
+
+This is **hysteresis**. The exit threshold is deliberately larger than the entry threshold, creating a band between `0.5°` and `1.0°`. Without this band, small measurement fluctuations near a single threshold could repeatedly switch the controller on and off, producing motor chatter or oscillation.
+
+When a joint enters the in-position state, the code clears its integral and filtered derivative, sets the output to zero, and sends `M_STOP`. While it remains in position, the controller keeps the output at zero. If the error later exceeds the exit tolerance, normal control resumes.
+
+#### Deadband
+
+After the PID output is saturated, the code applies a deadband:
+
+```cpp
+if (abs(output[i]) < (int)deadband[i]) {
+    output[i] = 0;
+    prevError[i] = error[i];
+    return;
+}
+```
+
+The configured deadband is `2` steps for every motor. Outputs whose magnitude is less than `2` are discarded. This prevents tiny corrections caused by sensor noise from repeatedly moving the motors or creating vibrations near the target. Because this branch returns early, it also skips the step accumulation and RPM command for that cycle.
+
+#### From PID output to motor steps and RPM
+
+The bounded PID output is used as a fractional step command. The code accumulates it over cycles:
+
+```cpp
+stepAccumulator[i] += output[i];
+int steps = (int)stepAccumulator[i];
+stepAccumulator[i] -= steps;
+```
+
+The accumulator preserves the fractional remainder after converting the accumulated value to an integer. This can distribute small commands over multiple cycles instead of discarding their fractional part each time. The resulting `steps` value is then used to determine the motor speed command.
+
+The code maps the absolute step count to a motor-specific RPM range:
+
+\[
+\mathrm{RPM}_i =
+\operatorname{constrain}\left(
+\operatorname{mapRange}
+\left(|\mathrm{steps}|,0,L_i,
+\mathrm{RPM}_{\min,i},\mathrm{RPM}_{\max,i}\right),
+\mathrm{RPM}_{\min,i},\mathrm{RPM}_{\max,i}
+\right)
+\]
+
+| Joint index | `rpm_min` | `rpm_max` |
+| --- | ---: | ---: |
+| 0 | 0.5 RPM | 8 RPM |
+| 1 | 0.5 RPM | 6 RPM |
+| 2 | 0.5 RPM | 6 RPM |
+| 3 | 0.5 RPM | 3 RPM |
+
+The minimum RPM is nonzero to help avoid stalling when a movement command is sent. Each motor has its own maximum speed, allowing the speed command to reflect its mechanical limits. The code sends this value through `M_SET_MAX_RPM`.
+
+**Important implementation detail:** in the shown code, the sign of `output[i]` is not passed to `M_SET_MAX_RPM`; only the absolute value of `steps` is used to calculate RPM. The direction must therefore be handled elsewhere (for example, by the step command or motor-driver logic). Also verify that the motor firmware interprets `M_SET_MAX_RPM` as a speed limit and that another command actually initiates the required signed movement.
+
+### Sigmoid trajectory generation
+
+!!! info "Smooth reference generation"
+
+    The sigmoid is applied to the **reference joint positions**, not directly to the PID output. It creates a smooth interpolation from each joint's starting position to its target position over the trajectory duration. The PID then tracks this changing reference.
+
+At the beginning of a trajectory, the program stores the initial joint positions in `q_start[i]` and the desired final positions in `q_goal[i]`. The normalized progress variable `trajProgress` runs from `0.0` to `1.0`. For each of the four joints, the trajectory generator evaluates the sigmoid and calculates the reference angle:
+
+```cpp
+for (int i = 0; i < 4; i++) {
+    float s = sigmoidMotor(i, trajProgress);
+    q_ref[i] = q_start[i] + (q_goal[i] - q_start[i]) * s;
+}
+```
+
+The reference is therefore
+
+\[
+q_{\mathrm{ref},i}(x) =
+q_{\mathrm{start},i} +
+\left(q_{\mathrm{goal},i}-q_{\mathrm{start},i}\right)s_i(x)
+\]
+
+where \(x=\texttt{trajProgress}\) and \(s_i(x)\) is the normalized sigmoid.
+
+#### Sigmoid equation
+
+The implementation starts with a decreasing logistic function:
+
+\[
+f_i(x)=\frac{1}{1+\exp(k_i(x-0.5))}
+\]
+
+The code calculates two endpoint values:
+
+\[
+s_0=\frac{1}{1+\exp(0.5k_i)}
+\qquad
+s_1=\frac{1}{1+\exp(-0.5k_i)}
+\]
+
+It then normalizes the logistic output:
+
+\[
+s_i(x)=\frac{f_i(x)-s_0}{s_1-s_0}
+\]
+
+**Important:** with the signs currently used in the code, this normalized function decreases from `1` at `x = 0` to `0` at `x = 1`: `s_i(0) = 1` and `s_i(1) = 0`. Therefore, the reference generated by the current implementation starts at `q_goal` and ends at `q_start`, which is the reverse of the likely intended trajectory. If the intended behavior is to move from `q_start` to `q_goal`, change the logistic expression to `1.0f / (1.0f + exp(-k * (x - 0.5f)))`, while keeping the endpoint normalization consistent with that increasing function. With this corrected sign, the normalized output runs from zero to one.
+
+#### Sigmoid parameter `k_sigmoid`
+
+The configured values are:
+
+```cpp
+const float k_sigmoid[4] = {
+    10.0f, 10.0f, 10.0f, 10.0f
+};
+```
+
+`k_sigmoid[i]` controls the steepness of the transition:
+
+- **Larger `k`**: the transition is more concentrated around the middle of the trajectory. The reference stays closer to its starting position for longer, then changes more rapidly near the midpoint, before flattening near the target.
+- **Smaller `k`**: the transition is closer to a linear ramp, with less pronounced easing at the beginning and end.
+- **`k = 10`**: all four joints currently use the same moderate-to-steep sigmoid profile. The value can be tuned per joint if different mechanisms need different motion profiles.
+
+The sigmoid produces a smooth position reference with a gradual start and finish, which can reduce abrupt changes in the demanded motion compared with an immediate step from the start angle to the target angle. However, the sigmoid alone does not enforce motor velocity, acceleration or torque limits. Those limits still depend on the trajectory timing, PID behavior, RPM mapping and motor hardware.
+
+#### Trajectory timing
+
+The configured initial duration is `trajDuration = 2.0` seconds. The trajectory manager should update `trajProgress` from `0.0` to `1.0` over this duration, clamp it to that range, and set `trajActive` to `false` when the trajectory completes. For example, if progress is linear in time,
+
+\[
+x(t)=\operatorname{constrain}
+\left(\frac{t-t_0}{T},0,1\right)
+\]
+
+where \(T\) is the trajectory duration and \(t_0\) is its start time. With `T = 2.0 s`, the reference reaches its goal after approximately two seconds. The exact timing depends on how the main program updates `trajProgress`.
+
+`dt_control = 10 ms` is the nominal PID sampling interval. It is distinct from `trajDuration`: the sampling interval determines how often the controller updates, while the trajectory duration determines how long the reference takes to move from start to goal.
+
+### Main parameters summary
+
+| Parameter | Current value(s) | Purpose |
+| --- | --- | --- |
+| `dt_control` | 10 ms nominal | Nominal PID update interval |
+| `trajDuration` | 2.0 s | Initial trajectory duration |
+| `k_sigmoid` | 10 per joint | Sigmoid transition steepness |
+| `outputLimit` | 80, 80, 80, 35 | Maximum absolute PID output |
+| `integralLimit` | 2000 per joint | Integral clamp for anti-windup |
+| `alphaDerivative` | 0.85 per joint | EMA smoothing of derivative |
+| `enterTol` | 0.5° per joint | Error threshold to enter in-position state |
+| `exitTol` | 1.0° per joint | Error threshold to leave in-position state |
+| `deadband` | 2 steps per joint | Suppresses very small PID outputs |
+| `rpm_min` | 0.5 RPM per joint | Minimum commanded RPM |
+| `rpm_max` | 8, 6, 6, 3 RPM | Maximum RPM for each motor |
+
+!!! warning "Units and implementation checks"
+
+    - Make sure `dt` is in seconds when computing the derivative and integral. If the code stores elapsed time in milliseconds, convert it to seconds.
+    - Confirm that `trajProgress` is clamped to `[0, 1]` and that the trajectory timing uses consistent units.
+    - The anti-windup test checks the previous output before the new PID output is calculated. This is a simple conditional integration scheme, not a full back-calculation anti-windup controller.
+    - The RPM calculation uses `abs(steps)`, so it determines speed magnitude, not direction.
+    - The `stepAccumulator` behavior depends on the units and meaning of `output[i]`. In the shown code, `output[i]` is described as steps per cycle, but the accumulator also preserves fractional values. Verify that this matches the motor command protocol and the intended control period.
+
 
 ## References
 
