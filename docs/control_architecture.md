@@ -287,7 +287,7 @@ $$
 $$
 
 $$
-\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H\)
+\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H)
 $$
 
 $$
