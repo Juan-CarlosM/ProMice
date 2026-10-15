@@ -99,7 +99,7 @@ $$
 
 where \(e = x_{target} - x(q)\).
 
-!!! tip "Intuition for \(\lambda\)"
+??? tip "Intuition for \(\lambda\)"
 
     | \(\lambda\) | Behaviour |
     |:-----------:|-----------|
@@ -129,7 +129,7 @@ where \(e = x_{target} - x(q)\).
     and finally 
     
     $$
-    \Delta q_{task} = J^T x.
+    \Delta q_{task} = J^T x
     $$
 
 ```cpp title="model.h — wdls_step() (primary task)" linenums="1" hl_lines="3-9 30-32 35-36"
@@ -174,14 +174,6 @@ for (int i = 0; i < 4; ++i)
 !!! success "Why \(\det A\) never reaches zero"
 
     Since \(JJ^T\) is positive semi-definite, adding \(\lambda^2 I\) makes all eigenvalues of \(A\) at least \(\lambda^2 = 0.0025\). Therefore \(\det A \ge \lambda^6 > 0\) and `1.0f / det` is always safe, even at a singularity.
-
-??? example "Equation ↔ code correspondence"
-
-    | Equation | Code |
-    |----------|------|
-    | \(JJ^T + \lambda^2 I\) | `A[i][j]` |
-    | \((JJ^T+\lambda^2 I)^{-1}e\) | `x[0..2]` |
-    | \(J^T x\) | `dq_task[i]` |
 
 ---
 
@@ -289,6 +281,18 @@ for (int i = 0; i < 4; ++i) {
 ### Final control law
 
 Combining both tasks, the update applied at every iteration is:
+
+$$
+\Delta q = \Delta q_{task} + k_0 N_g
+$$
+
+$$
+\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H\)
+$$
+
+$$
+\Delta q = J^T A^{-1} e + k_0 N (-\nabla H )
+$$
 
 $$
 \boxed{\;
