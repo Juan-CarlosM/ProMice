@@ -553,15 +553,12 @@ The accumulator preserves the fractional remainder after converting the accumula
 
 The code maps the absolute step count to a motor-specific RPM range:
 
-\[
-\mathrm{RPM}_i =
-\operatorname{constrain}\left(
-\operatorname{mapRange}
-\left(|\mathrm{steps}|,0,L_i,
-\mathrm{RPM}_{\min,i},\mathrm{RPM}_{\max,i}\right),
-\mathrm{RPM}_{\min,i},\mathrm{RPM}_{\max,i}
-\right)
-\]
+```cpp
+float rpm = map_range((float)abs(steps), 0.0f, (float)outputLimit[i], rpm_min[i], rpm_max[i]);
+rpm = constrain(rpm, rpm_min[i], rpm_max[i]);
+serials[i]->sendCmd(M_SET_MAX_RPM, sizeof(float), &rpm);
+```
+
 
 | Joint index | `rpm_min` | `rpm_max` |
 | --- | ---: | ---: |
@@ -572,7 +569,6 @@ The code maps the absolute step count to a motor-specific RPM range:
 
 The minimum RPM is nonzero to help avoid stalling when a movement command is sent. Each motor has its own maximum speed, allowing the speed command to reflect its mechanical limits. The code sends this value through `M_SET_MAX_RPM`.
 
-**Important implementation detail:** in the shown code, the sign of `output[i]` is not passed to `M_SET_MAX_RPM`; only the absolute value of `steps` is used to calculate RPM. The direction must therefore be handled elsewhere (for example, by the step command or motor-driver logic). Also verify that the motor firmware interprets `M_SET_MAX_RPM` as a speed limit and that another command actually initiates the required signed movement.
 
 ### Sigmoid trajectory generation
 
@@ -642,14 +638,14 @@ The sigmoid produces a smooth position reference with a gradual start and finish
 
 #### Trajectory timing
 
-The configured initial duration is `trajDuration = 2.0` seconds. The trajectory manager should update `trajProgress` from `0.0` to `1.0` over this duration, clamp it to that range, and set `trajActive` to `false` when the trajectory completes. For example, if progress is linear in time,
+The configured initial duration is `trajDuration = 1.0` second. The trajectory manager should update `trajProgress` from `0.0` to `1.0` over this duration, clamp it to that range, and set `trajActive` to `false` when the trajectory completes. For example, if progress is linear in time,
 
 \[
 x(t)=\operatorname{constrain}
 \left(\frac{t-t_0}{T},0,1\right)
 \]
 
-where \(T\) is the trajectory duration and \(t_0\) is its start time. With `T = 2.0 s`, the reference reaches its goal after approximately two seconds. The exact timing depends on how the main program updates `trajProgress`.
+where \(T\) is the trajectory duration and \(t_0\) is its start time. With `T = 1.0 s`, the reference reaches its goal after approximately two seconds. The exact timing depends on how the main program updates `trajProgress`.
 
 `dt_control = 10 ms` is the nominal PID sampling interval. It is distinct from `trajDuration`: the sampling interval determines how often the controller updates, while the trajectory duration determines how long the reference takes to move from start to goal.
 
