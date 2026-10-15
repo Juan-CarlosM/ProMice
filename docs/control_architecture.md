@@ -408,23 +408,7 @@ static const float DX = 0.0f, DY = 0.0f, DZ = 40.0f;  // global offset (mm)
 
     The IK produces the reference joint angles; a PID loop then makes each joint follow its reference.
 
-![PID diagram](images/PID_diagram.png){ loading=lazy }
 
-/// caption
-PID loop for each joint.
-///
-
-!!! question "To complete"
-
-    The PID code was not part of `model.h`. Add here the control law \(u(t)=K_p e(t)+K_i\!\int e\,dt+K_d\,\dot e(t)\), the gains used and the sampling period.
-
-### Sigmoid
-
-!!! question "To complete"
-
-    Describe here where the sigmoid is applied (e.g. smoothing of the reference or the control output) and its equation and parameters.
-
----
 
 ### PID control
 
