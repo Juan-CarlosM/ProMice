@@ -300,6 +300,8 @@ $$
 \;}
 $$
 
+![IKM diagram](images/IKM_diagram.png){ loading=lazy }
+
 After each update the joints are **clamped** to their mechanical limits:
 
 ```cpp title="model.h — inverseKinematics()" linenums="1" hl_lines="17"
@@ -334,7 +336,7 @@ bool Model::inverseKinematics(const float target[3], float q_inout[4], float dq_
 
     The null-space term pushes the joints **softly** toward the centre of their range, while `clamp_joints()` is a **hard** safety net. The clamp guarantees the limits are never exceeded, but if it activates the DLS solution is no longer exact for that iteration.
 
-![IKM diagram](images/IKM_diagram.png){ loading=lazy }
+
 
 /// caption
 Inverse kinematics block diagram: DLS primary task + null-space secondary task.
