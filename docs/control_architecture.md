@@ -47,10 +47,6 @@ repeat IK_ITERS times:
     5. q    = clamp(q + dq)              # update and respect limits
 ```
 
-!!! note "About the notation \(\dot q\)"
-
-    The equations use \(\dot q\) (the usual notation in the literature), but in the code the result is applied as a **joint increment** \(\Delta q\) at each iteration, i.e. \(q \leftarrow q + \Delta q\). The time step is implicitly 1.
-
 ---
 
 ### Numeric computation of the Jacobian
@@ -98,7 +94,7 @@ where \(e_i\) is the \(i\)-th canonical basis vector.
 The classical pseudoinverse \(J^T(JJ^T)^{-1}\) explodes near **singularities** (configurations where the arm loses the ability to move in some direction, so \(JJ^T\) becomes almost non-invertible). DLS adds a small term \(\lambda^2 I\) that keeps the matrix invertible, at the price of a small tracking error.
 
 $$
-\dot{q}_{task} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e
+\Delta q_{task} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e
 $$
 
 where \(e = x_{target} - x(q)\).
@@ -188,18 +184,14 @@ $$
 Any motion of the form \(N\,v\) (for an arbitrary vector \(v\)) does not disturb the primary task. We use it to minimise a cost function \(H(q)\) by choosing \(v = -\nabla H(q)\) (gradient descent):
 
 $$
-\dot{q}_{null} = k_0 \, N \, \bigl(-\nabla H(q)\bigr)
+\Delta q_{null} = k_0 \, N \, \bigl(-\nabla H(q)\bigr)
 $$
 
 !!! info "Task priority"
 
     The task priority is **strict**: the position tracking (primary) always has priority, and the joint-limit avoidance (secondary) only uses the leftover freedom.
 
-![IKM diagram](images/IKM_diagram.png){ loading=lazy }
 
-/// caption
-Inverse kinematics block diagram: DLS primary task + null-space secondary task.
-///
 
 #### Cost function: distance to the joint centre
 
@@ -227,9 +219,28 @@ $$
 \nabla H(q) = \left[\;\frac{2\,(q_1 - q_{mid,1})}{(\Delta q_1)^2},\ \dots,\ \frac{2\,(q_4 - q_{mid,4})}{(\Delta q_4)^2}\;\right]^T
 $$
 
+!!! tip "To implement we make:"
+    
+    $$
+    N(-\nabla H)=(I - J^+J)(-\nabla H) = -\nabla H + J^+J\,\nabla H\
+    $$
+
+    Then
+
+    $$
+    N_g=-\nabla H + J^+J\,\nabla H\
+    $$
+
+    $$
+    \Delta q = \Delta q_{task} + k_0*N_g
+    $$
+
+    `Ng` accumulates: first `-grad_H[i]`, then `+ JpJ[i][j]*grad_H[j]`.
+
+
 #### Implementation
 
-```cpp title="model.h — wdls_step() (secondary task)" linenums="1" hl_lines="1-12 24-28"
+```cpp title="model.h — wdls_step() (secondary task)" linenums="1" hl_lines="1-10 21-25"
 // (1) J^+ J  (4x4)  using  J^+ = J^T A^-1
 float JpJ[4][4];
 for (int i = 0; i < 4; ++i) {
@@ -257,9 +268,7 @@ for (int i = 0; i < 4; ++i) {
 }
 ```
 
-!!! tip "Reading the last loop"
 
-    \((I - J^+J)(-\nabla H) = -\nabla H + J^+J\,\nabla H\). That is exactly what `Ng` accumulates: first `-grad_H[i]`, then `+ JpJ[i][j]*grad_H[j]`.
 
 ---
 
@@ -307,6 +316,11 @@ bool Model::inverseKinematics(const float target[3], float q_inout[4], float dq_
 
     The null-space term pushes the joints **softly** toward the centre of their range, while `clamp_joints()` is a **hard** safety net. The clamp guarantees the limits are never exceeded, but if it activates the DLS solution is no longer exact for that iteration.
 
+![IKM diagram](images/IKM_diagram.png){ loading=lazy }
+
+/// caption
+Inverse kinematics block diagram: DLS primary task + null-space secondary task.
+///
 ---
 
 ## Model class reference
@@ -358,52 +372,11 @@ static const float DX = 0.0f, DY = 0.0f, DZ = 40.0f;  // global offset (mm)
 | `FK_EPS` | \(\varepsilon\) | 1e-5 | Less numerical noise, but more linearisation error |
 | `DZ` | – | 40 mm | Shifts the base frame of the chain upward |
 
-!!! tip "Tuning procedure"
 
-    1. Start with `IK_NULL_K = 0` and check that the position converges.
-    2. Increase `IK_NULL_K` gradually and verify that `inverseKinematics()` still returns `true`.
-    3. If the arm oscillates near the workspace boundary, increase `IK_LAMBDA`.
-
----
-
-## Usage example
-
-```cpp title="example.ino" linenums="1"
-#include "model.h"
-
-Model model;
-float q[4]  = {0, 0, 0, 0};   // current joint angles [rad]
-float dq[4];                  // joint variation returned by the IK
-
-void setup() {
-    Serial.begin(115200);
-
-    float target[3] = {10.0f, 5.0f, 60.0f};   // desired position [mm]
-
-    bool ok = model.inverseKinematics(target, q, dq);
-
-    float xyz[3];
-    model.forwardGeometry(q, xyz);            // verify the result
-
-    Serial.print("Converged: "); Serial.println(ok ? "yes" : "no");
-    Serial.print("q [rad]: ");
-    for (int i = 0; i < 4; ++i) { Serial.print(q[i], 4); Serial.print(' '); }
-    Serial.println();
-    Serial.print("xyz [mm]: ");
-    for (int i = 0; i < 3; ++i) { Serial.print(xyz[i], 3); Serial.print(' '); }
-    Serial.println();
-}
-
-void loop() {}
-```
 
 !!! warning "Unreachable targets"
 
     If the target is outside the workspace, the IK returns `false` and `q` holds the closest configuration found. Always check the returned flag before sending `q` to the motors.
-
-!!! tip "Warm start"
-
-    `q` is used as the **initial guess**. In a real-time loop, pass the previous solution (or the measured joint angles) so that 10 iterations are more than enough.
 
 ---
 
