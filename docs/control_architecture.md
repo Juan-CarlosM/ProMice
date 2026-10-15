@@ -108,15 +108,29 @@ where \(e = x_{target} - x(q)\).
 
     The current value is `IK_LAMBDA = 0.05`.
 
-#### Implementation: solving a 3 × 3 system
+#### Implementation 
+!!! tip "solving a 3 × 3 system"
+    The factor  \(JJ^T + \lambda^2 I\) is a **3 × 3 symmetric** matrix that we call \(A\). The code inverts it analytically using the **cofactor (Cramer) method**:
 
-Because the task is 3D, the matrix \(A = JJ^T + \lambda^2 I\) is only **3 × 3 and symmetric**. Instead of using a generic linear-algebra library, the code inverts it analytically using the **cofactor (Cramer) method**:
+    $$
+    A=JJ^T + \lambda^2 I
+    $$
+    
+    $$
+    A^{-1} = \frac{1}{\det A}\,\mathrm{adj}(A) = \frac{1}{\det A}\,C^T
+    $$
 
-$$
-A^{-1} = \frac{1}{\det A}\,\mathrm{adj}(A) = \frac{1}{\det A}\,C^T
-$$
+    so that 
+    
+    $$
+    x = A^{-1}e
+    $$
 
-so that \(x = A^{-1}e\) and finally \(\dot q_{task} = J^T x\).
+    and finally 
+    
+    $$
+    \Delta q_{task} = J^T x.
+    $$
 
 ```cpp title="model.h — wdls_step() (primary task)" linenums="1" hl_lines="3-9 30-32 35-36"
 // A = J J^T + lambda^2 I   (3x3, symmetric)
@@ -219,6 +233,7 @@ $$
 \nabla H(q) = \left[\;\frac{2\,(q_1 - q_{mid,1})}{(\Delta q_1)^2},\ \dots,\ \frac{2\,(q_4 - q_{mid,4})}{(\Delta q_4)^2}\;\right]^T
 $$
 
+#### Implementation
 !!! tip "To implement we make:"
     
     $$
@@ -237,9 +252,6 @@ $$
     \Delta q = \Delta q_{task} + k_0*N_g
     $$
 
-
-
-#### Implementation
 
 ```cpp title="model.h — wdls_step() (secondary task)" linenums="1" hl_lines="1-10 21-25"
 // (1) J^+ J  (4x4)  using  J^+ = J^T A^-1
