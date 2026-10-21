@@ -1,6 +1,6 @@
-La prothèse utilise la carte Arduino Teensy, qui permet de (commander les drivers?). La Teensy est fixée sur une carte avec plusieurs connecteurs, permettant de la relier avec les cartes de connexions entre les drivers....
+The prosthesis employs a Teensy 4.1 development board mounted on a custom PCB. This is where the robot model and the PID controller run. The board communicates with the motor controllers via UART ports.
 
-## Schéma électronique
+## Wiring diagram for electronic devices 
 ![electronic_schematic](images/electronic_schematic.png){width=95% .center .on-glb}
 ## Boards
 The prosthesis uses four boards: the Teensy, which is mounted on a larger Promice board, as well as two connection boards between the drivers.
