@@ -46,7 +46,7 @@ A final stiffness test can be to move shaft with magnet like in the video. If yo
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 
-![Ball arm remnants](images/ball_remnants.png){width=60% .center }
+![Ball arm remnants](images/ball_remnants.png){ loading=lazy }
 
 !!! tip 
     You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
