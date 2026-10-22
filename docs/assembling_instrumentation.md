@@ -4,13 +4,13 @@
 
 The first element of the prosthesis you have to assemble is the ball joint arm. 
 
-![ball arm assembly](images/ball_arm_assembly.png){width=40% .center .on-glb}
+![ball arm assembly](images/ball_arm_assembly.png){ loading=lazy }
 
 As described in the [3D printing](3D_printing.md) section, although resin printing is a great ally for small, highly detailed prototypes, it does have its limitations. The chamber of the [Yaw-lock system](mechanical_design.md#yaw_lock_system) may require small, detailed adjustments. If the cavity for the mini bearings suffered deformation, the interior will need to be carefully carved to restore its cylindrical shape.
 
 To carve the inside of the ball, we used the cylindrical carving bit shown in the following image.
 
-![YLS ball bearings cav3](images/ball_arm_craving.png){width=70% .center .on-glb}
+![YLS ball bearings cav3](images/ball_arm_craving.png){ loading=lazy }
 
 
 We then used a screwdriver  flat-tip with the exact diameter of the ball bearings (3 mm). You have to rotate and apply pressure to the inside to shape it better. 
@@ -30,7 +30,7 @@ Follow these steps to assemble your ball arm.
   5. Check that the components are properly aligned. The T-shaft must be centered in its movement slot; if it isn’t, make sure the first bearing is seated all the way to the bottom of the slot.
   6. Put on the lid ball. Verify that the T-shaft movement is not stiff.
 
-![Ball arm assembling](images/ball_assem_steps.png){width=50% .center .on-glb}
+![Ball arm assembling](images/ball_assem_steps.png){ loading=lazy }
 
 If the T-shaft moves stiffly after assembling, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
 If you're sure the minibearing is seated all the way to the bottom and it feels still stiff, take a 1-millimeter drill bit and re-drill the cavity shown in the following image (without going through the ball).
