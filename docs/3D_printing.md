@@ -65,9 +65,9 @@ The rest is a sort of lid to complete the sphere.
 
 This piece was made to be actuated in two degrees of freedom; therefore, the arm of the ball is a stalk with a sort of mini-platform at the lower end featuring eight holes, all of which are used to insert and attach the actuating cables. 
 The four outer holes are for the main actuation; the remaining four are intended to actuate the component during
-a [Hall sensor linearisation](encoders_linearization.md) phase. On the top of the ball, there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to support the elbow joint.
+a [Hall sensor linearisation](encoders_linearization.md) phase. On the top of the ball, there is a cavity to integrate a magnet, there is also a longitudinal cavity in the stalk into which a small rod is inserted to supportthe elbow joint.
 
-![ball arm labels](images/ball_arm_labels.png){width=70% .center .on-glb}
+![ball arm labels](images/ball_arm_labels.png){width=90% .center}
 
 
 Given that the geometry of the ball-arm contains both horizontal and vertical cylindrical cavities, the vertical priority must be given to those requiring greater printing precision.
@@ -97,7 +97,7 @@ connected to the ninth cylindrical cavity to allow the sensor cables to pass thr
 The second part of the socket is symmetrical to the lower part of the first, except that it does not house a bearing.
 Its function is to hold the ball in place together with part one.
 
-![socket labels](images/socket_labels.png){width=60% .center .on-glb}
+![socket labels](images/socket_labels.png){width=70% .center}
 
 When printing, we must avoid creating supports within the spherical cavity and to ensure that the cylindrical cavities remain free from deformation, therefore, printing orientation must be vertical.
 !!! printer-3d "Socket print orientation"
@@ -115,7 +115,7 @@ component that supports the front of the prosthesis; the following image shows t
 [Flex arm](https://www.amazon.fr/SMALLRIG-Articul%C3%A9-Friction-R%C3%A9glable-Moniteur/dp/B08B63WXWN/ref=sr_1_1?crid=36M1VY295M2MQ&dib=eyJ2IjoiMSJ9.KGiIRm_QPLJhUIhU1N34kqAYeY66ar65T2RxIAyC5f-uMuk5aTKTYd3H7nni7IM6WjRBQcNbQ9WdEJuWjIoZFVrEm2gYyOMpcHyqmOA4SWdRUADsrTYoYQMwC7yEsQ6xcVR144ers6Tz1gCvJFgjxIjzeC-KBF_7Zjg-uiVb4PxhTXkaV829QS1jBANfmplZqVrv-mAeqohvgv2w3wQRbfktaMZ0KMstzPFnAle9ixHhLMXd_0YWc8hwDBu47y6c5cgRjOTXP1nDM0HJygyaWxgcuB6_G2oyH0hdsHEWegw.Qr0gYVoHgxusC7XTGdkxMi8Gfpx3oLuNlquboS8tCac&dib_tag=se&keywords=bras%2Bmagique&qid=1786965479&sprefix=braz%2Bma%2Caps%2C147&sr=8-1&th=1).
 The two remaining pieces are complementary parts designed to hold the bearings and to hold the Bowden cable.
  
-![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=70% .center .on-glb}
+![shoulder ball bearing housing labels](images/shoulder_ball_bearing_housing_labels.png){width=80% .center}
 
 To print the two biggest pieces, give them an inclination of 45 degrees as shown below. 
 
@@ -128,7 +128,7 @@ To print the two biggest pieces, give them an inclination of 45 degrees as shown
 
 This is a set of three components that transmit $z$-axis rotation from the shoulder to the rest of the prosthesis. The top component is inserted into the pulley and has a recess for a magnet to be situated directly beneath an encoder used to measure rotation. The pulley secures the actuating cables as shown by the red line in the figure below. The bottom component forms the connection between the pulley and the socket.
 
-![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=85% .center .on-glb}
+![shoulder rotatory pieces labels](images/shoulder_rotatory_pieces_labels_v2.png){width=95% .center}
 
 !!! printer-3d "Shoulder rotary pieces print orientation"
     ![shoulder rotatory pieces printing](images/shoulder_rotatory_pieces_printing.png){width=100% .center} 
@@ -164,7 +164,7 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
 
 ![Motors support](images/motor_support.png){width=70% .center}
 
-![Teensy support](images/PCB_teensy_housing.png){width=80% .center .on-glb}
+![Teensy support](images/PCB_teensy_housing.png){width=90% .center}
 
 
 !!! tip
@@ -173,7 +173,7 @@ The motors rack and PCB housing are printed in PLA, this pieces do not require a
     The infill density should be at least 30% to ensure good strength.
     
 !!! printer-3d "Motors rack print orientation"
-    ![motors suport](images/motors_suport_printing.png){width=70% .center .on-glb}
+    ![motors suport](images/motors_suport_printing.png){width=80% .center}
 
 !!! printer-3d "PCB housing print orientation" 
     ![teensy suport printing](images/teensy_suport_printing.png){width=50% .center}
