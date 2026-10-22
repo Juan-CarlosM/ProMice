@@ -229,13 +229,13 @@ $$
 !!! tip "To implement we make:"
     
     $$
-    N(-\nabla H)=(I - J^+J)(-\nabla H) = -\nabla H + J^+J\,\nabla H\
+    N(-\nabla H(q))=(I - J^+J)(-\nabla H(q)) = -\nabla H(q) + J^+J\,\nabla H(q)\
     $$
 
     Then:
 
     $$
-    N_g=-\nabla H + J^+J\,\nabla H\
+    N_g=-\nabla H(q) + J^+J\,\nabla H(q)\
     $$
 
     And finally:
@@ -287,11 +287,11 @@ $$
 $$
 
 $$
-\Delta q = J^T A^{-1} e + k_0 N (-\nabla H )
+\Delta q = J^T A^{-1} e + k_0 N (-\nabla H(q) )
 $$
 
 $$
-\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H)
+\Delta q = J^T x + k_0 (-\nabla H(q) + J^+J\,\nabla H(q))
 $$
 
 $$
