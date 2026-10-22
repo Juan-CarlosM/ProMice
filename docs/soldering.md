@@ -2,7 +2,7 @@
 
 The prosthesis relies on small bearing-shaft mechanisms to compose its joints $\alpha_2$, $\alpha_3$, and $\alpha_4$. They consist of two small T-shaped shafts and four mini bearings.
 
-![Joints mechanisms](images/joints_mecha.png){width=90% .center .on-glb}
+![Joints mechanisms](images/joints_mecha.png){ loading=lazy }
 
 T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To join two pieces of steel with tin, we use phosphoric acid.  The same technique works on the two bearings inserted in the elbow since they must have a pin soldered radially. To solder these mini parts, we used a standard soldering iron capable of reaching a temperature of 300 degrees and a pointy tip.
 !!! tip inline end "Phosphoric acid"
@@ -12,7 +12,7 @@ T-shafts are crafted from 1-mm-diameter steel rod, soldered with tin solder. To 
 
 !!! warning "Soldering iron tip"
     The phosforic acid will abrade the soldering iron tip after several uses. We recomend that you use an old tip for this specific task and that you use a different tip for electronic components soldering. 
-    ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=30% .center .on-glb}
+    ![Soldering iron tip](images/soldering_iron_tip.jpeg){width=50% .center}
     
 
 
@@ -22,7 +22,7 @@ To accurately form the soldered joints, we used the resin-printed molds shown be
     You will find links to buy these materials in section [Materials](materials.md), as well as the molds' 3D models. 
 
 
-![Soldering molds](images/molds_resin.png){width=60% .center .on-glb}
+![Soldering molds](images/molds_resin.png){width=60% .center}
 
 ## T-shaft fabrication
 
@@ -48,12 +48,12 @@ Then you add a piece of solder through the hole on the first side and add at lea
 of the piece and repeat the process on the other side.
 
 
-![T-shaft mold](images/T_shaft_mold_resin_2.png){width=40% .center .on-glb}
+![T-shaft mold](images/T_shaft_mold_resin_2.png){ loading=lazy }
 
 
 The result should look like this on both sides of the T-shaft: 
 
-![T-shaft finish](images/mold_t_shaft_soldered.png){id="T_shaft_finish" width=40% .center .on-glb}
+![T-shaft finish](images/mold_t_shaft_soldered.png){id="T_shaft_finish" width=70% .center}
 
 It is important that the joint is uniform as in the image and that you used enough tin to make a strong union. 
 
@@ -67,7 +67,7 @@ The process to solder a pin to the bearing is very similar to the T-shaft proces
 add two little bits of tin in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
 Finally, add two drops of phosphoric acid and fuse the little tin bits with the soldering iron by pushing them into the bearing-rod union. 
     
-![Ball bearing soldering](images/ball_bearing_mold_solder.png){width=90% .center .on-glb}
+![Ball bearing soldering](images/ball_bearing_mold_solder.png){ loading=lazy }
 
 !!! failure "Soldered bearings"
     If the tin solder reached the inside of the ballbearing after the process, the piece wont be useful. 
