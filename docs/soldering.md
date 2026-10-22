@@ -40,7 +40,7 @@ One tip that will help you make a good joint is to taper the end of the
 longer segment slightly and position it so that it comes into contact with the shorter segment. Next, rotate it until the two small, worn sides of the longer segment are oriented to the sides, roughly as shown in the figure.
 
 
-![T-shaft mold and segments](images/T_shaft_mold_resin.png){width=40% .center .on-glb}
+![T-shaft mold and segments](images/T_shaft_mold_resin.png){width=50% .center}
 
 Next, you add the mold lid. The mold and the lid have a hole for inserting the tin, the acid and the soldering iron to solder both sides of the piece.
 The hole is aligned with the joint, ensuring a precise joint soldering.
@@ -48,7 +48,7 @@ Then you add a piece of solder through the hole on the first side and add at lea
 of the piece and repeat the process on the other side.
 
 
-![T-shaft mold](images/T_shaft_mold_resin_2.png){ loading=lazy }
+![T-shaft mold](images/T_shaft_mold_resin_2.png){ width=50% .center }
 
 
 The result should look like this on both sides of the T-shaft: 
