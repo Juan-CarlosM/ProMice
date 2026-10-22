@@ -4,7 +4,7 @@
 
 The first element of the prosthesis you have to assemble is the ball joint arm. 
 
-![ball arm assembly](images/ball_arm_assembly.png){ loading=lazy }
+![ball arm assembly](images/ball_arm_assembly.png){width=50% .center}
 
 As described in the [3D printing](3D_printing.md) section, although resin printing is a great ally for small, highly detailed prototypes, it does have its limitations. The chamber of the [Yaw-lock system](mechanical_design.md#yaw_lock_system) may require small, detailed adjustments. If the cavity for the mini bearings suffered deformation, the interior will need to be carefully carved to restore its cylindrical shape.
 
@@ -35,18 +35,18 @@ Follow these steps to assemble your ball arm.
 If the T-shaft moves stiffly after assembling, the first bearing is probably not fully seated at the bottom, so you may need to scrape the inside of the ball a little more.
 If you're sure the minibearing is seated all the way to the bottom and it feels still stiff, take a 1-millimeter drill bit and re-drill the cavity shown in the following image (without going through the ball).
 
-![Ball inside](images/ball_inside_drill.png){width=30% .center loading=lazy}
+![Ball inside](images/ball_inside_drill.png){width=30% .center}
 
 If it's still too stiff after that, go over the recesses of the ball lid with the carving bit, as shown in the image below. Scrape the bearing recesse and ream the two little holes.
 
-![Ball lid craving](images/ball_lid_craving_bit.png){width=30% .center .on-glb}
+![Ball lid craving](images/ball_lid_craving_bit.png){width=50% .center}
 
 A final stiffness test can be to move shaft with magnet like in the video. If your assembling passes this test, your [Yaw-lock system](mechanical_design.md#yaw_lock_system) will work perfectly 
 ![type:video](video/T_shaft_test_with_magnets.mp4){: style='width: 50%'}
 
 If the spherical surface of any of the parts has come out of the print with deformations, you'll probably have to reshape it by hand.
 
-![Ball arm remnants](images/ball_remnants.png){width=60% .center .on-glb}
+![Ball arm remnants](images/ball_remnants.png){width=60% .center }
 
 !!! tip 
     You must consider the printing support remnants too. They will cause friction inside the socket and they might not let pieces to fit as you can see in the image below. 
@@ -54,13 +54,13 @@ If the spherical surface of any of the parts has come out of the print with defo
 You might have to sand down the pieces to reduce friction with the socket, to remove any remaining material from surface and  adjusting the shape . 
 Use 800-grit sandpaper to degrade and a 100-grit to polish. You can use a scalpel to carefully scrape other surfaces if needed.
 
-![Ball arm sanding](images/ball_clean.png){width=70% .center .on-glb}
+![Ball arm sanding](images/ball_clean.png){ loading=lazy }
 
 
 ## Assembling of the socket 
 To ensure that the two parts of the socket can be securely assembled, we had to carefully scrap the two mounting features with a scalpel to make them thinner, as they did not fit into their designated holes.
 After this modification, the two parts could be assembled, but they still did not remain securely in the assembled position. We therefore had to remove a small protrusion at the bottom of each hole using a cylindrical  carving bit.
-![socket imperfections](images/socket_imperfections.png){width=60% .center .on-glb} 
+![socket imperfections](images/socket_imperfections.png){ loading=lazy } 
 
 To fit the 3 mm bearing, we used a screwdriver with a 3 mm tip to widen the hole, make it perfectly circular, and remove any irregularities, as was done for the ball arm. It is important that the bearing is sufficiently recessed once positioned so that it does not protrude from the surface of the part. Otherwise, it would cause friction against the spherical part of the ball joint and lead to wear over time.
 ![socket bearing cavity](images/socket_bearing_cavity.png){width=100% .center }
