@@ -542,90 +542,11 @@ serials[i]->sendCmd(M_SET_MAX_RPM, sizeof(float), &rpm);
 The minimum RPM is nonzero to help avoid stalling when a movement command is sent. Each motor has its own maximum speed, allowing the speed command to reflect its mechanical limits. The code sends this value through `M_SET_MAX_RPM`.
 
 
-### Sigmoid trajectory generation
-
-!!! info "Smooth reference generation"
-
-    The sigmoid is applied to the **reference joint positions**, not directly to the PID output. It creates a smooth interpolation from each joint's starting position to its target position over the trajectory duration. The PID then tracks this changing reference.
-
-At the beginning of a trajectory, the program stores the initial joint positions in `q_start[i]` and the desired final positions in `q_goal[i]`. The normalized progress variable `trajProgress` runs from `0.0` to `1.0`. For each of the four joints, the trajectory generator evaluates the sigmoid and calculates the reference angle:
-
-```cpp
-for (int i = 0; i < 4; i++) {
-    float s = sigmoidMotor(i, trajProgress);
-    q_ref[i] = q_start[i] + (q_goal[i] - q_start[i]) * s;
-}
-```
-
-The reference is therefore
-
-\[
-q_{\mathrm{ref},i}(x) =
-q_{\mathrm{start},i} +
-\left(q_{\mathrm{goal},i}-q_{\mathrm{start},i}\right)s_i(x)
-\]
-
-where \(x=\texttt{trajProgress}\) and \(s_i(x)\) is the normalized sigmoid.
-
-#### Sigmoid equation
-
-The implementation starts with a decreasing logistic function:
-
-\[
-f_i(x)=\frac{1}{1+\exp(k_i(x-0.5))}
-\]
-
-The code calculates two endpoint values:
-
-\[
-s_0=\frac{1}{1+\exp(0.5k_i)}
-\qquad
-s_1=\frac{1}{1+\exp(-0.5k_i)}
-\]
-
-It then normalizes the logistic output:
-
-\[
-s_i(x)=\frac{f_i(x)-s_0}{s_1-s_0}
-\]
-
-
-#### Sigmoid parameter `k_sigmoid`
-
-The configured values are:
-
-```cpp
-const float k_sigmoid[4] = {10.0f, 10.0f, 10.0f, 10.0f};
-```
-
-`k_sigmoid[i]` controls the steepness of the transition:
-
-- **Larger `k`**: the transition is more concentrated around the middle of the trajectory. The reference stays closer to its starting position for longer, then changes more rapidly near the midpoint, before flattening near the target.
-- **Smaller `k`**: the transition is closer to a linear ramp, with less pronounced easing at the beginning and end.
-- **`k = 10`**: all four joints currently use the same moderate-to-steep sigmoid profile. The value can be tuned per joint if different mechanisms need different motion profiles.
-
-The sigmoid produces a smooth position reference with a gradual start and finish, which can reduce abrupt changes in the demanded motion compared with an immediate step from the start angle to the target angle. However, the sigmoid alone does not enforce motor velocity, acceleration or torque limits. Those limits still depend on the trajectory timing, PID behavior, RPM mapping and motor hardware.
-
-#### Trajectory timing
-
-The configured initial duration is `trajDuration = 1.0` second. The trajectory manager should update `trajProgress` from `0.0` to `1.0` over this duration, clamp it to that range, and set `trajActive` to `false` when the trajectory completes. For example, if progress is linear in time,
-
-\[
-x(t)=\operatorname{constrain}
-\left(\frac{t-t_0}{T},0,1\right)
-\]
-
-where \(T\) is the trajectory duration and \(t_0\) is its start time. With `T = 1.0 s`, the reference reaches its goal after approximately two seconds. The exact timing depends on how the main program updates `trajProgress`.
-
-`dt_control = 10 ms` is the nominal PID sampling interval. It is distinct from `trajDuration`: the sampling interval determines how often the controller updates, while the trajectory duration determines how long the reference takes to move from start to goal.
-
 ### Main parameters summary
 
 | Parameter | Current value(s) | Purpose |
 | --- | --- | --- |
-| `dt_control` | 10 ms nominal | Nominal PID update interval |
-| `trajDuration` | 1.0 s | Initial trajectory duration |
-| `k_sigmoid` | 10 per joint | Sigmoid transition steepness |
+| `dt_control` | 8 ms nominal | Nominal PID update interval |
 | `outputLimit` | 80, 80, 80, 35 | Maximum absolute PID output |
 | `integralLimit` | 2000 per joint | Integral clamp for anti-windup |
 | `alphaDerivative` | 0.85 per joint | EMA smoothing of derivative |
