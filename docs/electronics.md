@@ -1,7 +1,7 @@
 The prosthesis employs a Teensy 4.1 development board mounted on a custom PCB. This is where the robot model and the PID controller run. The board communicates with the motor controllers via UART ports.
 
 ## Wiring diagram for electronic devices 
-![electronic_schematic](images/electronic_schematic.png){width=95% .center .on-glb}
+![electronic_schematic](images/electronic_schematic.png){ loading=lazy }
 
 The blue line labeled “UART” in the legend has 3 ports leading to the connector board and one port leading to the board mounted on motor driver M0. The connector board inserted into motor M1 distributes the respective serial connections to motors M1, M2, and M3.
 
