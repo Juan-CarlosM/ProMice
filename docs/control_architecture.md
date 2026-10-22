@@ -283,11 +283,7 @@ for (int i = 0; i < 4; ++i) {
 Combining both tasks, the update applied at every iteration is:
 
 $$
-\Delta q = \Delta q_{task} + k_0 N_g
-$$
-
-$$
-\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H)
+\Delta{q} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e \;+\; k_0\,\bigl(I - J^+ J\bigr)\bigl(-\nabla H(q)\bigr)
 $$
 
 $$
@@ -295,10 +291,19 @@ $$
 $$
 
 $$
+\Delta q = J^T x + k_0 (-\nabla H + J^+J\,\nabla H)
+$$
+
+$$
 \boxed{\;
-\Delta{q} = J^T \left(J J^T + \lambda^2 I\right)^{-1} e \;+\; k_0\,\bigl(I - J^+ J\bigr)\bigl(-\nabla H(q)\bigr)
+\Delta q = \Delta q_{task} + k_0 N_g
 \;}
 $$
+
+
+
+
+
 
 ![IKM diagram](images/IKM_diagram.png){ loading=lazy }
 /// caption
