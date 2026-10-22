@@ -1,4 +1,4 @@
-The prosthesis employs a Teensy 4.1 development board mounted on a custom PCB. This is where the robot model and the PID controller run. The board communicates with the motor controllers via UART ports.
+The prosthesis employs a Teensy 4.1 development board mounted on a custom PCB. This is where the [robot model](modified_denavit_hartenberg.md) and the PID controller run. The board communicates with the motor controllers via UART ports.
 
 ## Wiring diagram for electronic devices 
 ![electronic_schematic](images/electronic_schematic.png){ loading=lazy }
@@ -14,7 +14,7 @@ The prosthesis uses four boards: the Teensy, which is mounted on a larger Promic
 ### Connectors
 To prepare the connectors, we need one set of eight cables and one set of six cables. We cut the cables to a length of approximately 30 cm. The ends of the cables are then stripped to allow the crimp terminals to be attached, making it possible to insert the cables into their respective connectors.
 !!! note
-   The wiring of these connectors is shown in <span style="color: #116EB4;">blue</span> in the electrical schematic.
+    The wiring of these connectors is shown in <span style="color: #116EB4;">blue</span> in the electrical schematic.
 ![connectors](images/connectors.png){width=100% .center} 
 
 ### Jack connectors
@@ -35,7 +35,7 @@ We then attach the crimp terminals and insert the cables into their respective c
 !!! note
     The sensor wiring is shown in <span style="color: #FC122D;">red</span> in the schematic.
 
-### Câblage entre les drivers
+### Conections between drivers
 We first connect the power supplies of drivers 1, 2, and 3 to the board of driver 1. The power supply of driver 4 is connected to the board mounted on top of it.
 Then, using standard male-to-male jumper wires approximately 25 cm long, we connect the TX/RX ports of drivers 2 and 3 to the RX/TX ports of the board of driver 1, respectively.
 
