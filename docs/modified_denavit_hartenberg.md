@@ -38,15 +38,7 @@ $$
 \theta_{\text{off}} = \bigl[0,\; 0,\; -,\; 0,\; 90^\circ,\; 0\bigr]
 $$
 
-$$
-{}^{i-1}T_i =
-\begin{bmatrix}
-\cos\theta_i & -\sin\theta_i & 0 & a_{i-1} \\
-\sin\theta_i\cos\alpha_{i-1} & \cos\theta_i\cos\alpha_{i-1} & -\sin\alpha_{i-1} & -d_i\sin\alpha_{i-1} \\
-\sin\theta_i\sin\alpha_{i-1} & \cos\theta_i\sin\alpha_{i-1} & \cos\alpha_{i-1} & d_i\cos\alpha_{i-1} \\
-0 & 0 & 0 & 1
-\end{bmatrix}
-$$
+
 
 
 In the implementation, the four-element input vector is ordered as
@@ -64,20 +56,15 @@ store lengths in **millimetres**.
 For each row, the transformation from frame (i-1) to frame (i) is
 computed using the MDH matrix:
 
-\[ {}\^{i-1}T_i =
-```{=tex}
+$$
+{}^{i-1}T_i =
 \begin{bmatrix}
-\cos\theta_i & -\sin\theta_i & 0 & a_{i-1}\\
-\sin\theta_i\cos\alpha_{i-1} &
-\cos\theta_i\cos\alpha_{i-1} &
--\sin\alpha_{i-1} & -d_i\sin\alpha_{i-1}\\
-\sin\theta_i\sin\alpha_{i-1} &
-\cos\theta_i\sin\alpha_{i-1} &
-\cos\alpha_{i-1} & d_i\cos\alpha_{i-1}\\
+\cos\theta_i & -\sin\theta_i & 0 & a_{i-1} \\
+\sin\theta_i\cos\alpha_{i-1} & \cos\theta_i\cos\alpha_{i-1} & -\sin\alpha_{i-1} & -d_i\sin\alpha_{i-1} \\
+\sin\theta_i\sin\alpha_{i-1} & \cos\theta_i\sin\alpha_{i-1} & \cos\alpha_{i-1} & d_i\cos\alpha_{i-1} \\
 0 & 0 & 0 & 1
 \end{bmatrix}
-```
-\]
+$$
 
 The method `mdh_transform()` in `model.h` implements this matrix
 directly. It first calculates the sine and cosine of (`\theta`{=tex}*i)
@@ -107,11 +94,9 @@ thetas[5] = 0.0f + MDH_THETA_OFF[5];
 The MDH constants in `model.h` are stored in radians and millimetres:
 
 ``` cpp
-static const float MDH_A[] =
-    {0.0f, 0.0f, 0.0f, 0.0f, 13.0f, 20.0f};
+static const float MDH_A[] = {0.0f, 0.0f, 0.0f, 0.0f, 13.0f, 20.0f};
 
-static const float MDH_D[] =
-    {15.0f, 0.0f, 0.0f, 0.0f, 0.0f, 5.50f};
+static const float MDH_D[] = {15.0f, 0.0f, 0.0f, 0.0f, 0.0f, 5.50f};
 
 static const float MDH_ALPHA[] = {
     3.14159265f,   // 180 degrees
@@ -122,56 +107,57 @@ static const float MDH_ALPHA[] = {
     1.57079632f    // 90 degrees
 };
 
-static const float MDH_THETA_OFF[] =
-    {0.0f, 0.0f, 0.0f, 0.0f, 1.57079633f, 0.0f};
+static const float MDH_THETA_OFF[] = {0.0f, 0.0f, 0.0f, 0.0f, 1.57079633f, 0.0f};
 ```
 
-### 4.2 Initialise the base transformation
-
-The initial transformation is an identity matrix with a fixed
-translation of the base frame:
+### 4.2 MDH Transformations
+``` cpp title="model.h — build_full_fk()" 
+void Model::build_full_fk(const float q_in[4], float T_out[16]) const {}
+```
 
 ``` cpp
-float T[16] = {
-    1, 0, 0, DX,
-    0, 1, 0, DY,
-    0, 0, 1, DZ,
-    0, 0, 0, 1
-};
+// Build theta for each row
+    float thetas[6];
+    thetas[0] = q_in[0] + MDH_THETA_OFF[0];
+    thetas[1] = q_in[1] + MDH_THETA_OFF[1];
+    thetas[2] = 1.57079633f + MDH_THETA_OFF[2]; // fixed 90 deg
+    thetas[3] = q_in[2] + MDH_THETA_OFF[3];
+    thetas[4] = q_in[3] + MDH_THETA_OFF[4];
+    thetas[5] = 0.0f    + MDH_THETA_OFF[5];
+```   
+The initial transform is an identity matrix with a fixed translation of the base frame: `T[16]`.In this model, `DX` and `DY` are zero and `DZ` is 40 mm.
+``` cpp
+    // Initial transform: identity with global offset
+    float T[16] = {
+        1,0,0,DX,
+        0,1,0,DY,
+        0,0,1,DZ,
+        0,0,0,1
+    };
+
+    float Ttmp[16], Tlink[16];
 ```
 
-In this model, `DX` and `DY` are zero and `DZ` is 40 mm.
+``` cpp
+    for (int row = 0; row < 6; ++row) {
+        mdh_transform(thetas[row], MDH_ALPHA[row], MDH_A[row], MDH_D[row], Tlink);
+        mat4_mul(T, Tlink, Ttmp);
+        for (int k = 0; k < 16; ++k) T[k] = Ttmp[k];
+    }
 
-### 4.3 Multiply the transformations in order
-
+    for (int k = 0; k < 16; ++k) T_out[k] = T[k];
+``` 
 For each of the six rows, the code calculates an individual MDH
 transformation and post-multiplies it into the accumulated transform:
 
-``` cpp
-for (int row = 0; row < 6; ++row) {
-    mdh_transform(
-        thetas[row],
-        MDH_ALPHA[row],
-        MDH_A[row],
-        MDH_D[row],
-        Tlink
-    );
 
-    mat4_mul(T, Tlink, Ttmp);
-
-    for (int k = 0; k < 16; ++k) {
-        T[k] = Ttmp[k];
-    }
-}
-```
 
 The resulting transformation is the complete chain from the base frame
 to the final frame:
 
-\[ T\_{`\mathrm{final}`{=tex}} = T\_{`\mathrm{base}`{=tex}} {}\^0T_1
-{}\^1T_2 {}\^2T_3 {}\^3T_4 {}\^4T_5 {}\^5T_6 \]
 
-Here, (T\_{`\mathrm{base}`{=tex}}) represents the fixed global
+
+`T[16]` starts with the values representing a fixed global
 translation. The multiplication order in the equation corresponds to the
 order used in `build_full_fk()`.
 
