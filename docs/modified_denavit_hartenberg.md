@@ -25,9 +25,9 @@ such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between 
     | 5       | \(q_3 + \theta_{off,4}\) |  $0°$                 |$1.3$            |$0$          |Revolute  |
     | 6       | \(0 + \theta_{off,5}\)   |  $90°$                |$2.0$            |$0.55$       | Fixed    |                                         
 
-\[
+$$
 \theta_{\text{off}} = \bigl[0,\; 0,\; -,\; 0,\; 90^\circ,\; 0\bigr]
-\]
+$$
 
 $$
 {}^{i-1}T_i =
