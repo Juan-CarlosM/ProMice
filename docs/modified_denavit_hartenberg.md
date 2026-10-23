@@ -15,7 +15,7 @@ The system 3 is a supplementary system to add rotations to the spherical joint. 
 such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between system 2 and system 4.
 
 
-!!! list "MDH table"
+!!! table "MDH table"
     |   Link  |    \(\theta_{i}\)(deg)   | \(\alpha_{i-1}\)(deg) | \(a_{i-1}\)(cm) | \(d_i\)(cm) |Join type |
     |:-------:|:------------------------:|:---------------------:|:---------------:|:-----------:|----------|
     | 1       | \(q_0 + \theta_{off,0}\) |  $180°$               |$0$              |$1.5$        |Revolute  |
