@@ -20,15 +20,14 @@ such as $\forall x$, $x_i$ $\perp$ $z_{i+1}$ . It acts as a fixed joint between 
     |:-------:|:------------------------:|:---------------------:|:---------------:|:-----------:|----------|
     | 1       | \(q_0 + \theta_{off,0}\) |  $180°$               |$0$              |$1.5$        |Revolute  |
     | 2       | \(q_1 + \theta_{off,1}\) |  $-90°$               |$0$              |$0$          |Revolute  |
-    | 3       | 90°                      |  $180°$               |$0$              |$0$          | Fixed    |
+    | 3       | $90°$                    |  $180°$               |$0$              |$0$          | Fixed    |
     | 4       | \(q_2 + \theta_{off,3}\) |  $90°$                |$0$              |$0$          |Revolute  |
     | 5       | \(q_3 + \theta_{off,4}\) |  $0°$                 |$1.3$            |$0$          |Revolute  |
     | 6       | \(0 + \theta_{off,5}\)   |  $90°$                |$2.0$            |$0.55$       | Fixed    |                                         
 
-
-
-
-![Modified Denavit hartenber table](images/Table_MDH.png){width .center}
+\[
+\theta_{\text{off}} = \bigl[0,\; 0,\; -,\; 0,\; 90^\circ,\; 0\bigr]
+\]
 
 $$
 {}^{i-1}T_i =
