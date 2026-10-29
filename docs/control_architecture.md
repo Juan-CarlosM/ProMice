@@ -25,7 +25,7 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
 
 ### Overview
 
-![IK flowchar](images/IK_flowchart.png){loading=lazy}
+![IK flowchar](images/IK_flowchart.png){width=40% .center}
 
 | Symbol | Meaning |Size |
 |:------:|---------|:----:|
