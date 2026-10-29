@@ -66,7 +66,7 @@ one-dimensional array in **row-major order**.
 ## 4. Building the complete forward-kinematics chain
 
 
-![FG flowchart](images/FG_flowchart.png){loading=lazy}
+![FG flowchart](images/FG_flowchart.png){width=40% .center}
 
 
 
