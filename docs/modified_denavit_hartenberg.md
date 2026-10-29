@@ -65,6 +65,14 @@ one-dimensional array in **row-major order**.
 
 ## 4. Building the complete forward-kinematics chain
 
+
+![FG flowchart](images/FG_flowchart.png){loading=lazy}
+
+
+
+
+
+
 The implementation follows three main steps.
 
 ### 4.1 Define the angle for each MDH row
