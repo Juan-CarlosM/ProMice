@@ -207,48 +207,7 @@ T_{\mathrm{final}}[2,3]
 Thus, `forwardGeometry(q, xyz)` maps the four joint angles (q), in
 radians, to the end-effector position ((x,y,z)), in millimetres.
 
-## 6. Numerical positional Jacobian
 
-The same direct geometric model is used to calculate the positional
-Jacobian by finite differences. The Jacobian describes how small changes
-in each joint angle affect the Cartesian position:
-
-\[ J(q) `\in `{=tex}`\mathbb{R}`{=tex}\^{3`\times4`{=tex}} \]
-
-For joint (i), the implementation perturbs only that joint by a small
-amount (`\varepsilon`{=tex}), evaluates the forward geometry again, and
-estimates the corresponding Jacobian column:
-
-\[ J\_{:,i} =
-`\frac{\mathrm{FG}(q+\varepsilon e_i)-\mathrm{FG}(q)}`{=tex}
-{`\varepsilon`{=tex}}, `\qquad `{=tex}`\varepsilon=10`{=tex}\^{-5} \]
-
-where (e_i) is the unit vector for joint (i). The code uses
-`FK_EPS = 1e-5f`.
-
-``` cpp
-void Model::numerical_jacobian(
-    const float q_in[4],
-    float J[3][4]
-) const {
-    float p0[3], p1[3], qd[4];
-
-    forwardGeometry(q_in, p0);
-
-    for (int i = 0; i < 4; ++i) {
-        for (int k = 0; k < 4; ++k) {
-            qd[k] = q_in[k];
-        }
-
-        qd[i] += FK_EPS;
-        forwardGeometry(qd, p1);
-
-        J[0][i] = (p1[0] - p0[0]) / FK_EPS;
-        J[1][i] = (p1[1] - p0[1]) / FK_EPS;
-        J[2][i] = (p1[2] - p0[2]) / FK_EPS;
-    }
-}
-```
 
 Each column (J\_{:,i}) corresponds to one of the four active joints, and
 each row corresponds to a Cartesian coordinate (x), (y), or (z). Since
