@@ -1,5 +1,6 @@
 
 # Control Architecture
+The arm has **4 active joints** and the task is to place the end-effector at a **3D position** \(x_{target} = [x,\,y,\,z]^T\). 
 
 [![Control diagram](images/Control_diagram.png)](images/Control_diagram.png){ loading=lazy }
 
@@ -12,7 +13,7 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
     - How the **inverse kinematics (IK)** is solved on the Teensy with **Damped Least Squares (DLS)**.
     - How a **secondary task** (joint-limit avoidance) is added through the **null space** of the Jacobian.
     - How every equation maps to the C++ class `Model` in `model.h`.
-    - Parameters, tuning advice and a minimal usage example.
+    - Parameters, tuning advice.
 
 !!! info "Related pages"
 
@@ -24,7 +25,7 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
 
 ### Overview
 
-The arm has **4 active joints** and the task is to place the end-effector at a **3D position** \(x_{target} = [x,\,y,\,z]^T\). Since there are 4 unknowns for 3 equations, the arm is **redundant** (1 degree of freedom is left over). That extra freedom is exploited to keep the joints away from their mechanical limits.
+!IK [flowchar](images/IK_flowchart.png){loading=lazy}
 
 | Symbol | Meaning |Size |
 |:------:|---------|:----:|
@@ -246,6 +247,7 @@ $$
 
 
 ```cpp title="model.h — wdls_step() (secondary task)" linenums="1" hl_lines="1-10 21-25"
+// Null-space: grad_H and N * (-grad_H)
 // (1) J^+ J  (4x4)  using  J^+ = J^T A^-1
 float JpJ[4][4];
 for (int i = 0; i < 4; ++i) {
