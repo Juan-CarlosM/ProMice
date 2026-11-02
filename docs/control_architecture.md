@@ -24,8 +24,11 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
 ## Inverse Kinematics via DLS with Null Space
 
 ### Overview
+The folowing flow chart presents the IK pipeline. 
 
 ![IK flowchar](images/IK_flowchart.png){width=40% .center}
+
+
 
 | Symbol | Meaning |Size |
 |:------:|---------|:----:|
@@ -280,7 +283,7 @@ for (int i = 0; i < 4; ++i) {
 
 ---
 
-### Final control law
+### Final IK control law
 
 Combining both tasks, the update applied at every iteration is:
 
@@ -413,7 +416,7 @@ static const float DX = 0.0f, DY = 0.0f, DZ = 40.0f;  // global offset (mm)
 
 !!! info "Joint-space control"
 
-    The inverse kinematics (IK) solver provides the target joint angles, `q_tar_deg`. Before these targets are sent to the PID controllers, the trajectory generator creates a smooth reference, `q_ref`, between the starting and goal positions. Each joint has an independent PID controller that tries to minimize the difference between its reference angle and measured angle.
+    The inverse kinematics (IK) solver provides the target joint angles, `q_tar_deg`. Each joint has an independent PID controller that tries to minimize the difference between its reference angle and measured angle.
 
 ![PID diagram](images/PID_diagram.png){ loading=lazy }
 
@@ -425,37 +428,36 @@ PID loop for each joint. The controller calculates a bounded step command and se
 
 For joint \(i\), the position error is
 
-\[
+$$
 e_i[k] = q_{\mathrm{ref},i}[k] - q_{\mathrm{meas},i}[k]
-\]
+$$
 
-where `q_ref[i]` is the smoothed reference angle and `q_meas[i]` is the measured joint angle. The implementation uses a discrete PID law:
+The implementation uses a discrete PID law:
 
-\[
+$$
 u_i[k] = K_{p,i}e_i[k] + K_{i,i}I_i[k] + K_{d,i}D_i[k]
-\]
+$$
 
 The integral and derivative terms are updated each control cycle:
 
-\[
+$$
 I_i[k] = I_i[k-1] + e_i[k]\Delta t
-\]
+$$
 
-\[
+$$
 D_{\mathrm{raw},i}[k] =
 \frac{e_i[k]-e_i[k-1]}{\Delta t}
-\]
+$$
 
 The derivative is filtered with an exponential moving average (EMA):
-
-\[
+$$
 D_i[k] = \alpha_iD_i[k-1] +
 (1-\alpha_i)D_{\mathrm{raw},i}[k]
-\]
+$$
 
 This filter reduces the effect of measurement noise and sudden changes in the error. A larger `alphaDerivative[i]` smooths the derivative more strongly but makes it respond more slowly. The configured value is `0.85` for all four motors.
 
-The nominal control period is `dt_control = 10 ms` (100 Hz). The `dt` argument passed to `computePID()` must be expressed in **seconds** if the derivative and integral equations are to use standard time units. If the program passes milliseconds, convert them to seconds before using them in these equations. The actual loop period should be measured or calculated rather than assumed to be exactly nominal.
+The nominal control period is between `dt_control = 10 ms` (100 Hz) and `dt_control = 8 ms` (~125 Hz). The `dt` argument passed to `computePID()` must be expressed in **seconds** if the derivative and integral equations are to use standard time units. If the program passes milliseconds, convert them to seconds before using them in these equations. The actual loop period should be measured or calculated rather than assumed to be exactly nominal.
 
 #### PID gains
 
