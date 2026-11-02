@@ -59,18 +59,13 @@ $$
 $$
 
 The method `mdh_transform()` in `model.h` implements this matrix
-directly. It first calculates the sine and cosine of (`\theta`{=tex}*i)
-and (`\alpha`{=tex}*{i-1}), then stores the 16 matrix elements in a
-one-dimensional array in **row-major order**.
+directly. 
 
-## 4. Building the complete forward-kinematics chain
+## 4. Forward geometry  implementation
 
+The forward geometry method `forwardGeometry(q_inout, pos)` is illustrated by the flow chart: 
 
 ![FG flowchart](images/FG_flowchart.png){width=40% .center}
-
-
-
-
 
 
 The implementation follows three main steps.
