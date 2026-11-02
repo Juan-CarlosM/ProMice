@@ -45,7 +45,7 @@ store lengths in **millimetres**.
 
 ## 3. Homogeneous MDH transformation
 
-For each row, the transformation from frame $$(i-1)$$ to frame $$(i)$$ is
+For each row, the transformation from frame $(i-1)$ to frame $(i)$ is
 computed using the MDH matrix:
 
 $$
@@ -190,7 +190,7 @@ radians, to the end-effector position `(x,y,z)`, in millimetres.
 
 
 
-Each column$$(J_{:,i})$$corresponds to one of the four active joints, and
+Each column \(J_{:,i}\)corresponds to one of the four active joints, and
 each row corresponds to a Cartesian coordinate (x), (y), or (z). Since
 the input angles are in radians and the Cartesian coordinates are in
 millimetres, the Jacobian entries have units of **mm/rad**.
