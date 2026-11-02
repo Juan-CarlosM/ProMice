@@ -45,7 +45,7 @@ store lengths in **millimetres**.
 
 ## 3. Homogeneous MDH transformation
 
-For each row, the transformation from frame (i-1) to frame (i) is
+For each row, the transformation from frame $$(i-1)$$ to frame $$(i)$$ is
 computed using the MDH matrix:
 
 $$
@@ -63,28 +63,12 @@ directly.
 
 ## 4. Forward geometry  implementation
 
-The forward geometry method `forwardGeometry(q_inout, pos)` is illustrated by the flow chart: 
+The forward geometry method `forwardGeometry(q, xyz)` is illustrated by the flow chart: 
 
 ![FG flowchart](images/FG_flowchart.png){width=40% .center}
 
 
 The implementation follows three main steps.
-
-### 4.1 Define the angle for each MDH row
-
-The method `build_full_fk()` expands the four active joint variables
-into six MDH angles, including the fixed joints and the angular offsets:
-
-``` cpp
-float thetas[6];
-
-thetas[0] = q_in[0] + MDH_THETA_OFF[0];
-thetas[1] = q_in[1] + MDH_THETA_OFF[1];
-thetas[2] = 1.57079633f + MDH_THETA_OFF[2]; // fixed 90 degrees
-thetas[3] = q_in[2] + MDH_THETA_OFF[3];
-thetas[4] = q_in[3] + MDH_THETA_OFF[4];
-thetas[5] = 0.0f + MDH_THETA_OFF[5];
-```
 
 The MDH constants in `model.h` are stored in radians and millimetres:
 
@@ -105,7 +89,11 @@ static const float MDH_ALPHA[] = {
 static const float MDH_THETA_OFF[] = {0.0f, 0.0f, 0.0f, 0.0f, 1.57079633f, 0.0f};
 ```
 
-### 4.2 MDH Transformations
+### 4.1 Define the angle for each MDH row
+
+The method `build_full_fk()` expands the four active joint variables
+into six MDH angles, including the fixed joints and the angular offsets:
+
 ``` cpp title="model.h — build_full_fk()" 
 void Model::build_full_fk(const float q_in[4], float T_out[16]) const {}
 ```
@@ -120,6 +108,11 @@ void Model::build_full_fk(const float q_in[4], float T_out[16]) const {}
     thetas[4] = q_in[3] + MDH_THETA_OFF[4];
     thetas[5] = 0.0f    + MDH_THETA_OFF[5];
 ```   
+
+
+
+### 4.2 MDH Transformations
+
 The initial transform is an identity matrix with a fixed translation of the base frame: `T[16]`.In this model, `DX` and `DY` are zero and `DZ` is 40 mm.
 ``` cpp
     // Initial transform: identity with global offset
@@ -130,10 +123,17 @@ The initial transform is an identity matrix with a fixed translation of the base
         0,0,0,1
     };
 
-    float Ttmp[16], Tlink[16];
+   
 ```
+For each of the six rows, the code calculates an individual MDH
+transformation and post-multiplies it into the accumulated transform.
+`T[16]` starts with the values representing a fixed global
+translation. `build_full_fk()` corresponds to the equation of **Homogeneous MDH transformation**. The helper `mat4_mul()` computes the product of two **4X4**
+matrices stored in row-major arrays.
 
 ``` cpp
+    float Ttmp[16], Tlink[16];
+
     for (int row = 0; row < 6; ++row) {
         mdh_transform(thetas[row], MDH_ALPHA[row], MDH_A[row], MDH_D[row], Tlink);
         mat4_mul(T, Tlink, Ttmp);
@@ -142,27 +142,17 @@ The initial transform is an identity matrix with a fixed translation of the base
 
     for (int k = 0; k < 16; ++k) T_out[k] = T[k];
 ``` 
-For each of the six rows, the code calculates an individual MDH
-transformation and post-multiplies it into the accumulated transform:
 
 
-
-The resulting transformation is the complete chain from the base frame
+The resulting transformation `T_out[k]` is the complete chain from the base frame
 to the final frame:
 
 
 
-`T[16]` starts with the values representing a fixed global
-translation. The multiplication order in the equation corresponds to the
-order used in `build_full_fk()`.
 
-The helper `mat4_mul()` computes the product of two (4`\times4`{=tex})
-matrices stored in row-major arrays.
 
 ## 5. Obtaining the Cartesian position
 
-The public method `forwardGeometry()` calls `build_full_fk()` and
-extracts the translation column of the final homogeneous transformation:
 
 ``` cpp
 void Model::forwardGeometry(
@@ -178,36 +168,34 @@ void Model::forwardGeometry(
     xyz_out[2] = T[11];
 }
 ```
+In sumary, the public method `forwardGeometry()` calls `build_full_fk()` and
+extracts the translation column of the final homogeneous transformation:
 
-Mathematically, the direct geometric model is
+Mathematically, the direct geometric model is:
 
-\[ `\mathrm{FG}`{=tex}(q) =
-```{=tex}
+$$
+\mathrm{FG}(q) =
 \begin{bmatrix}
 x(q)\\
 y(q)\\
 z(q)
-\end{bmatrix}
-```
-=
-```{=tex}
-\begin{bmatrix}
+\end{bmatrix} 
+= \begin{bmatrix}
 T_{\mathrm{final}}[0,3]\\
 T_{\mathrm{final}}[1,3]\\
 T_{\mathrm{final}}[2,3]
 \end{bmatrix}
-```
-\]
+$$
 
 Thus, `forwardGeometry(q, xyz)` maps the four joint angles (q), in
-radians, to the end-effector position ((x,y,z)), in millimetres.
+radians, to the end-effector position `(x,y,z)`, in millimetres.
 
 
 
-Each column (J\_{:,i}) corresponds to one of the four active joints, and
+Each column $$(J_{:,i})$$ corresponds to one of the four active joints, and
 each row corresponds to a Cartesian coordinate (x), (y), or (z). Since
 the input angles are in radians and the Cartesian coordinates are in
 millimetres, the Jacobian entries have units of **mm/rad**.
 
-The numerical Jacobian is used by the inverse-kinematics solver to
-relate Cartesian position error to joint-angle updates.
+This method is also called to solve the [numerical Jacobian](control_architecture.md#Numeric-computation-of-the-Jacobian) used by the Inverse Kinematics solver to
+relate cartesian position error to joint-angle updates.
