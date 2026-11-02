@@ -24,7 +24,7 @@ Overall control pipeline of ProMice: Cartesian target → inverse kinematics →
 ## Inverse Kinematics via DLS with Null Space
 
 ### Overview
-The folowing flow chart presents the IK pipeline. 
+The folowing flow chart presents the IK pipeline `inverseKinematics(x_target, q_target, dq)`. 
 
 ![IK flowchar](images/IK_flowchart.png){width=40% .center}
 
