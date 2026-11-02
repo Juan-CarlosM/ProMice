@@ -149,8 +149,6 @@ to the final frame:
 
 
 
-
-
 ## 5. Obtaining the Cartesian position
 
 
@@ -187,12 +185,12 @@ T_{\mathrm{final}}[2,3]
 \end{bmatrix}
 $$
 
-Thus, `forwardGeometry(q, xyz)` maps the four joint angles (q), in
+Thus, `forwardGeometry(q, xyz)` maps the four joint angles `(q)`, in
 radians, to the end-effector position `(x,y,z)`, in millimetres.
 
 
 
-Each column $$(J_{:,i})$$ corresponds to one of the four active joints, and
+Each column$$(J_{:,i})$$corresponds to one of the four active joints, and
 each row corresponds to a Cartesian coordinate (x), (y), or (z). Since
 the input angles are in radians and the Cartesian coordinates are in
 millimetres, the Jacobian entries have units of **mm/rad**.
