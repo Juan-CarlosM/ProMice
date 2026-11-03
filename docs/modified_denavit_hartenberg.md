@@ -64,11 +64,13 @@ directly.
 ## 4. Forward geometry  implementation
 
 The forward geometry method `forwardGeometry(q, xyz)` is illustrated by the flow chart: 
-
+```cpp title="model.h — forwardGeometry()"
+void Model::forwardGeometry(const float q_in[4], float xyz_out[3]) const {}
+```
 ![FG flowchart](images/FG_flowchart.png){width=40% .center}
 
 
-The implementation follows three main steps.
+
 
 The MDH constants in `model.h` are stored in radians and millimetres:
 
@@ -152,7 +154,7 @@ to the final frame:
 ## 5. Obtaining the Cartesian position
 
 
-``` cpp
+``` cpp linenums="1" hl_lines="9-11"
 void Model::forwardGeometry(
     const float q_in[4],
     float xyz_out[3]
@@ -167,7 +169,7 @@ void Model::forwardGeometry(
 }
 ```
 In sumary, the public method `forwardGeometry()` calls `build_full_fk()` and
-extracts the translation column of the final homogeneous transformation:
+extracts the translation column of the final homogeneous transformation.
 
 Mathematically, the direct geometric model is:
 
