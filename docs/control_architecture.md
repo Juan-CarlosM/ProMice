@@ -28,18 +28,6 @@ The folowing flow chart presents the IK pipeline `inverseKinematics(x_target, q_
 
 ![IK flowchar](images/IK_flowchart.png){width=40% .center}
 
-
-
-| Symbol | Meaning |Size |
-|:------:|---------|:----:|
-| \(q\) | Joint vector \([\theta_1,\ \theta_2,\ \theta_4,\ \theta_5]^T\) in rad | 4 × 1 |
-| \(x(q)\) | End-effector position given by the forward geometry (FG) | 3 × 1 |
-| \(e\) | Task error \(x_{target}-x(q)\) | 3 × 1 |
-| \(J\) | Positional Jacobian \(\partial x/\partial q\) | 3 × 4 |
-| \(\lambda\) | Damping factor | scalar |
-| \(k_0\) | Null-space gain | scalar |
-| \(H(q)\) | Joint-limit cost function | scalar |
-
 The algorithm runs **a fixed number of iterations** each time it is called:
 
 ```text
@@ -51,11 +39,23 @@ repeat IK_ITERS times:
     5. q    = clamp(q + dq)              # update and respect limits
 ```
 
+| Symbol | Meaning |Size |
+|:------:|---------|:----:|
+| \(q\) | Joint vector \([\theta_1,\ \theta_2,\ \theta_4,\ \theta_5]^T\) in rad | 4 × 1 |
+| \(x(q)\) | End-effector position given by the forward geometry (FG) | 3 × 1 |
+| \(e\) | Task error \(x_{target}-x(q)\) | 3 × 1 |
+| \(J\) | Positional Jacobian \(\partial x/\partial q\) | 3 × 4 |
+| \(\lambda\) | Damping factor | scalar |
+| \(k_0\) | Null-space gain | scalar |
+| \(H(q)\) | Joint-limit cost function | scalar |
+
+
+
 ---
 
 ### Numeric computation of the Jacobian
 
-The Jacobian is **not derived analytically**. Each column is approximated by finite differences of the forward geometry (FG), perturbing one joint at a time:
+The Jacobian is **not derived analytically**. Each column is approximated by finite differences of the [forward Geometry](modified_denavit_hartenberg.md#Forward-geometry-implementation) (FG), perturbing one joint at a time:
 
 $$
 J_{:,\,i} = \frac{\mathrm{FG}(q + \varepsilon\, e_i) - \mathrm{FG}(q)}{\varepsilon}, \qquad \varepsilon = 10^{-5}
