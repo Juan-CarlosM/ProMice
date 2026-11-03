@@ -196,7 +196,4 @@ radians, to the end-effector position `(x,y,z)`, in millimetres.
 
 This method is also called to solve the [numerical Jacobian](control_architecture.md#Numeric-computation-of-the-Jacobian) used by the Inverse Kinematics solver to
 relate cartesian position error to joint-angle updates.
-Each column \(J_{:,i}\)corresponds to one of the four active joints, and
-each row corresponds to a Cartesian coordinate (x), (y), or (z). Since
-the input angles are in radians and the Cartesian coordinates are in
-millimetres, the Jacobian entries have units of **mm/rad**.
+
