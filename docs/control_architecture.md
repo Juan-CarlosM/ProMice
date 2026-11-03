@@ -93,7 +93,6 @@ where \(e_i\) is the \(i\)-th canonical basis vector.
 
 ### Damped Least Squares (DLS) Pseudoinverse
 
-#### The idea
 
 The classical pseudoinverse \(J^T(JJ^T)^{-1}\) explodes near **singularities** (configurations where the arm loses the ability to move in some direction, so \(JJ^T\) becomes almost non-invertible). DLS adds a small term \(\lambda^2 I\) that keeps the matrix invertible, at the price of a small tracking error.
 
