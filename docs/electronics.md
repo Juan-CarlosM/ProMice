@@ -25,11 +25,14 @@ The jack can then be screwed back together, and a continuity test can be perform
 ![jack_connector](images/jack_connector.png){width=70% .center} 
 
 ### Sensor connectors
-Finally, we extend the cables coming from the two sensors by soldering an additional cable to each of the existing cables. A sleeve is then placed over each soldered connection and heat-shrunk to secure and insulate the connection.
+Finally, we extend the cables coming from the two sensors by soldering an additional crimped cable to each of the existing cables. A sleeve is then placed over each soldered connection and heat-shrunk to secure and insulate the connection.
 
 ![sensor sleeve](images/sensor_sleeve.png){width=100% .center} 
 
-We then attach the crimp terminals and insert the cables into their respective connectors, making sure that the sensor PINs match the markings on the board. The socket sensor is connected to HS1, while the limb sensor is connected to HS2.
+We then insert the cables into their respective connectors, making sure that the sensor PINs match the markings on the board.
+The shoulder sensor is connected to HS1, while the elbow sensor is connected to HS2.
+
+![sensor connectors ](images/HS_connector.jpeg){width=80% .center}
 
 ![sensor_connectors](images/sensor_connectors.jpeg){width=100% .center}
 !!! note
