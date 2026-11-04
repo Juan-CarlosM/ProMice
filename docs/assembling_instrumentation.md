@@ -71,8 +71,8 @@ You can now proceed to assemble the socket and the ball-arm to form the ball joi
 
 ## Assembling of the elbow joint 
 ### Elbow joint ball bearings
-To ensure the mini bearings with pins fit properly, the recesses in the forearm need to be modified slightly.
-Even if this modification can be made in the 3D model, it’s very likely that the print won’t be precise enough at this scale. 
+
+At this point we have already soldered the [elbow ball bearings](soldering.md#elbow_ball_bearings_soldered), and to ensure that they fit properly, the recesses in the forearm need to be modified slightly. Although this modification can be made in the 3D model, it’s very likely that the print won’t be precise enough at this scale. 
 We’ll scrape the part, trying to make more room for the ball bearing pin to fit.
 
 The following image shows how the recesses for the mini bearings have been reworked with a rotary tool and a carving bit.
