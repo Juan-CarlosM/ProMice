@@ -82,7 +82,16 @@ The two holes for the pins have been reamed with a 1mm drill bit.
 The small hole in the Hall sensor cavity is used to check that the shaft is aligned. If you look at our T-shaft for the elbow joint, you should see something like what is shown in the following figure.
 
 ![Elbow joint axis](images/elbow_joint_axis.png){width=60% .center}
-Once the shaft is properly aligned, the magnet can be glued onto the axis of the T-shape. We use a larger magnet to press the small magnet against it, making it easier to position it correctly. The rounded side of the magnet is glued against the axis of the T-shape.
+
+Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto the axis of the T-shape to be able to encode its rotation. The magnet has to be perpendicular respect to the T-shaft axis.
+
+![Elbow joint axis rot](images/elbow_joint_axis_rot.png){width=60% .center}
+
+It’s a meticulous task, since the magnet is very small and must be aligned properly, so you have to get creative. To succeed in this task, we use a larger magnet (2 mm in diameter) to anchor the small magnet to the rod. Next, we apply Super Glue using the same wire that was used for the actuator. Another thing to keep in mind is that you have to be careful not to get any glue inside the ball bearing.
+
+![Tiny magnet glue](images/tiny_magnet_glue.png){width=60% .center}
+
+The result looks like this: 
 
 ![Elbow_ball_bearings](images/elbow_ball_bearings.png){id="elbow_ball_bearings" width=70% .center loading=lazy}
 
