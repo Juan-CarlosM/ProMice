@@ -67,7 +67,7 @@ The process to solder a pin to the bearing is very similar to the T-shaft proces
 add two little bits of tin in each cavity next to the bearing to solder the two corners of the pin, as shown in the image.
 Finally, add two drops of phosphoric acid and fuse the little tin bits with the soldering iron by pushing them into the bearing-rod union. 
     
-![Ball bearing soldering](images/ball_bearing_mold_solder.png){ id="elbow_ball_bearings_soldered"  width=70% .center }
+![Ball bearing soldering](images/ball_bearing_mold_solder.png){ id="elbow_ball_bearings_soldered"  width=100% .center }
 
 !!! failure "Soldered bearings"
     If the tin solder reached the inside of the ballbearing after the process, the piece wont be useful. 
