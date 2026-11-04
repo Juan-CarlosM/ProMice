@@ -73,21 +73,22 @@ You can now proceed to assemble the socket and the ball-arm to form the ball joi
 ### Elbow joint ball bearings
 To ensure the mini bearings with pins fit properly, the recesses in the forearm need to be modified slightly.
 Even if this modification can be made in the 3D model, it’s very likely that the print won’t be precise enough at this scale. 
-We’ll scrape the part, trying to create the shape of the solder joint shown in the following figure.
+We’ll scrape the part, trying to make more room for the ball bearing pin to fit.
 
 The following image shows how the recesses for the mini bearings have been reworked with a rotary tool and a carving bit.
 The two holes for the pins have been reamed with a 1mm drill bit.
+
 ![forearm craved](images/forearm_craved.png){width=70% .center}
 
-The small hole in the Hall sensor cavity is used to check that the shaft is aligned. If you look at our T-shaft for the elbow joint, you should see something like what is shown in the following figure.
+The small hole in the Hall sensor cavity is used to check that the shaft is aligned. You should see something like what is shown in the following figure.
 
-![Elbow joint axis](images/elbow_joint_axis.png){width=60% .center}
+![Elbow joint axis](images/elbow_joint_axis.png){width=100% .center}
 
-Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto the axis of the T-shape to be able to encode its rotation. The magnet has to be perpendicular to the T-shaft axis.
+Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto the axis of the T-shape to be able to encode its rotation. The magnet has to be perpendicular to the T-shaft axis it is glued on.
 
 ![Elbow joint axis rot](images/elbow_joint_axis_rot.png){width=60% .center}
 
-It’s a meticulous work, since the magnet is very small and must be aligned properly, so you have to get creative. To succeed in this task, we used a larger magnet (2 mm in diameter) to anchor the small magnet to the rod. Next, we apply Super Glue using the same wire that was used for the actuator. Another thing to keep in mind is that you have to be careful not to get any glue inside the ball bearing.
+It’s a meticulous work, since the magnet is very small and must be aligned properly, so you have to get creative. To succeed in this task, we used a larger magnet (2 mm in diameter) to anchor the small magnet to the rod. Next, we apply Super Glue using the same wire that was used for the actuators. Another thing to keep in mind is that you have to be careful not to get any glue inside the ball bearing.
 
 ![Tiny magnet glue](images/tiny_magnet_glue.png){width=60% .center}
 
