@@ -83,7 +83,7 @@ The small hole in the Hall sensor cavity is used to check that the shaft is alig
 
 ![Elbow joint axis](images/elbow_joint_axis.png){width=60% .center}
 
-Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto the axis of the T-shape to be able to encode its rotation. The magnet has to be perpendicular respect to the T-shaft axis.
+Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto the axis of the T-shape to be able to encode its rotation. The magnet has to be perpendicular to the T-shaft axis.
 
 ![Elbow joint axis rot](images/elbow_joint_axis_rot.png){width=60% .center}
 
