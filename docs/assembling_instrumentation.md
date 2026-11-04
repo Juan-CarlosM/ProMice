@@ -90,7 +90,7 @@ Once the shaft is properly aligned, we have to glue the tiny 1x1 mm magnet onto 
 
 It’s a meticulous work, since the magnet is very small and must be aligned properly, so you have to get creative. To succeed in this task, we used a larger magnet (2 mm in diameter) to anchor the small magnet to the rod. Next, we apply Super Glue using the same wire that was used for the actuators. Another thing to keep in mind is that you have to be careful not to get any glue inside the ball bearing.
 
-![Tiny magnet glue](images/tiny_magnet_glue.png){width=60% .center}
+![Tiny magnet glue](images/tiny_magnet_glue.png){width=70% .center}
 
 The result looks like this: 
 
